@@ -11,14 +11,6 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
   const { id } = shop;
   const { name, address_detail, latitude, longitude, shop_images } =
     shop.attributes;
-  // prepare shop image
-  // let url = '';
-  // console.log(shop_images);
-  // if (shop_images.data !== null) {
-  //   const name = shop_images.data[0].attributes.hash;
-  //   url = `${apiBaseUrl}/uploads/${name}.jpg`;
-  //   console.log(url);
-  // }
 
   return (
     <>
