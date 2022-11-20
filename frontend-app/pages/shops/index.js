@@ -4,6 +4,16 @@ const ShopsPage = ({ shops, error }) => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
   }
+  const [inputText, changeInputText] = useState('');
+  const [tempShops, setTempShops] = useState(shops);
+  const getSearchData = async () => {
+    const res = await axios.get(
+      `http://localhost:1337/api/Shops?filters[name][$contains]=${inputText}`
+    );
+    const resShops = res.data.data;
+    setTempShops(resShops);
+  };
+
   return (
     <ul>
       {shops.map((shop) => {
