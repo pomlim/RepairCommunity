@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "review_tag_links",
+  "info": {
+    "singularName": "review-tag-link",
+    "pluralName": "review-tag-links",
+    "displayName": "ReviewTagLink",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "review": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::review.review",
+      "inversedBy": "review_tag_links"
+    },
+    "review_tag": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::review-tag.review-tag"
+    }
+  }
+}

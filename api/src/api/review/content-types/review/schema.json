@@ -40,6 +40,12 @@
       "relation": "manyToOne",
       "target": "api::shop.shop",
       "inversedBy": "Id"
+    },
+    "review_tag_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review-tag-link.review-tag-link",
+      "mappedBy": "review"
     }
   }
 }
