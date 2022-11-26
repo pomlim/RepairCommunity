@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import StarRating from '@/components/StarRating';
 
 const Modal = ({ shopId, reviewTags }) => {
+  const [rating, setRating] = useState(0);
   const [modal, setModal] = useState(false);
   const [checkedState, setCheckedState] = useState(
     new Array(reviewTags.length).fill(false)
@@ -87,6 +89,7 @@ const Modal = ({ shopId, reviewTags }) => {
                               name="username"
                             />
                           </label>
+                          <StarRating rating={rating} setRating={setRating} />
                           <label className="text-session" htmlFor="score">
                             score:{' '}
                           </label>{' '}
