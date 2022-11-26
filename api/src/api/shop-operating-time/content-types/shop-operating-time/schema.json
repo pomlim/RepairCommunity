@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_operating_times",
+  "info": {
+    "singularName": "shop-operating-time",
+    "pluralName": "shop-operating-times",
+    "displayName": "ShopOperatingTime",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "startTime": {
+      "type": "time"
+    },
+    "endTime": {
+      "type": "time"
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::shop.shop",
+      "inversedBy": "shop_operating_times"
+    }
+  }
+}

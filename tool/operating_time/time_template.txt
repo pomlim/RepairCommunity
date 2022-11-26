@@ -1,0 +1,6 @@
+{
+  "shop": {{data.No}},
+  "day": "{{data.day}}",
+  "startTime": {% if data.start == '' %}null{% else %}"{{data.start}}"{% endif %},
+  "endTime": {% if data.end == '' %}null{% else %}"{{data.end}}"{% endif %}
+}
