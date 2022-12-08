@@ -1,39 +1,68 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import StarRating from '@/components/StarRating';
+import StarRating from '@/components/review/StarRating';
+import TextInput from '@/components/review/TextInput';
+import TagReviews from '@/components/review/TagReviews';
 
 const Modal = ({ shopId, reviewTags }) => {
-  const [rating, setRating] = useState(0);
   const [modal, setModal] = useState(false);
-  const [checkedState, setCheckedState] = useState(
-    new Array(reviewTags.length).fill(false)
+
+  const [rating, setRating] = useState(0);
+  const [review, setReview] = useState('');
+  const [name, setName] = useState('');
+
+  const [checkedReviewTags, setCsheckedReviewTags] = useState(
+    reviewTags.map((tag) => {
+      return { ...tag, selected: false };
+    })
   );
-  const handleOnChange = (position) => {
-    const updatedCheckedState = checkedState.map((item, index) =>
-      index === position ? !item : item
-    );
 
-    setCheckedState(updatedCheckedState);
-  };
-  const toggleModal = (shopId) => {
-    setModal(!modal);
+  const handleTagClicked = (tagId, checked) => {
+    const updated = checkedReviewTags.map((tag) => {
+      if (tagId === tag.id) {
+        return { ...tag, selected: checked };
+      }
+      return { ...tag };
+    });
+    setCsheckedReviewTags(updated);
   };
 
-  const addTodo = async (shopId, username, comment, score) => {
+  const onReview = () => {
+    setModal(true);
+  };
+
+  const resetState = () => {
+    setRating(0);
+    setReview('');
+    setName('');
+
+    const resetTags = reviewTags.map((tag) => {
+      return { ...tag, selected: false };
+    });
+    setCsheckedReviewTags(resetTags);
+  };
+
+  const onSubmit = async () => {
     const result = await axios.post('http://localhost:1337/api/reviews', {
       data: {
         shopId: shopId,
-        review: comment,
-        username: username,
-        score: score
+        review: review,
+        username: name,
+        score: rating
       }
     });
-    setModal(!modal);
+    setModal(false);
+    resetState();
+  };
+
+  const onCancel = () => {
+    setModal(false);
+    resetState();
   };
 
   return (
     <>
-      <button onClick={toggleModal} className="btn-modal">
+      <button onClick={onReview} className="btn-modal">
         Review
       </button>
       {modal && (
@@ -55,66 +84,28 @@ const Modal = ({ shopId, reviewTags }) => {
                         className="text-lg font-medium leading-6 text-gray-900"
                         id="modal-title"
                       >
-                        Add comment
+                        ให้คะแนนและรีวิวร้านนี้
                       </h3>
                       <div className="mt-2">
                         <form action="send-data" method="post">
-                          <label className="block">
-                            <span
-                              className="block text-sm font-medium text-slate-700"
-                              htmlFor="comment"
-                            >
-                              Comment
-                            </span>
-                            <input
-                              className="block w-full py-2 pr-3 bg-white border rounded-md shadow-sm placeholder:italic placeholder:text-slate-400 border-slate-300 pl-9 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
-                              placeholder="Comment for anything..."
-                              type="text"
-                              id="comment"
-                              name="comment"
-                            />
-                          </label>
-                          <label className="block">
-                            <span
-                              className="block text-sm font-medium text-slate-700"
-                              htmlFor="comment"
-                            >
-                              Username
-                            </span>
-                            <input
-                              className="block w-full py-2 pr-3 bg-white border rounded-md shadow-sm placeholder:italic placeholder:text-slate-400 border-slate-300 pl-9 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
-                              placeholder="Type your username"
-                              type="text"
-                              id="username"
-                              name="username"
-                            />
-                          </label>
+                          ความพึงพอใจในการซ่อมครั้งนี้
                           <StarRating rating={rating} setRating={setRating} />
-                          <label className="text-session" htmlFor="score">
-                            score:{' '}
-                          </label>{' '}
-                          <input type="text" id="score" />
-                          <ul className="reviewTag-list">
-                            {reviewTags.map((tag, index) => {
-                              return (
-                                <li key={index}>
-                                  <div className="toppings-list-item">
-                                    <div className="left-section">
-                                      <input
-                                        type="checkbox"
-                                        id={`custom-checkbox-${index}`}
-                                        name={tag.attributes.name}
-                                        value={tag.id}
-                                        checked={checkedState[index]}
-                                        onChange={() => handleOnChange(index)}
-                                      />
-                                      <label> {tag.attributes.name}</label>
-                                    </div>
-                                  </div>
-                                </li>
-                              );
-                            })}
-                          </ul>
+                          <TagReviews
+                            reviewTags={checkedReviewTags}
+                            handleTagClicked={handleTagClicked}
+                          />
+                          <TextInput
+                            title="ให้คะแนนและรีวิวร้านนี้"
+                            placeholder="เขียนรีวิวให้ร้านนี้"
+                            review={review}
+                            setReview={setReview}
+                          />
+                          <TextInput
+                            title="ใส่ชื่อของคุณ"
+                            placeholder="ใส่ชื่อของคุณ"
+                            review={name}
+                            setReview={setName}
+                          />
                         </form>
                       </div>
                     </div>
@@ -123,21 +114,14 @@ const Modal = ({ shopId, reviewTags }) => {
                 <div className="px-4 py-3 bg-gray-50 sm:flex sm:flex-row-reverse sm:px-6">
                   <button
                     type="button"
-                    onClick={() => {
-                      addTodo(
-                        shopId,
-                        username.value,
-                        comment.value,
-                        score.value
-                      );
-                    }}
+                    onClick={onSubmit}
                     className="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-red-600 border border-transparent rounded-md shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
                   >
                     Summit
                   </button>
                   <button
                     type="button"
-                    onClick={toggleModal}
+                    onClick={onCancel}
                     className="inline-flex justify-center w-full px-4 py-2 mt-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
                   >
                     Cancel
