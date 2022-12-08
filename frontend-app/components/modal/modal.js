@@ -9,7 +9,7 @@ const Modal = ({ shopId, reviewTags }) => {
 
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState('');
-  const [name, setName] = useState('');
+  const [username, setName] = useState('');
 
   const [checkedReviewTags, setCsheckedReviewTags] = useState(
     reviewTags.map((tag) => {
@@ -45,10 +45,13 @@ const Modal = ({ shopId, reviewTags }) => {
   const onSubmit = async () => {
     const result = await axios.post('http://localhost:1337/api/reviews', {
       data: {
-        shopId: shopId,
-        review: review,
-        username: name,
-        score: rating
+        shopId,
+        review,
+        username,
+        score: rating,
+        tags: checkedReviewTags
+          .filter((tag) => tag.selected)
+          .map((tag) => tag.id)
       }
     });
     setModal(false);
@@ -103,7 +106,7 @@ const Modal = ({ shopId, reviewTags }) => {
                           <TextInput
                             title="ใส่ชื่อของคุณ"
                             placeholder="ใส่ชื่อของคุณ"
-                            review={name}
+                            review={username}
                             setReview={setName}
                           />
                         </form>
