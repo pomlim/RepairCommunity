@@ -6,28 +6,13 @@ import reviewTagService from '@/services/reviewTag';
 import config from '@/config/index';
 import Modal from '@/components/modal/modal';
 import Review from '@/components/review';
+import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
 const { apiBaseUrl } = config;
 
 const ShopPresenter = ({ shop, reviews, opeTimes, reviewTags }) => {
   const { id } = shop;
   const { name, address_detail, latitude, longitude, shop_images } =
     shop.attributes;
-
-  // const foundFri = opeTimes[0].filter
-  // const foundFri = opeTimes.filter((opeTime) => opeTime.attributes.day === "mon")
-  // opeTimes.filter((opeTime) => opeTime.day === "mon")
-
-  // const foundFri = opeTimes.filter((opeTime) => opeTime.attributes.day === 'fri').map(({day, startTime, endTime}) => ({day, startTime, endTime}));
-  const mon = opeTimes.find((e) => {
-    return e.attributes.day === 'mon';
-  });
-  const sun = opeTimes.find((e) => {
-    return e.attributes.day === 'sun';
-  });
-  const tue = opeTimes.find((e) => {
-    return e.attributes.day === 'tue';
-  });
-  console.log(sun.attributes.day);
 
   return (
     <>
@@ -37,39 +22,7 @@ const ShopPresenter = ({ shop, reviews, opeTimes, reviewTags }) => {
       <div>{address_detail}</div>
       <div>{latitude}</div>
       <div>{longitude}</div>
-      <div>{longitude}</div>
-      <div>{mon.attributes.day}</div>
-      <div>{mon.attributes.startTime}</div>
-      <div>{mon.attributes.endTime}</div>
-      <ui>
-        {mon ? (
-          <li>
-            <div>{mon.attributes.day}</div>
-            <div>{mon.attributes.startTime}</div>
-            <div>{mon.attributes.endTime}</div>
-          </li>
-        ) : (
-          ''
-        )}
-        {tue ? (
-          <li>
-            {tue.attributes.day}
-            {tue.attributes.startTime}
-            {tue.attributes.endTime}
-          </li>
-        ) : (
-          ''
-        )}
-        {sun ? (
-          <li>
-            {sun.attributes.day}
-            {sun.attributes.startTime}
-            {sun.attributes.endTime}
-          </li>
-        ) : (
-          ''
-        )}
-      </ui>
+      <OpeTimeDetail ope={opeTimes}/>
       {shop_images.data.map((shop_image, index) => {
         return (
           <Image
