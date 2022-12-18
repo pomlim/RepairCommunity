@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Image from 'next/image';
 import StarRating from '@/components/review/StarRating';
 import TextInput from '@/components/review/TextInput';
 import TagReviews from '@/components/review/TagReviews';
@@ -16,6 +17,17 @@ const Modal = ({ shopId, reviewTags }) => {
       return { ...tag, selected: false };
     })
   );
+
+  const [createObjectURL, setCreateObjectURL] = useState(null);
+  const [uploadedFileName, setUploadedFileName] = useState('');
+  const uploadToClient = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      const i = event.target.files[0];
+      const fileName = event.target.files[0].name.split('.')[0];
+      setUploadedFileName(fileName);
+      setCreateObjectURL(URL.createObjectURL(i));
+    }
+  };
 
   const handleTagClicked = (tagId, checked) => {
     const updated = checkedReviewTags.map((tag) => {
@@ -43,8 +55,25 @@ const Modal = ({ shopId, reviewTags }) => {
   };
 
   const onSubmit = async () => {
-    const result = await axios.post('http://localhost:1337/api/reviews', {
+    const myImage = await fetch(createObjectURL);
+    const myBlob = await myImage.blob();
+
+    const formData = new FormData();
+    formData.append('files', myBlob, uploadedFileName);
+    formData.append('ref', 'api::review.review');
+    // formData.append('refId', '123456');
+    formData.append('field', 'images');
+
+    const response = await fetch(`http://localhost:1337/api/upload`, {
+      method: 'POST',
+      body: formData
+    });
+
+    const data = await response.json();
+    const fileId = data[0].id;
+    const result = axios.post('http://localhost:1337/api/reviews', {
       data: {
+        images: fileId,
         shopId,
         review,
         username,
@@ -54,6 +83,7 @@ const Modal = ({ shopId, reviewTags }) => {
           .map((tag) => tag.id)
       }
     });
+
     setModal(false);
     resetState();
   };
@@ -109,6 +139,29 @@ const Modal = ({ shopId, reviewTags }) => {
                             review={username}
                             setReview={setName}
                           />
+                          {/* Upload images */}
+                          <div>
+                            <div>
+                              {createObjectURL ? (
+                                <Image
+                                  loader={() => createObjectURL}
+                                  src="me.png"
+                                  alt="Picture of the author"
+                                  width={100}
+                                  height={100}
+                                />
+                              ) : (
+                                ''
+                              )}
+                              <h4>Select Image</h4>
+                              <input
+                                type="file"
+                                name="myImage"
+                                onChange={uploadToClient}
+                              />
+                            </div>
+                          </div>
+                          {/* Upload images */}
                         </form>
                       </div>
                     </div>
