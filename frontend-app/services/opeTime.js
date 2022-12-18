@@ -27,6 +27,12 @@ class OpeTimeService {
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
+
+  async getAllOpeTime() {
+    const url = `/api/Shop-Operating-Times/?populate=*`;
+    const resp = await this.axiosClient.get(url);
+    return resp.data?.data;
+  }
 }
 
 const OpeTimeServiceInstance = OpeTimeService.Instance();
