@@ -4,7 +4,7 @@ import opeTimeService from '@/services/opeTime';
 import SearchBox from '@/components/SearchBox';
 import OpeTimeList from '@/components/list/OpeTimeList';
 
-const ShopsPage = ({ shops, opeTimes, error }) => {
+const ShopsPage = ({ shops, error }) => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
   }
@@ -27,14 +27,11 @@ const ShopsPage = ({ shops, opeTimes, error }) => {
       {tempShops.map((shop) => {
         const id = shop.id;
         const url = `/shops/${id}`;
-        const opeLists = opeTimes.filter(
-          (opeTime) => opeTime.attributes.shop.data.id === shop.id
-        );
         return (
           <div key={id}>
             <a href={url}> {shop.attributes.name}</a>
             <h4>{shop.attributes.address_detail}</h4>
-            <OpeTimeList ope={opeLists} />
+            <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
             <h4>latitude : {shop.attributes.latitude}</h4>
             <h4>longtitude : {shop.attributes.longitude}</h4>
           </div>
@@ -47,8 +44,8 @@ const ShopsPage = ({ shops, opeTimes, error }) => {
 ShopsPage.getInitialProps = async () => {
   const opeTimeResp = opeTimeService.getAllOpeTime();
   const shopResp = shopService.getAllShops();
-  const [shops, opeTimes] = await Promise.all([shopResp, opeTimeResp]);
-  return { shops, opeTimes };
+  const [shops] = await Promise.all([shopResp, opeTimeResp]);
+  return { shops };
 };
 
 export default ShopsPage;
