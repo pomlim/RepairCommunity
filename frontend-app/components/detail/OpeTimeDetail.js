@@ -1,30 +1,30 @@
 const OpeTimeDetail = ({ ope }) => {
-  const listObj = [];
+  const outputOpeObj = [];
   const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
-  const sortOpe = (opeObjs, day) => {
-    return opeObjs.find((e) => {
-      return e.attributes.day === day;
+  const sortOpeObj = (opeObjs, day) => {
+    return opeObjs.find((opeObj) => {
+      return opeObj.attributes.day === day;
     });
   };
-  const allObjs = days.map((day) => {
-    return sortOpe(ope, day);
+  const sortedOpeObjs = days.map((day) => {
+    return sortOpeObj(ope, day);
   });
 
-  allObjs.forEach((element) => {
-    if (element) {
-      let found = false;
-      listObj.forEach((record) => {
-        if (record.startTime === element.attributes.startTime) {
-          record.days = [...record.days, element.attributes.day];
-          found = true;
+  sortedOpeObjs.forEach((sortedOpeObj) => {
+    if (sortedOpeObj) {
+      let foundFlg = false;
+      outputOpeObj.forEach((record) => {
+        if (record.startTime === sortedOpeObj.attributes.startTime) {
+          record.days = [...record.days, sortedOpeObj.attributes.day];
+          foundFlg = true;
         }
       });
 
-      if (!found) {
-        listObj.push({
-          days: [element.attributes.day],
-          startTime: element.attributes.startTime,
-          endTime: element.attributes.endTime
+      if (!foundFlg) {
+        outputOpeObj.push({
+          days: [sortedOpeObj.attributes.day],
+          startTime: sortedOpeObj.attributes.startTime,
+          endTime: sortedOpeObj.attributes.endTime
         });
       }
     }
@@ -55,7 +55,7 @@ const OpeTimeDetail = ({ ope }) => {
   return (
     <div>
       <ui>
-        {listObj.map((tmpObj, index) => {
+        {outputOpeObj.map((tmpObj, index) => {
           return <Detail key={index} opeDay={tmpObj} />;
         })}
       </ui>
