@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import shopService from '@/services/shop';
-import opeTimeService from '@/services/opeTime';
 import SearchBox from '@/components/SearchBox';
 import OpeTimeList from '@/components/list/OpeTimeList';
 
@@ -42,9 +41,8 @@ const ShopsPage = ({ shops, error }) => {
 };
 
 ShopsPage.getInitialProps = async () => {
-  const opeTimeResp = opeTimeService.getAllOpeTime();
   const shopResp = shopService.getAllShops();
-  const [shops] = await Promise.all([shopResp, opeTimeResp]);
+  const [shops] = await Promise.all([shopResp]);
   return { shops };
 };
 
