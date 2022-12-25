@@ -18,14 +18,18 @@ const Modal = ({ shopId, reviewTags }) => {
     })
   );
 
-  const [createObjectURL, setCreateObjectURL] = useState(null);
-  const [uploadedFileName, setUploadedFileName] = useState('');
+  const [createObjectURLs, setCreateObjectURLs] = useState([]);
+  const [uploadedFileNames, setUploadedFileNames] = useState([]);
+
   const uploadToClient = (event) => {
     if (event.target.files && event.target.files[0]) {
-      const i = event.target.files[0];
       const fileName = event.target.files[0].name.split('.')[0];
-      setUploadedFileName(fileName);
-      setCreateObjectURL(URL.createObjectURL(i));
+
+      setUploadedFileNames([...uploadedFileNames, fileName]);
+      setCreateObjectURLs([
+        ...createObjectURLs,
+        URL.createObjectURL(event.target.files[0])
+      ]);
     }
   };
 
@@ -55,22 +59,28 @@ const Modal = ({ shopId, reviewTags }) => {
   };
 
   const onSubmit = async () => {
-    const myImage = await fetch(createObjectURL);
-    const myBlob = await myImage.blob();
+    createObjectURLs;
+    const myBlobs = await Promise.all(
+      createObjectURLs.map(async (createObjectURL) => {
+        const myImage = await fetch(createObjectURL);
+        return await myImage.blob();
+      })
+    );
 
     const formData = new FormData();
-    formData.append('files', myBlob, uploadedFileName);
-    formData.append('ref', 'api::review.review');
-    // formData.append('refId', '123456');
-    formData.append('field', 'images');
+    myBlobs.forEach((myBlob, index) => {
+      formData.append('files', myBlob, uploadedFileNames[index]);
+    });
 
+    formData.append('ref', 'api::review.review');
+    formData.append('field', 'images');
     const response = await fetch(`http://localhost:1337/api/upload`, {
       method: 'POST',
       body: formData
     });
 
     const data = await response.json();
-    const fileId = data[0].id;
+    const fileId = data.map((d) => d.id);
     const result = axios.post('http://localhost:1337/api/reviews', {
       data: {
         images: fileId,
@@ -142,16 +152,19 @@ const Modal = ({ shopId, reviewTags }) => {
                           {/* Upload images */}
                           <div>
                             <div>
-                              {createObjectURL ? (
-                                <Image
-                                  loader={() => createObjectURL}
-                                  src="me.png"
-                                  alt="Picture of the author"
-                                  width={100}
-                                  height={100}
-                                />
-                              ) : (
-                                ''
+                              {createObjectURLs.map(
+                                (createObjectURL, index) => {
+                                  return (
+                                    <Image
+                                      key={index}
+                                      loader={() => createObjectURL}
+                                      src="me.png"
+                                      alt="Picture of the author"
+                                      width={100}
+                                      height={100}
+                                    />
+                                  );
+                                }
                               )}
                               <h4>Select Image</h4>
                               <input
