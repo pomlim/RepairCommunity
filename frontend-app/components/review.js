@@ -8,7 +8,6 @@ function Review({ review }) {
   const reviewTags = reviewInfo.review_tag_links.data.map((tagLinks) => {
     return tagLinks.attributes.review_tag.data.attributes;
   });
-  console.log(review);
   return (
     <div className="review">
       <h2>{reviewInfo.review}</h2>
