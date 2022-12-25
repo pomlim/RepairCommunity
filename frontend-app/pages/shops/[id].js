@@ -5,6 +5,7 @@ import reviewTagService from '@/services/reviewTag';
 import config from '@/config/index';
 import Modal from '@/components/modal/modal';
 import Review from '@/components/review';
+import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
 const { apiBaseUrl } = config;
 
 const ShopPresenter = ({ shop, reviews, reviewTags }) => {
@@ -20,7 +21,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
       <div>{address_detail}</div>
       <div>{latitude}</div>
       <div>{longitude}</div>
-      <div>{longitude}</div>
+      <OpeTimeDetail ope={shop.attributes.shop_operating_times.data} />
       {shop_images.data.map((shop_image, index) => {
         return (
           <Image
