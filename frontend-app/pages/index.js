@@ -1,4 +1,14 @@
-const Home = () => {
-  return <div>Home page</div>;
+import PageLayout from '@/components/PageLayout';
+
+const HomePresenter = () => {
+  return (
+    <PageLayout>
+      <div>Home page</div>
+    </PageLayout>
+  );
 };
-export default Home;
+
+const Page = () => {
+  return <HomePresenter />;
+};
+export default Page;
