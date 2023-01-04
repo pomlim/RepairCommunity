@@ -54,11 +54,11 @@ const OpeTimeDetail = ({ ope }) => {
 
   return (
     <div>
-      <ui>
+      <ul>
         {outputOpeObj.map((tmpObj, index) => {
           return <Detail key={index} opeDay={tmpObj} />;
         })}
-      </ui>
+      </ul>
     </div>
   );
 };

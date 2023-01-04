@@ -32,9 +32,9 @@ const OpeTimeList = ({ ope }) => {
 
   return (
     <div>
-      <ui>
+      <ul>
         <OutputOpeTime foundOpeTimeObj={ope} />
-      </ui>
+      </ul>
     </div>
   );
 };
