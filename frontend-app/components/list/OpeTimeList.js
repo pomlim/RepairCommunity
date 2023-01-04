@@ -1,40 +1,56 @@
-const OpeTimeList = ({ ope }) => {
-  const curDate = new Date();
-  const nextDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
-  const nextDayStr = nextDate
-    .toLocaleString('en-us', { weekday: 'short' })
-    .toLowerCase();
-  const curDayStr = curDate
-    .toLocaleString('en-us', { weekday: 'short' })
-    .toLowerCase();
-  const curTime = `${curDate.getHours()}:${curDate.getMinutes()}:${curDate.getSeconds()}`;
+const getDayStrFromDate = (date) => {
+  return date.toLocaleString('en-us', { weekday: 'short' }).toLowerCase();
+};
 
-  const OutputOpeTime = ({ foundOpeTimeObj }) => {
-    if (foundOpeTimeObj.length !== 0) {
-      const curOpes = foundOpeTimeObj.find(
-        (curOpe) => curOpe.attributes.day === curDayStr
-      );
-      if (
-        curOpes.attributes.startTime <= curTime &&
-        curOpes.attributes.endTime > curTime
-      ) {
-        return `เปิดอยู่ ปิด ${curOpes.attributes.endTime}`;
-      } else {
-        const nextOpes = foundOpeTimeObj.find(
-          (nextOpe) => nextOpe.attributes.day === nextDayStr
-        );
-        return `ปิดอยู่ เปิด ${nextOpes.attributes.startTime}`;
-      }
-    } else {
-      return 'ไม่ระบุ';
+const getTimeStrFromDate = (date) => {
+  return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+};
+
+const getOpeTimeText = (operatedTimes) => {
+  const today = new Date();
+  const todayDay = getDayStrFromDate(today);
+  const curTime = getTimeStrFromDate(today);
+
+  const todayOpen = operatedTimes.find(
+    (operatedTime) => operatedTime.attributes.day === todayDay
+  );
+
+  if (
+    todayOpen &&
+    todayOpen.attributes.startTime <= curTime &&
+    todayOpen.attributes.endTime > curTime
+  ) {
+    return `เปิดอยู่ ปิด ${curOpes.attributes.endTime}`;
+  }
+
+  // today not found or already close
+  let orderedDayInWeek = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+  const todayIndex = orderedDayInWeek.findIndex((day) => day === todayDay);
+  if (todayIndex !== orderedDayInWeek.length - 1) {
+    orderedDayInWeek = [
+      ...orderedDayInWeek.slice(todayIndex + 1),
+      ...orderedDayInWeek.slice(0, todayIndex + 1)
+    ];
+  }
+
+  let outputText = '';
+  orderedDayInWeek.every((day) => {
+    const foundDay = operatedTimes.find(
+      (operatedTime) => operatedTime.attributes.day === day
+    );
+    if (foundDay) {
+      outputText = `ปิดอยู่ เปิด ${foundDay.attributes.day} ${foundDay.attributes.startTime}`;
+      return false;
     }
-  };
+    return true;
+  });
+  return outputText;
+};
 
+const OpeTimeList = ({ ope }) => {
   return (
     <div>
-      <ul>
-        <OutputOpeTime foundOpeTimeObj={ope} />
-      </ul>
+      <ul>{ope ? getOpeTimeText(ope) : 'ไม่ระบุ'}</ul>
     </div>
   );
 };
