@@ -9,13 +9,15 @@ const { createCoreController } = require("@strapi/strapi").factories;
 module.exports = createCoreController("api::review.review", ({ strapi }) => ({
   async create(ctx, next) {
     const user = ctx.state.user;
-    const { shopId, review, username, score, tags } = ctx.request.body.data;
+    const { shopId, review, username, score, tags, images } =
+      ctx.request.body.data;
     const userReview = await strapi.entityService.create("api::review.review", {
       data: {
         shopId,
         review,
         username,
         score,
+        images,
       },
     });
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import Image from 'next/image';
 import StarRating from '@/components/review/StarRating';
 import TextInput from '@/components/review/TextInput';
 import TagReviews from '@/components/review/TagReviews';
@@ -16,6 +17,21 @@ const Modal = ({ shopId, reviewTags }) => {
       return { ...tag, selected: false };
     })
   );
+
+  const [createObjectURLs, setCreateObjectURLs] = useState([]);
+  const [uploadedFileNames, setUploadedFileNames] = useState([]);
+
+  const uploadToClient = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      const fileName = event.target.files[0].name.split('.')[0];
+
+      setUploadedFileNames([...uploadedFileNames, fileName]);
+      setCreateObjectURLs([
+        ...createObjectURLs,
+        URL.createObjectURL(event.target.files[0])
+      ]);
+    }
+  };
 
   const handleTagClicked = (tagId, checked) => {
     const updated = checkedReviewTags.map((tag) => {
@@ -43,8 +59,31 @@ const Modal = ({ shopId, reviewTags }) => {
   };
 
   const onSubmit = async () => {
-    const result = await axios.post('http://localhost:1337/api/reviews', {
+    createObjectURLs;
+    const myBlobs = await Promise.all(
+      createObjectURLs.map(async (createObjectURL) => {
+        const myImage = await fetch(createObjectURL);
+        return await myImage.blob();
+      })
+    );
+
+    const formData = new FormData();
+    myBlobs.forEach((myBlob, index) => {
+      formData.append('files', myBlob, uploadedFileNames[index]);
+    });
+
+    formData.append('ref', 'api::review.review');
+    formData.append('field', 'images');
+    const response = await fetch(`http://localhost:1337/api/upload`, {
+      method: 'POST',
+      body: formData
+    });
+
+    const data = await response.json();
+    const fileId = data.map((d) => d.id);
+    const result = axios.post('http://localhost:1337/api/reviews', {
       data: {
+        images: fileId,
         shopId,
         review,
         username,
@@ -54,6 +93,7 @@ const Modal = ({ shopId, reviewTags }) => {
           .map((tag) => tag.id)
       }
     });
+
     setModal(false);
     resetState();
   };
@@ -109,6 +149,32 @@ const Modal = ({ shopId, reviewTags }) => {
                             review={username}
                             setReview={setName}
                           />
+                          {/* Upload images */}
+                          <div>
+                            <div>
+                              {createObjectURLs.map(
+                                (createObjectURL, index) => {
+                                  return (
+                                    <Image
+                                      key={index}
+                                      loader={() => createObjectURL}
+                                      src="me.png"
+                                      alt="Picture of the author"
+                                      width={100}
+                                      height={100}
+                                    />
+                                  );
+                                }
+                              )}
+                              <h4>Select Image</h4>
+                              <input
+                                type="file"
+                                name="myImage"
+                                onChange={uploadToClient}
+                              />
+                            </div>
+                          </div>
+                          {/* Upload images */}
                         </form>
                       </div>
                     </div>
