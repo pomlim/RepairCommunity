@@ -20,7 +20,7 @@ const getOpeTimeText = (operatedTimes) => {
     todayOpen.attributes.startTime <= curTime &&
     todayOpen.attributes.endTime > curTime
   ) {
-    return `เปิดอยู่ ปิด ${curOpes.attributes.endTime}`;
+    return `เปิดอยู่ ปิด ${todayOpen.attributes.endTime}`;
   }
 
   // today not found or already close
