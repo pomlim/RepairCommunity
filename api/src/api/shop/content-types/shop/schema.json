@@ -80,16 +80,16 @@
       "type": "datetime",
       "required": false
     },
-    "Id": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::review.review",
-      "mappedBy": "shopId"
-    },
     "shop_operating_times": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::shop-operating-time.shop-operating-time",
+      "mappedBy": "shop"
+    },
+    "reviews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::review.review",
       "mappedBy": "shop"
     }
   }
