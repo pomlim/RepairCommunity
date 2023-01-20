@@ -6,6 +6,8 @@ import config from '@/config/index';
 import Modal from '@/components/modal/modal';
 import Review from '@/components/review';
 import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
+import PageLayout from '@/components/PageLayout';
+
 const { apiBaseUrl } = config;
 
 const ShopPresenter = ({ shop, reviews, reviewTags }) => {
@@ -15,31 +17,35 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
 
   return (
     <>
-      <Link href="/shops"> BACK</Link>
-      {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
-      <div>{name}</div>
-      <div>{address_detail}</div>
-      <div>{latitude}</div>
-      <div>{longitude}</div>
-      <OpeTimeDetail ope={shop.attributes.shop_operating_times.data} />
-      {shop_images.data
-        ? shop_images.data.map((shop_image, index) => {
-            return (
-              <Image
-                key={index}
-                loader={() => apiBaseUrl + shop_image.attributes.url}
-                src={apiBaseUrl + shop_image.attributes.url}
-                alt="/"
-                width={100}
-                height={100}
-              />
-            );
-          })
-        : ''}
-      {reviews.map((review, index) => (
-        <Review key={index} review={review} />
-      ))}
-
+      <PageLayout>
+        <Link href="/shops"> BACK</Link>
+        {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
+        <div>{name}</div>
+        <div>{address_detail}</div>
+        <div>{latitude}</div>
+        <div>{longitude}</div>
+        <OpeTimeDetail ope={shop.attributes.shop_operating_times.data} />
+        {shop_images.data
+          ? shop_images.data.map((shop_image, index) => {
+              return (
+                <Image
+                  key={index}
+                  loader={() => apiBaseUrl + shop_image.attributes.url}
+                  src={apiBaseUrl + shop_image.attributes.url}
+                  alt="/"
+                  width={100}
+                  height={100}
+                />
+              );
+            })
+          : ''}
+        <br />
+        <h2>รีวิวจากผู้ใช้งาน</h2>
+        <br />
+        {reviews.map((review, index) => (
+          <Review key={index} review={review} />
+        ))}
+      </PageLayout>
       <Modal shopId={id} reviewTags={reviewTags} />
     </>
   );

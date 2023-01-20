@@ -2,6 +2,35 @@ import { useState } from 'react';
 import shopService from '@/services/shop';
 import SearchBox from '@/components/SearchBox';
 import OpeTimeList from '@/components/list/OpeTimeList';
+import PageLayout from '@/components/PageLayout';
+
+import StarRating from '@/components/review/StarRating';
+
+const ReviewSummary = ({ reviews }) => {
+  const reviewScores = reviews.data.map((review) => {
+    return review.attributes.score;
+  });
+  const numReviewers = reviews.data.length;
+
+  const averageScore =
+    numReviewers !== 0
+      ? reviewScores.reduce((a, b) => a + b) / numReviewers
+      : 0;
+
+  const getReviewerNumberText = (numReviewers) => {
+    if (numReviewers > 100) return '100+ รีวิว';
+    else if (numReviewers > 50) return '50+ รีวิว';
+    else if (numReviewers > 10) return '10+ รีวิว';
+
+    return `${numReviewers} รีวิว`;
+  };
+  return (
+    <div>
+      <StarRating rating={averageScore} setRating={() => {}} />
+      {getReviewerNumberText(numReviewers)}
+    </div>
+  );
+};
 
 const ShopsPage = ({ shops, error }) => {
   if (error) {
@@ -16,27 +45,32 @@ const ShopsPage = ({ shops, error }) => {
   };
 
   return (
-    <ul>
-      <SearchBox
-        searchText={inputText}
-        updateSearch={changeInputText}
-        onClick={() => getSearchData()}
-      />
-      <button onClick={() => getSearchData()}>Search</button>
-      {tempShops.map((shop) => {
-        const id = shop.id;
-        const url = `/shops/${id}`;
-        return (
-          <div key={id}>
-            <a href={url}> {shop.attributes.name}</a>
-            <h4>{shop.attributes.address_detail}</h4>
-            <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
-            <h4>latitude : {shop.attributes.latitude}</h4>
-            <h4>longtitude : {shop.attributes.longitude}</h4>
-          </div>
-        );
-      })}
-    </ul>
+    <PageLayout>
+      <ul>
+        <SearchBox
+          searchText={inputText}
+          updateSearch={changeInputText}
+          onClick={() => getSearchData()}
+        />
+        <button onClick={() => getSearchData()}>Search</button>
+        {tempShops.map((shop) => {
+          const id = shop.id;
+          const url = `/shops/${id}`;
+          return (
+            <div key={id}>
+              <a href={url}> {shop.attributes.name}</a>
+              <h4>{shop.attributes.address_detail}</h4>
+              <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
+              <h4>latitude : {shop.attributes.latitude}</h4>
+              <h4>longtitude : {shop.attributes.longitude}</h4>
+              {shop.attributes.reviews ? (
+                <ReviewSummary reviews={shop.attributes.reviews} />
+              ) : null}
+            </div>
+          );
+        })}
+      </ul>
+    </PageLayout>
   );
 };
 

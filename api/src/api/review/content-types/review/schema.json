@@ -35,11 +35,11 @@
       "min": 0,
       "default": 0
     },
-    "shopId": {
+    "shop": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::shop.shop",
-      "inversedBy": "Id"
+      "inversedBy": "reviews"
     },
     "review_tag_links": {
       "type": "relation",
