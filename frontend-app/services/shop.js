@@ -30,7 +30,7 @@ class ShopService {
   }
 
   async GetReviewsByShopID(id) {
-    const url = `/api/reviews?filters[shopId]=${id}&populate=deep`;
+    const url = `/api/reviews?filters[shop]=${id}&populate=deep`;
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
