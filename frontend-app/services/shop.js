@@ -24,7 +24,7 @@ class ShopService {
   }
 
   async GetByID(id) {
-    const url = `/api/Shops/${id}?populate=*`;
+    const url = `/api/Shops/${id}?populate=deep`;
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
