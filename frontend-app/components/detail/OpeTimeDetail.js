@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 const OpeTimeDetail = ({ ope }) => {
   const outputOpeObj = [];
   const days = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
@@ -14,7 +16,10 @@ const OpeTimeDetail = ({ ope }) => {
     if (sortedOpeObj) {
       let foundFlg = false;
       outputOpeObj.forEach((record) => {
-        if (record.startTime === sortedOpeObj.attributes.startTime) {
+        if (
+          record.startTime === sortedOpeObj.attributes.startTime &&
+          record.endTime === sortedOpeObj.attributes.endTime
+        ) {
           record.days = [...record.days, sortedOpeObj.attributes.day];
           foundFlg = true;
         }
@@ -29,21 +34,37 @@ const OpeTimeDetail = ({ ope }) => {
       }
     }
   });
+  const daysEngToThai = {
+    mon: 'จันทร์',
+    tue: 'อังคาร',
+    wed: 'พุธ',
+    thu: 'พฤหัส',
+    fri: 'ศุกร์',
+    sat: 'เสาร์',
+    sun: 'อาทิตย์'
+  };
 
   const Detail = ({ opeDay }) => {
     let dayStr = '';
     if (opeDay.days.length > 1) {
-      dayStr = opeDay.days[0] + '-' + opeDay.days.at(-1);
+      dayStr =
+        daysEngToThai[opeDay.days[0]] +
+        ' - ' +
+        daysEngToThai[opeDay.days.at(-1)];
     } else {
-      dayStr = opeDay.days[0];
+      dayStr = daysEngToThai[opeDay.days[0]];
     }
+    var startTimeStr = new moment(opeDay.startTime, 'HH:mm:ss').format('LT');
+    var endTimeStr = new moment(opeDay.endTime, 'HH:mm:ss').format('LT');
+
     return (
       <>
         {opeDay ? (
           <li>
             <div>{dayStr}</div>
-            <div>{opeDay.startTime}</div>
-            <div>{opeDay.endTime}</div>
+            <div className="font-bold">
+              {startTimeStr} - {endTimeStr}
+            </div>
           </li>
         ) : (
           ''
@@ -54,7 +75,7 @@ const OpeTimeDetail = ({ ope }) => {
 
   return (
     <div>
-      <ul>
+      <ul className="grid items-center content-center grid-cols-4 gap-4">
         {outputOpeObj.map((tmpObj, index) => {
           return <Detail key={index} opeDay={tmpObj} />;
         })}
