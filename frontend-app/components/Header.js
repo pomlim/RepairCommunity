@@ -8,9 +8,9 @@ const Header = () => {
         <TitleXL className="text-primary">Repair Community</TitleXL>
       </div>
 
-      <div className="flex items-center">
+      {/* <div className="flex items-center">
         <Avatar src="https://placeimg.com/192/192/people" className="w-10" />
-      </div>
+      </div> */}
     </nav>
   );
 };
