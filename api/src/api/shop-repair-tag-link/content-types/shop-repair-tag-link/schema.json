@@ -28,8 +28,9 @@
     },
     "shop": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::shop.shop"
+      "relation": "manyToOne",
+      "target": "api::shop.shop",
+      "inversedBy": "shop_repair_tag_links"
     }
   }
 }
