@@ -24,29 +24,47 @@ function Review({ review }) {
     : null;
   return (
     <div className="review">
-      <h1>{reviewInfo.username}</h1>
-      <h2>{reviewInfo.review}</h2>
-      {presenteCreateDate ? <p>{presenteCreateDate}</p> : null}
-      {reviewTags
-        ? reviewTags.map((tag, index) => {
-            return <p key={index}>{tag.name}</p>;
-          })
-        : null}
-      {images
-        ? images.map((image, index) => {
+      <p className="font-bold">{reviewInfo.username}</p>
+      {presenteCreateDate ? (
+        <p className="font-bold  text-secondary-content">
+          {presenteCreateDate}
+        </p>
+      ) : null}
+
+      {images ? (
+        <div className="flex flex-wrap flex-row">
+          {images.map((image, index) => {
             return (
-              <Image
-                key={index}
-                loader={() => apiBaseUrl + image.attributes.url}
-                src={apiBaseUrl + image.attributes.url}
-                alt="/"
-                width={100}
-                height={100}
-              />
+              <div key={index} className="mr-2 ">
+                <Image
+                  loader={() => apiBaseUrl + image.attributes.url}
+                  src={apiBaseUrl + image.attributes.url}
+                  alt="/"
+                  width={100}
+                  height={100}
+                  className="rounded-[8px]"
+                />
+              </div>
             );
-          })
-        : null}
-      <hr></hr>
+          })}
+        </div>
+      ) : null}
+
+      {reviewTags ? (
+        <div className="flex flex-wrap flex-row">
+          {reviewTags.map((tag, index) => {
+            return (
+              <p
+                className="mr-3 mt-3 p-1 border-[1px] border-secondary-content rounded font-bold text-secondary-content"
+                key={index}
+              >
+                {tag.name}
+              </p>
+            );
+          })}
+        </div>
+      ) : null}
+      <p className="font-bold">{reviewInfo.review}</p>
     </div>
   );
 }

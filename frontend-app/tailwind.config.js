@@ -20,6 +20,7 @@ module.exports = {
           // Customize light theme here
           primary: '#C3C130',
           'primary-content': '#443616',
+          'secondary-content': '#835020',
           'base-300': '#F9F3D9',
           'neutral-content': '#FCFAED'
         }
