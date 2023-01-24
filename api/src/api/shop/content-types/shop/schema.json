@@ -91,6 +91,12 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "shop"
+    },
+    "shop_repair_tag_links": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::shop-repair-tag-link.shop-repair-tag-link",
+      "mappedBy": "shop"
     }
   }
 }
