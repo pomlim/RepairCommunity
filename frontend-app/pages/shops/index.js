@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import shopService from '@/services/shop';
+import repairTagService from '@/services/repairTag';
 import SearchBox from '@/components/SearchBox';
 import OpeTimeList from '@/components/list/OpeTimeList';
 import PageLayout from '@/components/PageLayout';
+import FilterTagModal from '@/components/modal/filterTagModal';
 
 import StarRating from '@/components/review/StarRating';
 
@@ -32,16 +34,21 @@ const ReviewSummary = ({ reviews }) => {
   );
 };
 
-const ShopsPage = ({ shops, error }) => {
+const ShopsPage = ({ shops, repairTags, error }) => {
   if (error) {
     return <div>An error occured: {error.message}</div>;
   }
   const [inputText, changeInputText] = useState('');
   const [tempShops, setTempShops] = useState(shops);
+  const [filter, setFilter] = useState(false);
   const getSearchData = async () => {
     const searchResp = shopService.GetShopsBySearch(inputText);
     const [searchShops] = await Promise.all([searchResp]);
     setTempShops(searchShops);
+  };
+
+  const onFormat = () => {
+    setFilter(true);
   };
 
   return (
@@ -53,6 +60,19 @@ const ShopsPage = ({ shops, error }) => {
           onClick={() => getSearchData()}
         />
         <button onClick={() => getSearchData()}>Search</button>
+        <button
+          onClick={onFormat}
+          className="m-3 border-solid rounded-full btn w-60 btn-outline"
+        >
+          ปรับรูปแบบการซ่อม
+        </button>
+        {filter && (
+          <FilterTagModal
+            repairTags={repairTags}
+            setFilter={setFilter}
+            updateShops={setTempShops}
+          />
+        )}
         {tempShops.map((shop) => {
           const id = shop.id;
           const url = `/shops/${id}`;
@@ -76,8 +96,9 @@ const ShopsPage = ({ shops, error }) => {
 
 ShopsPage.getInitialProps = async () => {
   const shopResp = shopService.getAllShops();
-  const [shops] = await Promise.all([shopResp]);
-  return { shops };
+  const repairResp = repairTagService.getAllRepairTag();
+  const [shops, repairTags] = await Promise.all([shopResp, repairResp]);
+  return { shops, repairTags };
 };
 
 export default ShopsPage;

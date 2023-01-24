@@ -58,6 +58,28 @@ class ShopService {
     return resp.data?.data;
   }
 
+  async GetShopsByTag(repairTags) {
+    const query = qs.stringify(
+      {
+        filters: {
+          shop_repair_tag_links: {
+            repair_tag: {
+              name: {
+                $in: repairTags
+              }
+            }
+          }
+        }
+      },
+      {
+        encodeValuesOnly: true // prettify URL
+      }
+    );
+    const url = `/api/Shops?${query}&populate=deep`;
+    const resp = await this.axiosClient.get(url);
+    return resp.data?.data;
+  }
+
   async getAllShops() {
     const url = `/api/Shops/?populate=*`;
     const resp = await this.axiosClient.get(url);
