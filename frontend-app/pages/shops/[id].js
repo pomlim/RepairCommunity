@@ -42,7 +42,6 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
     contracts,
     payments
   } = shop.attributes;
-  console.log(reviews);
   return (
     <>
       <PageLayout>
