@@ -53,7 +53,7 @@ class ShopService {
         encodeValuesOnly: true // prettify URL
       }
     );
-    const url = `/api/Shops?${query}`;
+    const url = `/api/Shops?${query}&populate=deep`;
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
