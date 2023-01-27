@@ -41,8 +41,25 @@ const ShopsPage = ({ shops, repairTags, error }) => {
   const [inputText, changeInputText] = useState('');
   const [tempShops, setTempShops] = useState(shops);
   const [filter, setFilter] = useState(false);
+  const [filterRepairTags, setFilterRepairTags] = useState(
+    repairTags.map((repairTag) => {
+      return { ...repairTag, checked: false };
+    })
+  );
+  const convertRepairTagArrayToText = (filterTags) => {
+    const checkedRepairTagText = filterTags.map((filterTag) => {
+      if (filterTag.checked === true) {
+        return filterTag.attributes.name;
+      }
+    });
+    return checkedRepairTagText;
+  };
+
   const getSearchData = async () => {
-    const searchResp = shopService.GetShopsBySearch(inputText);
+    const searchResp = shopService.GetShopsBySearch(
+      inputText,
+      convertRepairTagArrayToText(filterRepairTags)
+    );
     const [searchShops] = await Promise.all([searchResp]);
     setTempShops(searchShops);
   };
@@ -68,9 +85,12 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         </button>
         {filter && (
           <FilterTagModal
-            repairTags={repairTags}
-            setFilter={setFilter}
+            repairTags={filterRepairTags}
+            updateRepairTags={setFilterRepairTags}
             updateShops={setTempShops}
+            searchText={inputText}
+            convertArrayToText={convertRepairTagArrayToText}
+            setFilter={setFilter}
           />
         )}
         {tempShops.map((shop) => {

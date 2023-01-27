@@ -1,26 +1,27 @@
 import { useState } from 'react';
 import shopService from '@/services/shop';
 
-const FilterTagModal = ({ repairTags, setFilter, updateShops }) => {
-  const [checkedRepairTags, setCheckedRepairTags] = useState(
-    repairTags.map((repairTag) => {
-      return { ...repairTag, checked: false };
-    })
-  );
-
+const FilterTagModal = ({
+  repairTags,
+  updateRepairTags,
+  updateShops,
+  searchText,
+  convertArrayToText,
+  setFilter
+}) => {
+  const [checkedRepairTags, setCheckedRepairTags] = useState(repairTags);
   const getRepairTag = async () => {
-    const stringRepairTag = checkedRepairTags.map((repairTag) => {
-      if (repairTag.checked === true) {
-        return repairTag.attributes.name;
-      }
-    });
-    const filterResp = shopService.GetShopsByTag(stringRepairTag);
-    const [filterShops] = await Promise.all([filterResp]);
-    updateShops(filterShops);
+    const checkedRepairTagResp = shopService.GetShopsBySearch(
+      searchText,
+      convertArrayToText(checkedRepairTags)
+    );
+    const [repairTagShops] = await Promise.all([checkedRepairTagResp]);
+    updateShops(repairTagShops);
   };
 
   const onSubmit = () => {
     getRepairTag();
+    updateRepairTags(checkedRepairTags);
     setFilter(false);
   };
 
@@ -66,7 +67,7 @@ const FilterTagModal = ({ repairTags, setFilter, updateShops }) => {
                     >
                       เลือกประเภทการซ่อม (เลือกได้มากกว่า 1)
                     </h1>
-                    {repairTags.map((repairTag, index) => {
+                    {checkedRepairTags.map((repairTag, index) => {
                       return (
                         <li key={index}>
                           <div className="toppings-list-item">
