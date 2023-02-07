@@ -60,13 +60,13 @@ class ShopService {
         encodeValuesOnly: true // prettify URL
       }
     );
-    const url = `/api/Shops?${query}&populate=deep`;
+    const url = `/api/Shops?${query}&sort[0]=name&populate=deep`;
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
 
   async getAllShops() {
-    const url = `/api/Shops/?populate=*`;
+    const url = `/api/Shops/?sort[0]=name&populate=*`;
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
