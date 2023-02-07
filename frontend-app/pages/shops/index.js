@@ -83,6 +83,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         >
           ปรับรูปแบบการซ่อม
         </button>
+        <div>ผลการค้นหา {tempShops.length} ร้านซ่อม</div>
         {filter && (
           <FilterTagModal
             repairTags={filterRepairTags}
