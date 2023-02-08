@@ -57,28 +57,30 @@ const Modal = ({ shopId, reviewTags, setModal }) => {
   };
 
   const onSubmit = async () => {
-    createObjectURLs;
-    const myBlobs = await Promise.all(
-      createObjectURLs.map(async (createObjectURL) => {
-        const myImage = await fetch(createObjectURL);
-        return await myImage.blob();
-      })
-    );
+    const fileId = [];
+    if (createObjectURLs.length > 0) {
+      const myBlobs = await Promise.all(
+        createObjectURLs.map(async (createObjectURL) => {
+          const myImage = await fetch(createObjectURL);
+          return await myImage.blob();
+        })
+      );
 
-    const formData = new FormData();
-    myBlobs.forEach((myBlob, index) => {
-      formData.append('files', myBlob, uploadedFileNames[index]);
-    });
+      const formData = new FormData();
+      myBlobs.forEach((myBlob, index) => {
+        formData.append('files', myBlob, uploadedFileNames[index]);
+      });
 
-    formData.append('ref', 'api::review.review');
-    formData.append('field', 'images');
-    const response = await fetch(`http://localhost:1337/api/upload`, {
-      method: 'POST',
-      body: formData
-    });
+      formData.append('ref', 'api::review.review');
+      formData.append('field', 'images');
+      const response = await fetch(`http://localhost:1337/api/upload`, {
+        method: 'POST',
+        body: formData
+      });
 
-    const data = await response.json();
-    const fileId = data.map((d) => d.id);
+      const data = await response.json();
+      fileId = data.map((d) => d.id);
+    }
     const result = axios.post('http://localhost:1337/api/reviews', {
       data: {
         images: fileId,
@@ -124,50 +126,48 @@ const Modal = ({ shopId, reviewTags, setModal }) => {
                       ให้คะแนนและรีวิวร้านนี้
                     </h3>
                     <div className="mt-2">
-                      <form action="send-data" method="post">
-                        ความพึงพอใจในการซ่อมครั้งนี้
-                        <StarRating rating={rating} setRating={setRating} />
-                        <TagReviews
-                          reviewTags={checkedReviewTags}
-                          handleTagClicked={handleTagClicked}
-                        />
-                        <TextInput
-                          title="ให้คะแนนและรีวิวร้านนี้"
-                          placeholder="เขียนรีวิวให้ร้านนี้"
-                          review={review}
-                          setReview={setReview}
-                        />
-                        <TextInput
-                          title="ใส่ชื่อของคุณ"
-                          placeholder="ใส่ชื่อของคุณ"
-                          review={username}
-                          setReview={setName}
-                        />
-                        {/* Upload images */}
+                      ความพึงพอใจในการซ่อมครั้งนี้
+                      <StarRating rating={rating} setRating={setRating} />
+                      <TagReviews
+                        reviewTags={checkedReviewTags}
+                        handleTagClicked={handleTagClicked}
+                      />
+                      <TextInput
+                        title="ให้คะแนนและรีวิวร้านนี้"
+                        placeholder="เขียนรีวิวให้ร้านนี้"
+                        review={review}
+                        setReview={setReview}
+                      />
+                      <TextInput
+                        title="ใส่ชื่อของคุณ"
+                        placeholder="ใส่ชื่อของคุณ"
+                        review={username}
+                        setReview={setName}
+                      />
+                      {/* Upload images */}
+                      <div>
                         <div>
-                          <div>
-                            {createObjectURLs.map((createObjectURL, index) => {
-                              return (
-                                <Image
-                                  key={index}
-                                  loader={() => createObjectURL}
-                                  src="me.png"
-                                  alt="Picture of the author"
-                                  width={100}
-                                  height={100}
-                                />
-                              );
-                            })}
-                            <h4>Select Image</h4>
-                            <input
-                              type="file"
-                              name="myImage"
-                              onChange={uploadToClient}
-                            />
-                          </div>
+                          {createObjectURLs.map((createObjectURL, index) => {
+                            return (
+                              <Image
+                                key={index}
+                                loader={() => createObjectURL}
+                                src={uploadedFileNames[index]}
+                                alt="Picture of the author"
+                                width={100}
+                                height={100}
+                              />
+                            );
+                          })}
+                          <h4>Select Image</h4>
+                          <input
+                            type="file"
+                            name="myImage"
+                            onChange={uploadToClient}
+                          />
                         </div>
-                        {/* Upload images */}
-                      </form>
+                      </div>
+                      {/* Upload images */}
                     </div>
                   </div>
                 </div>

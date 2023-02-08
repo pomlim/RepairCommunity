@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -30,6 +31,12 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
 
   const onReview = () => {
     setModal(true);
+  };
+  const modalClick = (open) => {
+    setModal(open);
+    if (!open) {
+      // FIXME: get updated reviews
+    }
   };
 
   const { id } = shop;
@@ -141,7 +148,11 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
         <div className="mt-3 p-4">
           <p className="font-bold text-secondary-content">รีวิวจากผู้ใช้งาน</p>
           <div className="divide-y divide-dashed divide-primary">
-            {reviews.map((review, index) => (
+            {_.orderBy(
+              reviews,
+              [(review) => review.attributes.createdAt],
+              ['desc']
+            ).map((review, index) => (
               <div key={index} className="pt-4 pb-4">
                 <Review review={review} />
               </div>
@@ -150,7 +161,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
         </div>
       </PageLayout>
       {modal && (
-        <Modal shopId={id} reviewTags={reviewTags} setModal={setModal} />
+        <Modal shopId={id} reviewTags={reviewTags} setModal={modalClick} />
       )}
     </>
   );
