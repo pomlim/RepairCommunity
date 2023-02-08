@@ -9,6 +9,7 @@ import Modal from '@/components/modal/modal';
 import Review from '@/components/review';
 import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
 import PageLayout from '@/components/PageLayout';
+import MapDetail from '@/components/MapDetail';
 
 import {
   faClock,
@@ -80,9 +81,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
           นำทาง
         </button>
         <div className="p-3 m-3 card">
-          Map
-          {/* <div>{latitude}</div>
-          <div>{longitude}</div> */}
+          <MapDetail lat={latitude} lng={longitude}/>
         </div>
         <div className="p-3 m-3 card">
           {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}
