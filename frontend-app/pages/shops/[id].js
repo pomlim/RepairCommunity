@@ -11,16 +11,12 @@ import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
 import PageLayout from '@/components/PageLayout';
 import MapDetail from '@/components/MapDetail';
 
+import Contact from '@/components/shopDetail/contact';
 import {
   faClock,
   faWallet,
   faMoneyBillTransfer
 } from '@fortawesome/free-solid-svg-icons';
-import {
-  faInstagram,
-  faFacebook,
-  faLine
-} from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -47,9 +43,21 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
     longitude,
     shop_images,
     shop_repair_tag_links,
-    contracts,
+    // contracts,
     payments
   } = shop.attributes;
+
+  const contracts = {
+    phone: ['0867722033', '0806187311'],
+    line: ['@benjamastailor'],
+    facebook: ['https://www.facebook.com/BenjamasTailor/'],
+    email: ['benjamas2519@gmail.com'],
+    instagram: ['https://www.instagram.com/benjamastailor/'],
+    webpage: ['http://www.benjamastailor.com/']
+  };
+
+  const phones = contracts.phone?.length > 0 ? contracts.phone : null;
+
   return (
     <>
       <PageLayout>
@@ -73,15 +81,17 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
             })
           : ''}
 
-        <button className="m-3 border-solid rounded-full btn w-60 btn-primary">
+        <button
+          disabled={!phones}
+          className="m-3 border-solid rounded-full btn w-60 btn-primary"
+        >
           โทร
         </button>
-        {/* contracts.phone */}
         <button className="m-3 border-solid rounded-full btn w-60 btn-outline">
           นำทาง
         </button>
         <div className="p-3 m-3 card">
-          <MapDetail lat={latitude} lng={longitude}/>
+          <MapDetail lat={latitude} lng={longitude} />
         </div>
         <div className="p-3 m-3 card">
           {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}
@@ -96,7 +106,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
             <p className="font-bold text-primary-content">
               ประเภทการซ่อมที่เชี่ยวชาญ
             </p>
-            <div className="flex flex-wrap flex-row">
+            <div className="flex flex-row flex-wrap">
               {shop_repair_tag_links
                 ? shop_repair_tag_links.data.map(
                     (shop_repair_tag_link, index) => {
@@ -116,13 +126,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
                 : null}
             </div>
           </div>
-          <div>
-            <p className="font-bold text-primary-content">ช่องทางติดต่อ</p>
-            {contracts.facebook !== '' ? (
-              <FontAwesomeIcon icon={faFacebook} />
-            ) : null}
-            {contracts.line !== '' ? <FontAwesomeIcon icon={faLine} /> : null}
-          </div>
+          <Contact contact={contracts} />
           <div>
             <p className="font-bold text-primary-content">วิธีชำระค่าบริการ</p>
             {payments.payments.map((payment, index) => {
@@ -145,7 +149,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
           ให้คะแนนและรีวิวร้านนี้
         </button>
         <br />
-        <div className="mt-3 p-4">
+        <div className="p-4 mt-3">
           <p className="font-bold text-secondary-content">รีวิวจากผู้ใช้งาน</p>
           <div className="divide-y divide-dashed divide-primary">
             {_.orderBy(
