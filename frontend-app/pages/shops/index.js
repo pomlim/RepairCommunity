@@ -5,6 +5,7 @@ import SearchBox from '@/components/SearchBox';
 import OpeTimeList from '@/components/list/OpeTimeList';
 import PageLayout from '@/components/PageLayout';
 import FilterTagModal from '@/components/modal/filterTagModal';
+import MapList from '@/components/MapList';
 
 import StarRating from '@/components/review/StarRating';
 
@@ -83,6 +84,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         >
           ปรับรูปแบบการซ่อม
         </button>
+        <MapList shops={tempShops} />
         <div>ผลการค้นหา {tempShops.length} ร้านซ่อม</div>
         {filter && (
           <FilterTagModal
