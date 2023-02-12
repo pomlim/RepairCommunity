@@ -10,9 +10,11 @@
   "latitude": 13.7419034,
   "longitude": 100.5618243,
   "contracts": {
-    "phone": "094-178-9874",
-    "line": "@Knitaoki",
-    "facebook": "Knit Aoki Bangkok"
+    "phone": ["0941789874"],
+    "line": ["+66941789874"],
+    "facebook": ["https://www.facebook.com/knitaokibangkok"],
+    "email": ["knitaokibangkok@gmail.com"],
+    "webpage": ["knitaokibkk.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",

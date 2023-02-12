@@ -9,7 +9,7 @@
   "operators": { "name": "กระต่าย" },
   "latitude": 13.7084069,
   "longitude": 100.6346345,
-  "contracts": { "phone": "095-721-6462", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0957216462"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 1,

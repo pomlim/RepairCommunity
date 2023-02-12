@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างอ้วน" },
   "latitude": 13.714058,
   "longitude": 100.5972095,
-  "contracts": { "phone": "", "line": "", "facebook": "" },
+  "contracts": {},
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1992-01-01",
   "fitting_room": 0,

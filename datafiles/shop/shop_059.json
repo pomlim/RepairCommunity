@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างทุเรียน" },
   "latitude": 13.7072242,
   "longitude": 100.607573,
-  "contracts": { "phone": "084-321-0086", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0843210086"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 1,

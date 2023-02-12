@@ -9,7 +9,9 @@
   "operators": { "name": "ป้าอ๊อด" },
   "latitude": 13.7321343,
   "longitude": 100.5868604,
-  "contracts": { "phone": "092-697-2055", "line": "", "facebook": "" },
+  "contracts": {
+    "phone": ["0926972055"]
+  },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 1,

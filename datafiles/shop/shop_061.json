@@ -10,9 +10,8 @@
   "latitude": 13.7339,
   "longitude": 100.6006582,
   "contracts": {
-    "phone": "064-891-6251",
-    "line": "s0648916251",
-    "facebook": ""
+    "phone": ["0648916251"],
+    "line": ["s0648916251"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2016-01-01",

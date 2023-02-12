@@ -9,7 +9,7 @@
   "operators": { "name": "ลุงเปี๊ยก" },
   "latitude": 13.7470573,
   "longitude": 100.5238481,
-  "contracts": { "phone": "094-927-2379", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0949272379"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

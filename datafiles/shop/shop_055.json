@@ -9,7 +9,7 @@
   "operators": { "name": "สมาน" },
   "latitude": 13.7120349,
   "longitude": 100.6099626,
-  "contracts": { "phone": "089-423-9765", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0894239765"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

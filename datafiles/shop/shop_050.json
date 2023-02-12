@@ -10,9 +10,10 @@
   "latitude": 13.7119027,
   "longitude": 100.6099917,
   "contracts": {
-    "phone": "064-562-9551",
-    "line": "@610isuwh",
-    "facebook": " ร้านช่างซิ้มซ่อมแซมเสื้อผ้าแบรนด์เนม"
+    "phone": ["0645629551"],
+    "line": ["@610isuwh"],
+    "facebook": ["https://www.facebook.com/profile.php?id=100064532568808"],
+    "email": ["ganitthamakdee456@gmail.com"]
   },
   "payments": { "payments": ["cash", "online", "credit"] },
   "establish_date": "2002-01-01",

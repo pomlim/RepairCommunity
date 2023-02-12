@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าแมว" },
   "latitude": 13.7498594,
   "longitude": 100.5567346,
-  "contracts": { "phone": "", "line": "", "facebook": "" },
+  "contracts": {},
   "payments": { "payments": ["cash", "online", "credit"] },
   "establish_date": "1995-01-01",
   "fitting_room": 1,

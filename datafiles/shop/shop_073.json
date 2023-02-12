@@ -9,7 +9,7 @@
   "operators": { "name": "ผิงผิง" },
   "latitude": 13.6907935,
   "longitude": 100.6085221,
-  "contracts": { "phone": "061-318-4366", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0613184366"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

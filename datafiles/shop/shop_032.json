@@ -10,9 +10,7 @@
   "latitude": 13.7376209,
   "longitude": 100.5604991,
   "contracts": {
-    "phone": "094-178-9874",
-    "line": "",
-    "facebook": "Knit Aoki Bangkok"
+    "phone": ["0941789874"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2017-01-01",

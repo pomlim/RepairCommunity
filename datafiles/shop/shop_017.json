@@ -10,9 +10,7 @@
   "latitude": 13.7536714,
   "longitude": 100.5279135,
   "contracts": {
-    "phone": "085-157-8877",
-    "line": "",
-    "facebook": "น้องหนูรับแก้ทรงกางเกง"
+    "phone": ["0851578877"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2018-01-01",

@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าแจ้" },
   "latitude": 13.7102318,
   "longitude": 100.6311765,
-  "contracts": { "phone": "", "line": "", "facebook": "" },
+  "contracts": {},
   "payments": { "payments": ["cash"] },
   "establish_date": "1983-01-01",
   "fitting_room": 0,

@@ -10,9 +10,7 @@
   "latitude": 13.7465578,
   "longitude": 100.5880932,
   "contracts": {
-    "phone": "084-448-6943/084-916-4845",
-    "line": "",
-    "facebook": ""
+    "phone": ["0844486943", "0849164845"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",

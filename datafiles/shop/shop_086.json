@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าพิมพ์" },
   "latitude": 13.6709531,
   "longitude": 100.681409,
-  "contracts": { "phone": "088-789-1571", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0887891571"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,
