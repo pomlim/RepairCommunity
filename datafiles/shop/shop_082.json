@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าผ้อม" },
   "latitude": 13.6747529,
   "longitude": 100.6627224,
-  "contracts": { "phone": "", "line": "", "facebook": "" },
+  "contracts": {},
   "payments": { "payments": ["cash"] },
   "establish_date": "1992-01-01",
   "fitting_room": 1,

@@ -9,7 +9,7 @@
   "operators": { "name": "อ้อย" },
   "latitude": 13.6687168,
   "longitude": 100.6826256,
-  "contracts": { "phone": "063-624-4429", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0636244429"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2007-01-01",
   "fitting_room": 0,

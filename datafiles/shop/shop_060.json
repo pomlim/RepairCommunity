@@ -9,7 +9,7 @@
   "operators": { "name": "" },
   "latitude": 13.6969686,
   "longitude": 100.5956526,
-  "contracts": { "phone": "089-888-2454", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0898882454"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1992-01-01",
   "fitting_room": 1,

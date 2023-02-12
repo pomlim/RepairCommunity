@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างเล็ก" },
   "latitude": 13.7213236,
   "longitude": 100.595819,
-  "contracts": { "phone": "063-731-5798", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0637315798"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

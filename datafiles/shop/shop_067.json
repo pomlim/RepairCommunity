@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าอ้อ" },
   "latitude": 13.7005939,
   "longitude": 100.629385,
-  "contracts": { "phone": "", "line": "", "facebook": "" },
+  "contracts": {},
   "payments": { "payments": ["cash"] },
   "establish_date": "1992-01-01",
   "fitting_room": 0,

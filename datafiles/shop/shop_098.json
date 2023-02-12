@@ -9,7 +9,7 @@
   "operators": { "name": "บัว" },
   "latitude": 13.6708745,
   "longitude": 100.6831138,
-  "contracts": { "phone": "098-825-4505", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0988254505"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2017-01-01",
   "fitting_room": 0,

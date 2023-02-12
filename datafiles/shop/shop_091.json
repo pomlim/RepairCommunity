@@ -9,7 +9,7 @@
   "operators": { "name": "ภา" },
   "latitude": 13.6707769,
   "longitude": 100.6826769,
-  "contracts": { "phone": "085-914-4499", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0859144499"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2010-01-01",
   "fitting_room": 1,
