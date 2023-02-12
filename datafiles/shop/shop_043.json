@@ -9,7 +9,13 @@
   "operators": { "name": "เดวิด" },
   "latitude": 13.7382348,
   "longitude": 100.5605509,
-  "contracts": { "phone": "081-565-7923", "line": "", "facebook": "" },
+  "contracts": {
+    "phone": ["0815657923"],
+    "facebook": ["https://www.facebook.com/myoxfordtailor/"],
+    "webpage": ["www.oxfordtailor.com"],
+    "email": ["service@oxfordtailor.com"],
+    "instagram": ["https://www.instagram.com/oxford_tailor/"]
+  },
   "payments": { "payments": ["cash", "online", "credit"] },
   "establish_date": "2010-01-01",
   "fitting_room": 1,

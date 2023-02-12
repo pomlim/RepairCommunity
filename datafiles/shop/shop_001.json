@@ -10,9 +10,7 @@
   "latitude": 13.7913638,
   "longitude": 100.5495483,
   "contracts": {
-    "phone": "081-742-6646",
-    "line": "",
-    "facebook": "นวลศรี สีสด"
+    "phone": ["0817426646"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2007-01-01",

@@ -10,9 +10,9 @@
   "latitude": 13.7886879,
   "longitude": 100.5570701,
   "contracts": {
-    "phone": "062-556-7916",
-    "line": "order1991",
-    "facebook": "Order ร้านตัดเสื้อ ชุดเครื่องแบบข้าราชการ สูท และยูนิฟอร์ม"
+    "phone": ["0625567916"],
+    "line": ["order1991"],
+    "facebook": ["https://www.facebook.com/profile.php?id=100035141330404"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1997-01-01",

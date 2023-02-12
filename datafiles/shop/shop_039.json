@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างฤทธิ์" },
   "latitude": 13.725963,
   "longitude": 100.5758791,
-  "contracts": { "phone": "086-206-4942", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0862064942"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1992-01-01",
   "fitting_room": 0,

@@ -10,9 +10,10 @@
   "latitude": 13.7233736,
   "longitude": 100.5801193,
   "contracts": {
-    "phone": "085-214-1437",
-    "line": "tuy0609",
-    "facebook": "ตุ๋ย ร้านแก๊สทรงเสื้อแท้ รับเปลี่ยนซิป รับเปลี่ยนยางยิด ตัดต่อยีนส์"
+    "phone": ["0852141437"],
+    "line": ["tuy0609"],
+    "facebook": ["https://www.facebook.com/Kannikar.tuy/"],
+    "email": ["k.chaniwong@gmail.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",

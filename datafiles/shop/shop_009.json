@@ -9,7 +9,7 @@
   "operators": { "name": "ก้องเกียรติ" },
   "latitude": 13.7907822,
   "longitude": 100.5454217,
-  "contracts": { "phone": "092-856-2457", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0928562457"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2018-01-01",
   "fitting_room": 1,

@@ -10,9 +10,9 @@
   "latitude": 13.7453118,
   "longitude": 100.5322091,
   "contracts": {
-    "phone": "098-521-0769",
-    "line": "098-521-0769",
-    "facebook": "ร้านโนราห์ รับซ่อมเสื้อผ้า ใต้ลิโด้"
+    "phone": ["0985210769"],
+    "line": ["+66985210769"],
+    "facebook": ["https://www.facebook.com/noraatlido"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",

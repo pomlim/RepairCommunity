@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าแจ๋ว" },
   "latitude": 13.7351417,
   "longitude": 100.5850566,
-  "contracts": { "phone": "086-344-3995", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0863443995"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 1,

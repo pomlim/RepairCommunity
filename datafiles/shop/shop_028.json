@@ -10,9 +10,9 @@
   "latitude": 13.74737,
   "longitude": 100.5447405,
   "contracts": {
-    "phone": "02-254-5385/081-454-4224",
-    "line": "",
-    "facebook": "Dry~CliniQue"
+    "phone": ["0814544224", "022545385"],
+    "facebook": ["https://www.facebook.com/drycliniquephaholyothin"],
+    "email": ["dryclinique.bkk@gmail.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",

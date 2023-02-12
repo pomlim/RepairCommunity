@@ -9,7 +9,9 @@
   "operators": { "name": "" },
   "latitude": 13.7556778,
   "longitude": 100.5287879,
-  "contracts": { "phone": "081-810-0479", "line": "", "facebook": "" },
+  "contracts": {
+    "phone": ["0818100479"]
+  },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

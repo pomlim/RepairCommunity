@@ -9,7 +9,7 @@
   "operators": { "name": "ลูกจ้าง" },
   "latitude": 13.7235843,
   "longitude": 100.5629274,
-  "contracts": { "phone": "097-239-4542", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0972394542"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

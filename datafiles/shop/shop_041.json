@@ -10,9 +10,10 @@
   "latitude": 13.7397139,
   "longitude": 100.5563295,
   "contracts": {
-    "phone": "0813132691/022542909",
-    "line": "BKK Bazaar",
-    "facebook": "Bangkok Clothes Alteration Services"
+    "phone": ["0813132691", "022542909"],
+    "line": ["+66813132691"],
+    "facebook": ["https://www.facebook.com/bangkokclothesalterations"],
+    "email": ["bkkbazaar@email.com"]
   },
   "payments": { "payments": ["cash", "online", "credit"] },
   "establish_date": "2012-01-01",

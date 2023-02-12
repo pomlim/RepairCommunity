@@ -10,9 +10,7 @@
   "latitude": 13.7444744,
   "longitude": 100.5852069,
   "contracts": {
-    "phone": "086-688-7861/094-723-3722",
-    "line": "",
-    "facebook": ""
+    "phone": ["0866887861", "0947233722"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
