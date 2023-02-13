@@ -10,9 +10,8 @@
   "latitude": 13.7474664,
   "longitude": 100.5660595,
   "contracts": {
-    "phone": "093-214-7259",
-    "line": "093-214-7259",
-    "facebook": ""
+    "phone": ["0932147259"],
+    "line": ["+66932147259"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",

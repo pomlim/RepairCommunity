@@ -10,9 +10,11 @@
   "latitude": 13.7385419,
   "longitude": 100.5580014,
   "contracts": {
-    "phone": "080-618-7311",
-    "line": "Benjamastailor",
-    "facebook": "Benjamastailor shop"
+    "phone": ["0806187311"],
+    "line": ["@benjamastailor"],
+    "facebook": ["https://www.facebook.com/BenjamasTailor/"],
+    "email": ["benjamas2519@gmail.com"],
+    "webpage": ["benjamastailor.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",

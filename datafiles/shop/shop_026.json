@@ -10,9 +10,8 @@
   "latitude": 13.7463797,
   "longitude": 100.5445073,
   "contracts": {
-    "phone": "087-039-4854",
-    "line": "",
-    "facebook": "Thip Fixshop"
+    "phone": ["0870394854"],
+    "facebook": ["https://www.facebook.com/thipfixshop"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2017-01-01",

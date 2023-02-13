@@ -9,7 +9,7 @@
   "operators": { "name": "แม่อารีย์" },
   "latitude": 13.7025688,
   "longitude": 100.6376823,
-  "contracts": { "phone": "082-508-2359", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0825082359"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1997-01-01",
   "fitting_room": 1,

@@ -9,7 +9,7 @@
   "operators": { "name": "สุพิมพ์พร" },
   "latitude": 13.6791565,
   "longitude": 100.6103903,
-  "contracts": { "phone": "080-744-5517", "line": "Supimporn", "facebook": "" },
+  "contracts": { "phone": ["0807445517"], "line": ["Supimporn"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

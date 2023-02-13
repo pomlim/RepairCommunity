@@ -10,9 +10,8 @@
   "latitude": 13.7804458,
   "longitude": 100.5439242,
   "contracts": {
-    "phone": "062-497-7580",
-    "line": "062-497-7580",
-    "facebook": ""
+    "phone": ["0624977580"],
+    "line": ["+66624977580"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2016-01-01",

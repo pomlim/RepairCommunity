@@ -9,7 +9,7 @@
   "operators": { "name": "แอ๋ว" },
   "latitude": 13.7242641,
   "longitude": 100.5629716,
-  "contracts": { "phone": "095-794-6248", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0957946248"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 1,

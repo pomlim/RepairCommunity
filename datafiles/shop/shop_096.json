@@ -9,7 +9,7 @@
   "operators": { "name": "ศร" },
   "latitude": 13.6687168,
   "longitude": 100.6826256,
-  "contracts": { "phone": "063-647-6289", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0636476289"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

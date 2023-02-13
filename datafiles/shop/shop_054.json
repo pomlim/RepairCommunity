@@ -9,7 +9,7 @@
   "operators": { "name": "คูณ" },
   "latitude": 13.7155867,
   "longitude": 100.5952246,
-  "contracts": { "phone": "099-383-9568", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0993839568"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

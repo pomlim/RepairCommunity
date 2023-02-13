@@ -10,9 +10,9 @@
   "latitude": 13.7455624,
   "longitude": 100.5327503,
   "contracts": {
-    "phone": "081-836-5729",
-    "line": "",
-    "facebook": "The machine BKK"
+    "phone": ["0818365729"],
+    "facebook": ["https://www.facebook.com/themachinebkk"],
+    "webpage": ["www.themachinebkk.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1997-01-01",

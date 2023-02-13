@@ -9,7 +9,7 @@
   "operators": { "name": "" },
   "latitude": 13.7395987,
   "longitude": 100.5561085,
-  "contracts": { "phone": "", "line": "", "facebook": "" },
+  "contracts": {},
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

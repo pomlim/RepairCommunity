@@ -10,9 +10,8 @@
   "latitude": 13.7382919,
   "longitude": 100.5531227,
   "contracts": {
-    "phone": "091-814-1890",
-    "line": "091-814-1890",
-    "facebook": ""
+    "phone": ["0918141890"],
+    "line": ["+66918141890"]
   },
   "payments": { "payments": ["cash"] },
   "establish_date": "2002-01-01",

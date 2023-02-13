@@ -9,7 +9,7 @@
   "operators": { "name": "มีนา" },
   "latitude": 13.7191899,
   "longitude": 100.5657921,
-  "contracts": { "phone": "093-946-6539", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0939466539"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

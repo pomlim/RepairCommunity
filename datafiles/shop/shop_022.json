@@ -10,9 +10,10 @@
   "latitude": 13.744988649350772,
   "longitude": 100.53281605041957,
   "contracts": {
-    "phone": "091-131-1439",
-    "line": "lovely1439",
-    "facebook": "รับแก้เสื้อผ้าทุกชนิด สยามสแควร์ซอย3 ช่างนิ่ม"
+    "phone": ["0911311439"],
+    "line": ["lovely1439"],
+    "facebook": ["https://www.facebook.com/profile.php?id=100072067320594"],
+    "email": ["phnnidaphnnida@gmail.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2017-01-01",

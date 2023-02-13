@@ -10,9 +10,12 @@
   "latitude": 13.7891597,
   "longitude": 100.5504718,
   "contracts": {
-    "phone": "089-926-2896",
-    "line": "",
-    "facebook": "สมบูรณ์สูท"
+    "phone": ["0899262896"],
+    "facebook": [
+      "https://www.facebook.com/Somboonsuit",
+      "https://www.facebook.com/Joyunifrom"
+    ],
+    "email": ["joy_somboon25@hotmail.com"]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",

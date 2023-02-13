@@ -9,7 +9,7 @@
   "operators": { "name": "พิมดาว" },
   "latitude": 13.6713203,
   "longitude": 100.6825839,
-  "contracts": { "phone": "097-198-6856", "line": "", "facebook": "" },
+  "contracts": { "phone": ["0971986856"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2007-01-01",
   "fitting_room": 0,

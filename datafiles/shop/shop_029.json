@@ -10,9 +10,10 @@
   "latitude": 13.735945,
   "longitude": 100.563568,
   "contracts": {
-    "phone": "085-109-1348",
-    "line": "",
-    "facebook": "Roes Clothing Alterotion"
+    "phone": ["0851091348"],
+    "facebook": [
+      "https://www.facebook.com/RoseClothingAlteration/photos/?ref=page_internal"
+    ]
   },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
