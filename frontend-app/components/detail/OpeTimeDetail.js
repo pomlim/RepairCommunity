@@ -50,7 +50,7 @@ const OpeTimeDetail = ({ ope }) => {
       dayStr =
         daysEngToThai[opeDay.days[0]] +
         ' - ' +
-        daysEngToThai[opeDay.days.at(-1)];
+        daysEngToThai[opeDay.days[opeDay.days.length - 1]];
     } else {
       dayStr = daysEngToThai[opeDay.days[0]];
     }
