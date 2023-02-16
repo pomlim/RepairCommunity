@@ -6,9 +6,12 @@ const nextConfig = {
   // loader: "default",
   // domains: ["res.cloudinary.com"],
 };
+
 module.exports = {
+  reactStrictMode: true,
+  swcMinify: true,
   images: {
-    domains: ['*']
+    domains: ['*', 'localhost', 'http://localhost:1337']
   },
   async redirects() {
     return [
@@ -21,4 +24,4 @@ module.exports = {
   }
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;

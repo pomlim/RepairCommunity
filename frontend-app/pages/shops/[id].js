@@ -4,7 +4,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import shopService from '@/services/shop';
 import reviewTagService from '@/services/reviewTag';
-import config from '@/config/index';
 import Modal from '@/components/modal/modal';
 import Review from '@/components/review';
 import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
@@ -12,6 +11,8 @@ import PageLayout from '@/components/PageLayout';
 import MapDetail from '@/components/MapDetail';
 
 import Contact from '@/components/shopDetail/contact';
+import ShopImage from '@/components/shopDetail/shopImage';
+
 import {
   faClock,
   faWallet,
@@ -19,8 +20,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const { apiBaseUrl } = config;
 
 const ShopPresenter = ({ shop, reviews, reviewTags }) => {
   const [modal, setModal] = useState(false);
@@ -48,12 +47,14 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
   } = shop.attributes;
 
   const contracts = {
-    phone: ['0867722033', '0806187311'],
-    line: ['@benjamastailor'],
-    facebook: ['https://www.facebook.com/BenjamasTailor/'],
-    email: ['benjamas2519@gmail.com'],
-    instagram: ['https://www.instagram.com/benjamastailor/'],
-    webpage: ['http://www.benjamastailor.com/']
+    data: {
+      phone: ['0867722033', '0806187311'],
+      line: ['@benjamastailor'],
+      facebook: ['https://www.facebook.com/BenjamasTailor/'],
+      email: ['benjamas2519@gmail.com'],
+      instagram: ['https://www.instagram.com/benjamastailor/'],
+      webpage: ['http://www.benjamastailor.com/']
+    }
   };
 
   const phones = contracts.phone?.length > 0 ? contracts.phone : null;
@@ -63,23 +64,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
       <PageLayout>
         {/* <Link href="/shops"> BACK</Link>s */}
         <p className="text-2xl font-bold">{name}</p>
-        {shop_images.data
-          ? shop_images.data.map((shop_image, index) => {
-              return (
-                <div key={index} className="relative h-64 m-3 w-96">
-                  <Image
-                    alt="Picture of the author"
-                    loader={() => apiBaseUrl + shop_image.attributes.url}
-                    src={apiBaseUrl + shop_image.attributes.url}
-                    layout="fill" // required
-                    objectFit="cover" // change to suit your needs
-                    unoptimized={true}
-                    className="rounded-[8px]"
-                  />
-                </div>
-              );
-            })
-          : ''}
+        <ShopImage shop_images={shop_images.data} />
 
         <button
           disabled={!phones}
@@ -126,7 +111,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
                 : null}
             </div>
           </div>
-          <Contact contact={contracts} />
+          <Contact contact={contracts.data} />
           <div>
             <p className="font-bold text-primary-content">วิธีชำระค่าบริการ</p>
             {payments.payments.map((payment, index) => {
