@@ -9,7 +9,7 @@
   "operators": { "name": "ลัก" },
   "latitude": 13.6657249,
   "longitude": 100.6827192,
-  "contracts": { "phone": ["0895169224"] },
+  "contacts": { "phone": ["0895169224"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 1,

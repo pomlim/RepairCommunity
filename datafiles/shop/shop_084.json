@@ -9,7 +9,7 @@
   "operators": { "name": "รุ่งนภา" },
   "latitude": 13.670955,
   "longitude": 100.6814095,
-  "contracts": { "phone": ["0636791218"] },
+  "contacts": { "phone": ["0636791218"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

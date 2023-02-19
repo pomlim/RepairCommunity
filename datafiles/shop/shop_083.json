@@ -9,7 +9,7 @@
   "operators": { "name": "พี่พลอย" },
   "latitude": 13.6766066,
   "longitude": 100.6622324,
-  "contracts": { "phone": ["0979248475"] },
+  "contacts": { "phone": ["0979248475"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

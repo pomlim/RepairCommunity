@@ -9,7 +9,7 @@
   "operators": { "name": "ลุงสัม" },
   "latitude": 13.72577,
   "longitude": 100.5848917,
-  "contracts": { "phone": ["0870012909"] },
+  "contacts": { "phone": ["0870012909"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างอู๋" },
   "latitude": 13.7417718,
   "longitude": 100.5881839,
-  "contracts": { "phone": ["0632537992"] },
+  "contacts": { "phone": ["0632537992"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2016-01-01",
   "fitting_room": 0,

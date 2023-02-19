@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าพร" },
   "latitude": 13.6710669,
   "longitude": 100.6827721,
-  "contracts": { "phone": ["0645361696"] },
+  "contacts": { "phone": ["0645361696"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 1,

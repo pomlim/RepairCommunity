@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างเอก" },
   "latitude": 13.7465578,
   "longitude": 100.5880932,
-  "contracts": {
+  "contacts": {
     "phone": ["0844486943", "0849164845"]
   },
   "payments": { "payments": ["cash", "online"] },

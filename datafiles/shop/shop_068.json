@@ -9,7 +9,7 @@
   "operators": { "name": "ป้ายอด" },
   "latitude": 13.7011793,
   "longitude": 100.6289141,
-  "contracts": {},
+  "contacts": {},
   "payments": { "payments": ["cash"] },
   "establish_date": "1992-01-01",
   "fitting_room": 0,

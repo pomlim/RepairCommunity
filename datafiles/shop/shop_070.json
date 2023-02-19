@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าหน่อง" },
   "latitude": 13.7018592,
   "longitude": 100.622176,
-  "contracts": { "phone": ["0622496591"] },
+  "contacts": { "phone": ["0622496591"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

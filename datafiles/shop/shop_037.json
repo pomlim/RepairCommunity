@@ -9,7 +9,7 @@
   "operators": { "name": "ป้านีย์" },
   "latitude": 13.7444744,
   "longitude": 100.5852069,
-  "contracts": {
+  "contacts": {
     "phone": ["0866887861", "0947233722"]
   },
   "payments": { "payments": ["cash", "online"] },

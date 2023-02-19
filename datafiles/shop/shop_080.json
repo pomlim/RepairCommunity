@@ -9,7 +9,7 @@
   "operators": { "name": "ลัดดา" },
   "latitude": 13.6780409,
   "longitude": 100.6575818,
-  "contracts": { "phone": ["0850566139"] },
+  "contacts": { "phone": ["0850566139"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 1,

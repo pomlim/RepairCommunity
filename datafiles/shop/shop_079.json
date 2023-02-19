@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าต๋อย" },
   "latitude": 13.6743238,
   "longitude": 100.6211456,
-  "contracts": { "phone": ["0895356581"] },
+  "contacts": { "phone": ["0895356581"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

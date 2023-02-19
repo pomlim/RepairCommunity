@@ -9,7 +9,7 @@
   "operators": { "name": "ลุงชิด" },
   "latitude": 13.685875,
   "longitude": 100.6080955,
-  "contracts": { "phone": ["0922483870"] },
+  "contacts": { "phone": ["0922483870"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1992-01-01",
   "fitting_room": 0,

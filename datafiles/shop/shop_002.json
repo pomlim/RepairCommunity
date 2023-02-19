@@ -9,7 +9,7 @@
   "operators": { "name": "วัชรพล" },
   "latitude": 13.7898017,
   "longitude": 100.5500168,
-  "contracts": {
+  "contacts": {
     "phone": ["0814313402"]
   },
   "payments": { "payments": ["cash", "online"] },

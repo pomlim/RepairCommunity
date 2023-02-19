@@ -9,7 +9,7 @@
   "operators": { "name": "กมล" },
   "latitude": 13.6710149,
   "longitude": 100.6827536,
-  "contracts": { "phone": ["0844565449"] },
+  "contacts": { "phone": ["0844565449"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 1,

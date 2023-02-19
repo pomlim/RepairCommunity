@@ -9,7 +9,7 @@
   "operators": { "name": "knit" },
   "latitude": 13.7376209,
   "longitude": 100.5604991,
-  "contracts": {
+  "contacts": {
     "phone": ["0941789874"]
   },
   "payments": { "payments": ["cash", "online"] },

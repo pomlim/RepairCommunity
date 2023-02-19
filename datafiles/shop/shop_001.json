@@ -9,7 +9,7 @@
   "operators": { "name": "พี่กล้วย" },
   "latitude": 13.7913638,
   "longitude": 100.5495483,
-  "contracts": {
+  "contacts": {
     "phone": ["0817426646"]
   },
   "payments": { "payments": ["cash", "online"] },

@@ -9,7 +9,7 @@
   "operators": { "name": "ภัทร" },
   "latitude": 13.6711346,
   "longitude": 100.6827413,
-  "contracts": { "phone": ["0992303735"] },
+  "contacts": { "phone": ["0992303735"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

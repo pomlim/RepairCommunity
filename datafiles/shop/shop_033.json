@@ -9,7 +9,7 @@
   "operators": { "name": "" },
   "latitude": 13.7439632,
   "longitude": 100.5565199,
-  "contracts": { "phone": ["0890043873"] },
+  "contacts": { "phone": ["0890043873"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

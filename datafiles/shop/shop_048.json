@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าเช็ก" },
   "latitude": 13.7234248,
   "longitude": 100.5846095,
-  "contracts": { "phone": ["0851006253"] },
+  "contacts": { "phone": ["0851006253"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

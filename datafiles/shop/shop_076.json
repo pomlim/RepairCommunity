@@ -9,7 +9,7 @@
   "operators": { "name": "ป้ารันต์" },
   "latitude": 13.6801588,
   "longitude": 100.6099458,
-  "contracts": { "phone": ["0645844370"] },
+  "contacts": { "phone": ["0645844370"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,

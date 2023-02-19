@@ -9,7 +9,7 @@
   "operators": { "name": "พร" },
   "latitude": 13.7799688,
   "longitude": 100.5440267,
-  "contracts": { "phone": ["0848609981"] },
+  "contacts": { "phone": ["0848609981"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2007-01-01",
   "fitting_room": 0,

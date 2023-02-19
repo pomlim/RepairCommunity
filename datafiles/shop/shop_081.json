@@ -9,7 +9,7 @@
   "operators": { "name": "สาคร" },
   "latitude": 13.674906,
   "longitude": 100.6630454,
-  "contracts": { "phone": ["0891032065"] },
+  "contacts": { "phone": ["0891032065"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1992-01-01",
   "fitting_room": 1,

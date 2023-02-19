@@ -9,7 +9,7 @@
   "operators": { "name": "พร" },
   "latitude": 13.7803284,
   "longitude": 100.5437057,
-  "contracts": { "phone": ["0850425932"] },
+  "contacts": { "phone": ["0850425932"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2014-01-01",
   "fitting_room": 1,

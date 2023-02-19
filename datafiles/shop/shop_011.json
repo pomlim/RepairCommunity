@@ -9,7 +9,7 @@
   "operators": { "name": "เมย์" },
   "latitude": 13.7945342,
   "longitude": 100.5497885,
-  "contracts": { "phone": ["0957508303"] },
+  "contacts": { "phone": ["0957508303"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2018-01-01",
   "fitting_room": 0,

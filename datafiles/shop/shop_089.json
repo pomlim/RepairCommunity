@@ -9,7 +9,7 @@
   "operators": { "name": "ทม" },
   "latitude": 13.6709968,
   "longitude": 100.6827467,
-  "contracts": { "phone": ["0851468716"] },
+  "contacts": { "phone": ["0851468716"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 1,

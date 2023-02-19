@@ -9,7 +9,7 @@
   "operators": { "name": "ป้าอ๊อด" },
   "latitude": 13.7321343,
   "longitude": 100.5868604,
-  "contracts": {
+  "contacts": {
     "phone": ["0926972055"]
   },
   "payments": { "payments": ["cash", "online"] },

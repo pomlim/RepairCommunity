@@ -9,7 +9,7 @@
   "operators": { "name": "เจ๊ดา" },
   "latitude": 13.6687168,
   "longitude": 100.6826256,
-  "contracts": { "phone": ["0818135156"] },
+  "contacts": { "phone": ["0818135156"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

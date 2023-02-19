@@ -9,7 +9,7 @@
   "operators": { "name": "กลิน" },
   "latitude": 13.7516491,
   "longitude": 100.5254316,
-  "contracts": {},
+  "contacts": {},
   "payments": { "payments": ["cash"] },
   "establish_date": "2018-01-01",
   "fitting_room": 0,

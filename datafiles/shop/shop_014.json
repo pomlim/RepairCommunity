@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างเสริม" },
   "latitude": 13.7558455,
   "longitude": 100.5303574,
-  "contracts": { "phone": ["0953922688"] },
+  "contacts": { "phone": ["0953922688"] },
   "payments": { "payments": ["cash"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

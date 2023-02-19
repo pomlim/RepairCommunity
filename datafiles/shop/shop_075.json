@@ -9,7 +9,7 @@
   "operators": { "name": "หนึ่ง" },
   "latitude": 13.6782683,
   "longitude": 100.6292564,
-  "contracts": { "phone": ["0814594397"] },
+  "contacts": { "phone": ["0814594397"] },
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2012-01-01",
   "fitting_room": 0,

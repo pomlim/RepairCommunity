@@ -9,7 +9,7 @@
   "operators": { "name": "" },
   "latitude": 13.7556778,
   "longitude": 100.5287879,
-  "contracts": {
+  "contacts": {
     "phone": ["0818100479"]
   },
   "payments": { "payments": ["cash", "online"] },

@@ -9,7 +9,7 @@
   "operators": { "name": "ลูกจ้างภายในร้าน" },
   "latitude": 13.74737,
   "longitude": 100.5447405,
-  "contracts": {
+  "contacts": {
     "phone": ["0814544224", "022545385"],
     "facebook": ["https://www.facebook.com/drycliniquephaholyothin"],
     "email": ["dryclinique.bkk@gmail.com"]

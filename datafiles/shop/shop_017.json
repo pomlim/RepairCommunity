@@ -9,7 +9,7 @@
   "operators": { "name": "ช่างหนู" },
   "latitude": 13.7536714,
   "longitude": 100.5279135,
-  "contracts": {
+  "contacts": {
     "phone": ["0851578877"]
   },
   "payments": { "payments": ["cash", "online"] },
