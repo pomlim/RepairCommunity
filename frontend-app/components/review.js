@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Zoom from 'next-image-zoom';
 import config from '@/config/index';
 import moment from 'moment';
 
@@ -26,23 +27,18 @@ function Review({ review }) {
     <div className="review">
       <p className="font-bold">{reviewInfo.username}</p>
       {presenteCreateDate ? (
-        <p className="font-bold  text-secondary-content">
-          {presenteCreateDate}
-        </p>
+        <p className="font-bold text-secondary-content">{presenteCreateDate}</p>
       ) : null}
 
       {images ? (
-        <div className="flex flex-wrap flex-row">
+        <div className="flex flex-row flex-wrap">
           {images.map((image, index) => {
             return (
               <div key={index} className="mr-2 ">
-                <Image
-                  loader={() => apiBaseUrl + image.attributes.url}
+                <Zoom
                   src={apiBaseUrl + image.attributes.url}
-                  alt="/"
                   width={100}
                   height={100}
-                  className="rounded-[8px]"
                 />
               </div>
             );
@@ -51,7 +47,7 @@ function Review({ review }) {
       ) : null}
 
       {reviewTags ? (
-        <div className="flex flex-wrap flex-row">
+        <div className="flex flex-row flex-wrap">
           {reviewTags.map((tag, index) => {
             return (
               <p
