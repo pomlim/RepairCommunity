@@ -42,11 +42,11 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
     longitude,
     shop_images,
     shop_repair_tag_links,
-    // contracts,
+    // contacts,
     payments
   } = shop.attributes;
 
-  const contracts = {
+  const contacts = {
     data: {
       phone: ['0867722033', '0806187311'],
       line: ['@benjamastailor'],
@@ -57,7 +57,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
     }
   };
 
-  const phones = contracts.phone?.length > 0 ? contracts.phone : null;
+  const phones = contacts.phone?.length > 0 ? contacts.phone : null;
 
   return (
     <>
@@ -111,7 +111,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
                 : null}
             </div>
           </div>
-          <Contact contact={contracts.data} />
+          <Contact contact={contacts.data} />
           <div>
             <p className="font-bold text-primary-content">วิธีชำระค่าบริการ</p>
             {payments.payments.map((payment, index) => {
