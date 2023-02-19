@@ -57,7 +57,7 @@
       "type": "float",
       "required": true
     },
-    "contracts": {
+    "contacts": {
       "type": "json"
     },
     "payments": {
