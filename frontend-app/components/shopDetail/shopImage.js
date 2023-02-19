@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React, { useState, useRef } from 'react';
+import Zoom from 'next-image-zoom';
 
 import {
   faCircleArrowLeft,
@@ -12,75 +12,49 @@ import config from '@/config/index';
 const { apiBaseUrl } = config;
 
 const ShopImage = ({ shop_images }) => {
-  const [current, setCurrent] = useState(0);
-  const length = shop_images ? shop_images.length : 0;
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextImage = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
+  const slideRef = useRef();
+
+  const handleOnNextClick = () => {
+    const count = (currentIndex + 1) % shop_images.length;
+    setCurrentIndex(count);
+    slideRef.current.classList.add('fade-anim');
   };
-
-  const prevImage = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
+  const handleOnPrevClick = () => {
+    const imagesLength = shop_images.length;
+    const count = (currentIndex + imagesLength - 1) % imagesLength;
+    setCurrentIndex(count);
+    slideRef.current.classList.add('fade-anim');
   };
-
-  if (!Array.isArray(shop_images) || shop_images.length <= 0) {
-    return null;
-  }
 
   return (
-    <div className="relative flex justify-center p-4">
-      {shop_images ? (
-        shop_images.map((shop_image, index) => {
-          return (
-            <div
-              key={index}
-              className={
-                index === current
-                  ? 'opacity-[1] ease-in duration-1000 h-64 w-96'
-                  : 'opacity-0'
-              }
-            >
-              <FontAwesomeIcon
-                icon={faCircleArrowLeft}
-                onClick={prevImage}
-                className="absolute top-[50%] ml-2 text-black cursor-pointer select-none z-[2]"
-              />
+    <div ref={slideRef} className="relative select-none ">
+      <div className="aspect-w-16 aspect-h-9">
+        <Zoom
+          src={apiBaseUrl + shop_images[currentIndex].attributes.url}
+          objectFit={'cover'}
+          className="rounded-[15px]"
+          layout={'responsive'}
+          width={450}
+          height={300}
+        />
+      </div>
 
-              {index === current && (
-                <Image
-                  alt="Picture of the author"
-                  // loader={() => apiBaseUrl + shop_image.attributes.url}
-                  src={apiBaseUrl + shop_image.attributes.url}
-                  // className="relative h-64 m-3 w-96"
-                  height="300"
-                  width="450"
-                  // layout="fill" // required
-                  objectFit="cover" // change to suit your needs
-                  // unoptimized={true}
-                  className="rounded-[8px]"
-                />
-              )}
-              <FontAwesomeIcon
-                icon={faCircleArrowRight}
-                onClick={nextImage}
-                className="absolute top-[50%] mr-2 text-black cursor-pointer select-none z-[2]"
-              />
-            </div>
-          );
-        })
-      ) : (
-        <div className="relative h-64 m-3 w-96">
-          <Image
-            alt="Picture of the author"
-            loader={() => apiBaseUrl + shop_image.attributes.url}
-            src={'/default-shop.jpg'}
-            layout="fill" // required
-            objectFit="cover" // change to suit your needs
-            unoptimized={true}
-            className="rounded-[8px]"
-          />
-        </div>
-      )}
+      <div className="absolute flex items-center justify-between w-full px-3 transform -translate-y-1/2 top-1/2">
+        <button
+          className="p-1 text-white transition bg-black bg-opacity-50 rounded-full cursor-pointer hover:bg-opacity-100"
+          onClick={handleOnPrevClick}
+        >
+          <FontAwesomeIcon icon={faCircleArrowLeft} />
+        </button>
+        <button
+          className="p-1 text-white transition bg-black bg-opacity-50 rounded-full cursor-pointer hover:bg-opacity-100"
+          onClick={handleOnNextClick}
+        >
+          <FontAwesomeIcon icon={faCircleArrowRight} />
+        </button>
+      </div>
     </div>
   );
 };

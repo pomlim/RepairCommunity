@@ -8,3 +8,16 @@
     box-shadow: theme('boxShadow.md');
   }
 }
+
+.fade-anim img {
+  animation: fadeAnim 1000ms ease-out;
+}
+
+@keyframes fadeAnim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
