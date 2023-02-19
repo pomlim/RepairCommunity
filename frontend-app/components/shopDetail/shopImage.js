@@ -29,7 +29,7 @@ const ShopImage = ({ shop_images }) => {
   };
 
   return (
-    <div ref={slideRef} className="relative select-none ">
+    <div ref={slideRef} className="relative p-4 select-none">
       <div className="aspect-w-16 aspect-h-9">
         <Zoom
           src={apiBaseUrl + shop_images[currentIndex].attributes.url}

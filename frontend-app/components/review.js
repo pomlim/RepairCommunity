@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Zoom from 'next-image-zoom';
 import config from '@/config/index';
 import moment from 'moment';
