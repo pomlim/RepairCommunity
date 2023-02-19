@@ -29,8 +29,8 @@ const ShopImage = ({ shop_images }) => {
   };
 
   return (
-    <div ref={slideRef} className="relative p-4 select-none">
-      <div className="aspect-w-16 aspect-h-9">
+    <div ref={slideRef} className="relative select-none">
+      <div className="p-4 aspect-w-16 aspect-h-9 ">
         <Zoom
           src={apiBaseUrl + shop_images[currentIndex].attributes.url}
           objectFit={'cover'}
@@ -41,7 +41,7 @@ const ShopImage = ({ shop_images }) => {
         />
       </div>
 
-      <div className="absolute flex items-center justify-between w-full px-3 transform -translate-y-1/2 top-1/2">
+      <div className="absolute flex items-center justify-between w-full px-5 transform -translate-y-1/2 top-1/2">
         <button
           className="p-1 text-white transition bg-black bg-opacity-50 rounded-full cursor-pointer hover:bg-opacity-100"
           onClick={handleOnPrevClick}
