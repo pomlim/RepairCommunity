@@ -4,7 +4,29 @@ import moment from 'moment';
 
 const { apiBaseUrl } = config;
 
-function Review({ review }) {
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 100
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 10
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 5
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 3
+  }
+};
+const Review = ({ review }) => {
   const reviewInfo = review.attributes;
   const createDate = moment(reviewInfo.createdAt);
 
@@ -30,10 +52,10 @@ function Review({ review }) {
       ) : null}
 
       {images ? (
-        <div className="flex flex-row flex-wrap">
+        <Carousel responsive={responsive}>
           {images.map((image, index) => {
             return (
-              <div key={index} className="mr-2 ">
+              <div key={index} className={`mr-2`}>
                 <Zoom
                   src={apiBaseUrl + image.attributes.url}
                   width={100}
@@ -42,9 +64,8 @@ function Review({ review }) {
               </div>
             );
           })}
-        </div>
+        </Carousel>
       ) : null}
-
       {reviewTags ? (
         <div className="flex flex-row flex-wrap">
           {reviewTags.map((tag, index) => {
@@ -62,5 +83,5 @@ function Review({ review }) {
       <p className="font-bold">{reviewInfo.review}</p>
     </div>
   );
-}
+};
 export default Review;

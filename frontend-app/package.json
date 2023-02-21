@@ -28,7 +28,8 @@
     "qs": "^6.11.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-map-gl": "^7.0.21"
+    "react-map-gl": "^7.0.21",
+    "react-multi-carousel": "^2.8.2"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.12",
