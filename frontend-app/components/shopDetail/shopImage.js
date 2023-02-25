@@ -27,7 +27,9 @@ const ShopImage = ({ shop_images }) => {
     setCurrentIndex(count);
     slideRef.current.classList.add('fade-anim');
   };
-
+  if (!shop_images || shop_images.length <= 0) {
+    return null;
+  }
   return (
     <div ref={slideRef} className="relative select-none">
       <div className="p-4 aspect-w-16 aspect-h-9 ">
