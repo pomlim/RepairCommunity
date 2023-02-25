@@ -1,17 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true
-  // deviceSizes: [320, 420, 768, 1024, 1200],
-  // loader: "default",
-  // domains: ["res.cloudinary.com"],
-};
-
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['*', 'localhost', 'http://localhost:1337']
+    domains: ['*', 'localhost', 'http://localhost:1337'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com'
+      }
+    ],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60 // 60 seconds - this cannot be invalidated
   },
   async redirects() {
     return [
@@ -23,5 +24,3 @@ module.exports = {
     ];
   }
 };
-
-// module.exports = nextConfig;
