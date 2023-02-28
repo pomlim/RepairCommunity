@@ -45,14 +45,14 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {lines ? (
-            <a href={`line://${phones[0]}`}>
-              <div class="flex flex-row space-x-4 mt-2">
-                <FontAwesomeIcon icon={faLine} />
-                {lines.map((line, index) => (
-                  <p key={index}>{line}</p>
-                ))}
-              </div>
-            </a>
+            <div class="flex flex-row space-x-4 mt-2">
+              <FontAwesomeIcon icon={faLine} />
+              {lines.map((line, index) => (
+                <a key={index} href={`https://line.me/R/ti/p/${lines}`}>
+                  <p>{line}</p>
+                </a>
+              ))}
+            </div>
           ) : null}
           {facebooks ? (
             <div class="flex flex-row space-x-4 mt-2">
@@ -116,12 +116,11 @@ const Contact = ({ contact }) => {
           ) : null}
           {lines ? (
             <div class="flex flex-row space-x-4 mt-2">
-              <a href={`line://${lines[0]}`}>
+              <a href={`https://line.me/R/ti/p/${lines[0]}`}>
                 <FontAwesomeIcon icon={faLine} />
               </a>
             </div>
           ) : null}
-
           {webpages ? (
             <div class="flex flex-row space-x-4 mt-2">
               <a href={webpages[0]} target="_blank" rel="noreferrer">

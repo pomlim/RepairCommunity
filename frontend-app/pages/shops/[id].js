@@ -49,7 +49,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
   const contacts = {
     data: {
       phone: ['0867722033', '0806187311'],
-      line: ['@benjamastailor'],
+      line: ['@benjamastailor', ['order1991']],
       facebook: ['https://www.facebook.com/BenjamasTailor/'],
       email: ['benjamas2519@gmail.com'],
       instagram: ['https://www.instagram.com/benjamastailor/'],
