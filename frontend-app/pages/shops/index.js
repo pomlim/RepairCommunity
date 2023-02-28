@@ -71,7 +71,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
   };
 
   const totalShops = 0;
-  const [selectedDistance, setSelectedDistance] = useState(0);
+  const [selectedDistance, setSelectedDistance] = useState(100);
   const handleDistanceChange = (event) => {
     setSelectedDistance(event.target.value);
   };
@@ -90,7 +90,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         getDistance(
           // { latitude: coords.latitude, longitude: coords.longitude },
           // Fix data for testing (@BTS Phyathai)
-          { latitude: 13.7566622643378, longitude: 100.53373985564936 },
+          { latitude: 13.793017268140483, longitude: 100.54925081035572 },
           { latitude: lat, longitude: lng }
         ) / 1000;
       return diffDistance;
@@ -120,6 +120,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
           onChange={handleDistanceChange}
           className="m-3 border-solid rounded-full btn w-60 btn-outline"
         >
+          <option value="100">ทั้งหมด</option>
           <option value="2">2 กม</option>
           <option value="5">5 กม</option>
           <option value="10">10 กม</option>
@@ -150,7 +151,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
             shop.attributes.latitude,
             shop.attributes.longitude
           );
-          if (distance >= selectedDistance) {
+          if (distance <= selectedDistance) {
             totalShops = totalShops + 1;
             return (
               <div key={id}>

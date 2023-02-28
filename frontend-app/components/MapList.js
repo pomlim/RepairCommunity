@@ -21,8 +21,10 @@ const mapList = ({ initialLocation, shops }) => {
             // latitude: initialLocation.latitude,
             // longitude: initialLocation.longitude
             // Fix data for testing (@BTS Phyathai)
-            latitude:"13.7566622643378",
-            longitude:"100.53373985564936"
+            // latitude:"13.7566622643378",
+            // longitude:"100.53373985564936"
+            latitude:"13.793017268140483",
+            longitude:"100.54925081035572"
           }}
           mapStyle="mapbox://styles/mapbox/streets-v11"
         >
@@ -30,8 +32,8 @@ const mapList = ({ initialLocation, shops }) => {
             // latitude={initialLocation.latitude}
             // longitude={initialLocation.longitude}
             // Fix data for testing (@BTS Phyathai)
-            latitude="13.7566622643378"
-            longitude="100.53373985564936"
+            latitude="13.793017268140483"
+            longitude="100.54925081035572"
             color="#F60909"
           />
           {shops.map((shop) => (
