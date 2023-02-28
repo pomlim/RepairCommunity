@@ -40,7 +40,9 @@ const Contact = ({ contact }) => {
             <div class="flex flex-row space-x-4 mt-2">
               <FontAwesomeIcon icon={faPhoneAlt} />
               {phones.map((phone, index) => (
-                <p key={index}>{phone}</p>
+                <a key={index} href={`tel:${phone}`}>
+                  <p>{phone}</p>
+                </a>
               ))}
             </div>
           ) : null}
@@ -68,7 +70,9 @@ const Contact = ({ contact }) => {
             <div class="flex flex-row space-x-4 mt-2">
               <FontAwesomeIcon icon={faEnvelope} />
               {emails.map((email, index) => (
-                <p key={index}>{email}</p>
+                <a key={index} href={`mailto:${email}`}>
+                  <p>{email}</p>
+                </a>
               ))}
             </div>
           ) : null}
@@ -118,6 +122,13 @@ const Contact = ({ contact }) => {
             <div class="flex flex-row space-x-4 mt-2">
               <a href={`https://line.me/R/ti/p/${lines[0]}`}>
                 <FontAwesomeIcon icon={faLine} />
+              </a>
+            </div>
+          ) : null}
+          {emails ? (
+            <div class="flex flex-row space-x-4 mt-2">
+              <a href={`mailto:${emails[0]}`}>
+                <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div>
           ) : null}
