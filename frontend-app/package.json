@@ -29,6 +29,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-map-gl": "^7.0.21",
+    "geolib": "^3.3.3",
+    "react-geolocated": "^4.0.3",
     "react-multi-carousel": "^2.8.2"
   },
   "devDependencies": {

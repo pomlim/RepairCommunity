@@ -43,7 +43,8 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
     shop_images,
     shop_repair_tag_links,
     // contacts,
-    payments
+    payments,
+    google_map_url
   } = shop.attributes;
 
   const contacts = {
@@ -72,9 +73,14 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
         >
           โทร
         </button>
-        <button className="m-3 border-solid rounded-full btn w-60 btn-outline">
-          นำทาง
-        </button>
+        <a href={google_map_url}>
+          <button
+            href
+            className="m-3 border-solid rounded-full btn w-60 btn-outline"
+          >
+            นำทาง
+          </button>
+        </a>
         <div className="p-3 m-3 card">
           <MapDetail lat={latitude} lng={longitude} />
         </div>
