@@ -57,7 +57,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
     }
   };
 
-  const phones = contacts.phone?.length > 0 ? contacts.phone : null;
+  const phones = contacts.data.phone?.length > 0 ? contacts.data.phone : null;
 
   return (
     <>
@@ -66,12 +66,14 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
         <p className="text-2xl font-bold">{name}</p>
         <ShopImage shop_images={shop_images.data} />
 
-        <button
-          disabled={!phones}
-          className="m-3 border-solid rounded-full btn w-60 btn-primary"
-        >
-          โทร
-        </button>
+        <a href={`tel:${phones[0]}`}>
+          <button
+            disabled={!phones}
+            className="m-3 border-solid rounded-full btn w-60 btn-primary"
+          >
+            โทร
+          </button>
+        </a>
         <button className="m-3 border-solid rounded-full btn w-60 btn-outline">
           นำทาง
         </button>

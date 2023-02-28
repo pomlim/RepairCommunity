@@ -45,12 +45,14 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {lines ? (
-            <div class="flex flex-row space-x-4 mt-2">
-              <FontAwesomeIcon icon={faLine} />
-              {lines.map((line, index) => (
-                <p key={index}>{line}</p>
-              ))}
-            </div>
+            <a href={`line://${phones[0]}`}>
+              <div class="flex flex-row space-x-4 mt-2">
+                <FontAwesomeIcon icon={faLine} />
+                {lines.map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+              </div>
+            </a>
           ) : null}
           {facebooks ? (
             <div class="flex flex-row space-x-4 mt-2">
@@ -112,6 +114,14 @@ const Contact = ({ contact }) => {
               </a>
             </div>
           ) : null}
+          {lines ? (
+            <div class="flex flex-row space-x-4 mt-2">
+              <a href={`line://${lines[0]}`}>
+                <FontAwesomeIcon icon={faLine} />
+              </a>
+            </div>
+          ) : null}
+
           {webpages ? (
             <div class="flex flex-row space-x-4 mt-2">
               <a href={webpages[0]} target="_blank" rel="noreferrer">
