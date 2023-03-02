@@ -50,7 +50,7 @@ const Contact = ({ contact }) => {
             <div class="flex flex-row space-x-4 mt-2">
               <FontAwesomeIcon icon={faLine} />
               {lines.map((line, index) => (
-                <a key={index} href={`https://line.me/R/ti/p/${lines}`}>
+                <a key={index} href={`https://line.me/R/ti/p/${line}`}>
                   <p>{line}</p>
                 </a>
               ))}
