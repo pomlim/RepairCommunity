@@ -13,6 +13,7 @@
   "payments": { "payments": ["cash"] },
   "establish_date": "1962-01-01",
   "fitting_room": 0,
+  "google_map_url": "https://goo.gl/maps/3EFBr1eEM7vByQH29",
   "notes": [
     {
       "operting_time": "โทรมาถามก่อน",

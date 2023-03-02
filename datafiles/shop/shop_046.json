@@ -15,6 +15,7 @@
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,
+  "google_map_url": "https://goo.gl/maps/bqtL3FFGmpyPojQZ7",
   "notes": [
     {
       "operting_time": "ป้ายหน้าร้านเปิด07.00 โมง แต่เปิดจริง10.00โมง",
