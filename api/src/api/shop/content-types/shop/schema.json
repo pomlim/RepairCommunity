@@ -97,6 +97,9 @@
       "relation": "oneToMany",
       "target": "api::shop-repair-tag-link.shop-repair-tag-link",
       "mappedBy": "shop"
+    },
+    "google_map_url": {
+      "type": "string"
     }
   }
 }

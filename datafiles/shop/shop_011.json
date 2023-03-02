@@ -13,6 +13,7 @@
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2018-01-01",
   "fitting_room": 0,
+  "google_map_url": "https://goo.gl/maps/HzSVzX5tv2rQUaRn7",
   "notes": [
     {
       "operting_time": "เวลาปิดหน้าร้านไม่ตรง เข้ามาหลัง 15:00 ต้องโทรเข้ามาก่อน",

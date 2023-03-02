@@ -16,6 +16,7 @@
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2016-01-01",
   "fitting_room": 0,
+  "google_map_url": "https://goo.gl/maps/unygQcPbfnin8Q6g6",
   "notes": [
     {
       "operting_time": "หยุดนักขัตฤกษ์",

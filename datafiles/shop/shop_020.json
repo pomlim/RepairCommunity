@@ -16,6 +16,7 @@
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "2002-01-01",
   "fitting_room": 0,
+  "google_map_url": "https://goo.gl/maps/9PgX1G79eZbNqoj4A",
   "notes": [
     {
       "operting_time": "",

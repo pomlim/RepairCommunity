@@ -6,7 +6,8 @@ import OpeTimeList from '@/components/list/OpeTimeList';
 import PageLayout from '@/components/PageLayout';
 import FilterTagModal from '@/components/modal/filterTagModal';
 import MapList from '@/components/MapList';
-
+import { useGeolocated } from 'react-geolocated';
+import { getDistance } from 'geolib';
 import StarRating from '@/components/review/StarRating';
 
 const ReviewSummary = ({ reviews }) => {
@@ -69,6 +70,40 @@ const ShopsPage = ({ shops, repairTags, error }) => {
     setFilter(true);
   };
 
+  const totalShops = 0;
+  const [selectedDistance, setSelectedDistance] = useState(100);
+  const handleDistanceChange = (event) => {
+    setSelectedDistance(event.target.value);
+  };
+
+  const { coords, isGeolocationAvailable, isGeolocationEnabled } =
+    useGeolocated({
+      positionOptions: {
+        enableHighAccuracy: false
+      },
+      userDecisionTimeout: 5000
+    });
+
+  const calculateDistance = (lat, lng) => {
+    if (coords) {
+      const diffDistance =
+        getDistance(
+          // { latitude: coords.latitude, longitude: coords.longitude },
+          // Fix data for testing (@BTS Phyathai)
+          { latitude: 13.793017268140483, longitude: 100.54925081035572 },
+          { latitude: lat, longitude: lng }
+        ) / 1000;
+      return diffDistance;
+    }
+  };
+
+  tempShops.sort((a, b) =>
+    calculateDistance(a.attributes.latitude, a.attributes.longitude) >
+    calculateDistance(b.attributes.latitude, b.attributes.longitude)
+      ? 1
+      : -1
+  );
+
   return (
     <PageLayout>
       <ul>
@@ -77,14 +112,27 @@ const ShopsPage = ({ shops, repairTags, error }) => {
           updateSearch={changeInputText}
           onClick={() => getSearchData()}
         />
-        <button onClick={() => getSearchData()}>Search</button>
+        <div>
+          <button onClick={() => getSearchData()}>Search</button>
+        </div>
+        <select
+          value={selectedDistance}
+          onChange={handleDistanceChange}
+          className="m-3 border-solid rounded-full btn w-60 btn-outline"
+        >
+          <option value="100">ทั้งหมด</option>
+          <option value="2">2 กม</option>
+          <option value="5">5 กม</option>
+          <option value="10">10 กม</option>
+          <option value="15">15 กม</option>
+        </select>
         <button
           onClick={onFormat}
           className="m-3 border-solid rounded-full btn w-60 btn-outline"
         >
           ปรับรูปแบบการซ่อม
         </button>
-        <MapList shops={tempShops} />
+        <MapList initialLocation={coords} shops={tempShops} />
         <div>ผลการค้นหา {tempShops.length} ร้านซ่อม</div>
         {filter && (
           <FilterTagModal
@@ -99,18 +147,24 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         {tempShops.map((shop) => {
           const id = shop.id;
           const url = `/shops/${id}`;
-          return (
-            <div key={id}>
-              <a href={url}> {shop.attributes.name}</a>
-              <h4>{shop.attributes.address_detail}</h4>
-              <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
-              <h4>latitude : {shop.attributes.latitude}</h4>
-              <h4>longtitude : {shop.attributes.longitude}</h4>
-              {shop.attributes.reviews ? (
-                <ReviewSummary reviews={shop.attributes.reviews} />
-              ) : null}
-            </div>
+          const distance = calculateDistance(
+            shop.attributes.latitude,
+            shop.attributes.longitude
           );
+          if (distance <= selectedDistance) {
+            totalShops = totalShops + 1;
+            return (
+              <div key={id}>
+                <h4>ห่างจากฉัน {distance} กม</h4>
+                <a href={url}> {shop.attributes.name}</a>
+                <h4>{shop.attributes.address_detail}</h4>
+                <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
+                {shop.attributes.reviews ? (
+                  <ReviewSummary reviews={shop.attributes.reviews} />
+                ) : null}
+              </div>
+            );
+          }
         })}
       </ul>
     </PageLayout>
