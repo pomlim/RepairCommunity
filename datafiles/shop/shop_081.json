@@ -13,6 +13,7 @@
   "payments": { "payments": ["cash", "online"] },
   "establish_date": "1992-01-01",
   "fitting_room": 1,
+  "google_map_url": "https://goo.gl/maps/MBkBxeb3wE8pm1Xt7",
   "notes": [
     {
       "operting_time": "หยุดวันขัตฤกษ์",

@@ -17,6 +17,7 @@
   "payments": { "payments": ["cash", "online", "credit"] },
   "establish_date": "2010-01-01",
   "fitting_room": 0,
+  "google_map_url": "https://goo.gl/maps/epTvgMM2kR5KpxpF6",
   "notes": [
     {
       "operting_time": "ปิด-เปิดตามเวลาของSaimCenter",
