@@ -120,7 +120,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
           onChange={handleDistanceChange}
           className="m-3 border-solid rounded-full btn w-60 btn-outline"
         >
-          <option value="100">ทั้งหมด</option>
+          <option value="100">ปรับระยะทาง</option>
           <option value="2">2 กม</option>
           <option value="5">5 กม</option>
           <option value="10">10 กม</option>
