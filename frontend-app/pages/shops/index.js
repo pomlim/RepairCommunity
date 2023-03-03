@@ -70,7 +70,6 @@ const ShopsPage = ({ shops, repairTags, error }) => {
     setFilter(true);
   };
 
-  const totalShops = 0;
   const [selectedDistance, setSelectedDistance] = useState(100);
   const handleDistanceChange = (event) => {
     setSelectedDistance(event.target.value);
@@ -104,6 +103,12 @@ const ShopsPage = ({ shops, repairTags, error }) => {
       : -1
   );
 
+  const totalShops = tempShops.filter(
+    (shop) =>
+      calculateDistance(shop.attributes.latitude, shop.attributes.longitude) <=
+      selectedDistance
+  );
+
   return (
     <PageLayout>
       <ul>
@@ -132,8 +137,8 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         >
           ปรับรูปแบบการซ่อม
         </button>
-        <MapList initialLocation={coords} shops={tempShops} />
-        <div>ผลการค้นหา {tempShops.length} ร้านซ่อม</div>
+        <MapList initialLocation={coords} shops={totalShops} />
+        <div>ผลการค้นหา {totalShops.length} ร้านซ่อม</div>
         {filter && (
           <FilterTagModal
             repairTags={filterRepairTags}
@@ -144,27 +149,24 @@ const ShopsPage = ({ shops, repairTags, error }) => {
             setFilter={setFilter}
           />
         )}
-        {tempShops.map((shop) => {
+        {totalShops.map((shop) => {
           const id = shop.id;
           const url = `/shops/${id}`;
           const distance = calculateDistance(
             shop.attributes.latitude,
             shop.attributes.longitude
           );
-          if (distance <= selectedDistance) {
-            totalShops = totalShops + 1;
-            return (
-              <div key={id}>
-                <h4>ห่างจากฉัน {distance} กม</h4>
-                <a href={url}> {shop.attributes.name}</a>
-                <h4>{shop.attributes.address_detail}</h4>
-                <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
-                {shop.attributes.reviews ? (
-                  <ReviewSummary reviews={shop.attributes.reviews} />
-                ) : null}
-              </div>
-            );
-          }
+          return (
+            <div key={id}>
+              <h4>ห่างจากฉัน {distance} กม</h4>
+              <a href={url}> {shop.attributes.name}</a>
+              <h4>{shop.attributes.address_detail}</h4>
+              <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
+              {shop.attributes.reviews ? (
+                <ReviewSummary reviews={shop.attributes.reviews} />
+              ) : null}
+            </div>
+          );
         })}
       </ul>
     </PageLayout>
