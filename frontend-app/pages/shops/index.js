@@ -111,7 +111,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
 
   return (
     <PageLayout>
-      <ul>
+      <div className="w-full">
         <SearchBox
           searchText={inputText}
           updateSearch={changeInputText}
@@ -168,7 +168,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
             </div>
           );
         })}
-      </ul>
+      </div>
     </PageLayout>
   );
 };
