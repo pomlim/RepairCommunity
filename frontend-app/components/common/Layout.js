@@ -5,9 +5,6 @@ const Layout = ({ header, children, footer }) => {
       <div className="flex justify-center">
         <div className="w-full max-w-4xl">{children}</div>
       </div>
-      <div className="flex justify-center">
-        <div className="w-full max-w-5xl ">{footer}</div>
-      </div>
     </div>
   );
 };
