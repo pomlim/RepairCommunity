@@ -12,7 +12,7 @@ const mapList = ({ initialLocation, shops }) => {
         <ReactMapGL
           mapboxAccessToken={mapboxToken}
           style={{
-            width: '500px',
+            width: '100%',
             height: '500px',
             borderRadius: '15px'
           }}
@@ -23,8 +23,8 @@ const mapList = ({ initialLocation, shops }) => {
             // Fix data for testing (@BTS Phyathai)
             // latitude:"13.7566622643378",
             // longitude:"100.53373985564936"
-            latitude:"13.793017268140483",
-            longitude:"100.54925081035572"
+            latitude: '13.793017268140483',
+            longitude: '100.54925081035572'
           }}
           mapStyle="mapbox://styles/mapbox/streets-v11"
         >

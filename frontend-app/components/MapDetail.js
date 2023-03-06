@@ -9,9 +9,9 @@ const mapDetail = ({ lat, lng }) => {
       <ReactMapGL
         mapboxAccessToken={mapboxToken}
         style={{
-          width: '500px',
+          width: '100%',
           height: '500px',
-          borderRadius: '15px',
+          borderRadius: '15px'
         }}
         initialViewState={{
           zoom: 15,
