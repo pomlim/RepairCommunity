@@ -111,21 +111,18 @@ const ShopsPage = ({ shops, repairTags, error }) => {
 
   return (
     <PageLayout>
-      <div className="w-full">
+      <div className="w-full h-full p-4 bg-butter-default ">
         <SearchBox
           searchText={inputText}
           updateSearch={changeInputText}
-          onClick={() => getSearchData()}
+          onSearch={getSearchData}
         />
-        <div>
-          <button onClick={() => getSearchData()}>Search</button>
-        </div>
         <select
           value={selectedDistance}
           onChange={handleDistanceChange}
           className="m-3 border-solid rounded-full btn w-60 btn-outline"
         >
-          <option value="100">ปรับระยะทาง</option>
+          <option value="100">ห่างจากฉัน</option>
           <option value="2">2 กม</option>
           <option value="5">5 กม</option>
           <option value="10">10 กม</option>
