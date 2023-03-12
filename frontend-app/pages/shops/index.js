@@ -120,7 +120,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         <select
           value={selectedDistance}
           onChange={handleDistanceChange}
-          className="m-3 border-solid rounded-full btn w-60 btn-outline"
+          className="m-3 placeholder-brown-light border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default rounded-full btn w-30 btn-outline bg-butter-default"
         >
           <option value="100">ห่างจากฉัน</option>
           <option value="2">2 กม</option>
@@ -130,12 +130,14 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         </select>
         <button
           onClick={onFormat}
-          className="m-3 border-solid rounded-full btn w-60 btn-outline"
+          className="m-3 border-solid border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default rounded-full w-45 "
         >
           ปรับรูปแบบการซ่อม
         </button>
         <MapList initialLocation={coords} shops={totalShops} />
-        <div>ผลการค้นหา {totalShops.length} ร้านซ่อม</div>
+        <div className="text-xs text-brick font-medium font-kanit">
+          ผลการค้นหา {totalShops.length} ร้านซ่อม
+        </div>
         {filter && (
           <FilterTagModal
             repairTags={filterRepairTags}
@@ -153,15 +155,44 @@ const ShopsPage = ({ shops, repairTags, error }) => {
             shop.attributes.latitude,
             shop.attributes.longitude
           );
+          const opeTime = OpeTimeList(
+            shop.attributes.shop_operating_times.data
+          );
+          let OpeFlag = opeTime.includes('เปิดอยู่');
           return (
-            <div key={id}>
-              <h4>ห่างจากฉัน {distance} กม</h4>
-              <a href={url}> {shop.attributes.name}</a>
-              <h4>{shop.attributes.address_detail}</h4>
-              <OpeTimeList ope={shop.attributes.shop_operating_times.data} />
-              {shop.attributes.reviews ? (
-                <ReviewSummary reviews={shop.attributes.reviews} />
-              ) : null}
+            <div key={id} className="bg-butter-light py-4 rounded-3xl">
+              <a
+                href={url}
+                className={`text-xl ${
+                  OpeFlag ? 'text-brick' : 'text-brown-light'
+                } font-medium font-kanit`}
+              >
+                {shop.attributes.name}
+              </a>
+              <div
+                className={`text-xs ${
+                  OpeFlag ? 'text-brown-mid' : 'text-brown-light'
+                } font-thin font-kanit`}
+              >
+                ห่างจากฉัน {distance} กม
+              </div>
+              <div
+                className={`text-base ${
+                  OpeFlag ? 'text-brown-default' : 'text-brown-light'
+                } font-normal font-kanit`}
+              >
+                <div>{shop.attributes.address_detail}</div>
+                <div>{opeTime}</div>
+              </div>
+              <div
+                className={`text-xs ${
+                  OpeFlag ? 'text-brick' : 'text-brown-light'
+                } font-light font-kanit`}
+              >
+                {shop.attributes.reviews ? (
+                  <ReviewSummary reviews={shop.attributes.reviews} />
+                ) : null}
+              </div>
             </div>
           );
         })}
