@@ -10,6 +10,9 @@ module.exports = {
     extend: {
       boxShadow: {
         md: '0px 0px 8px rgba(159, 134, 25, 0.2)'
+      },
+      fontFamily: {
+        kanit: ['Kanit', 'sans-serif']
       }
     },
     colors: {
