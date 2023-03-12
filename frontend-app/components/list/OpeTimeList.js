@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 const getDayStrFromDate = (date) => {
   return date.toLocaleString('en-us', { weekday: 'short' }).toLowerCase();
 };
@@ -20,7 +22,12 @@ const getOpeTimeText = (operatedTimes) => {
     todayOpen.attributes.startTime <= curTime &&
     todayOpen.attributes.endTime > curTime
   ) {
-    return `เปิดอยู่ ปิด ${todayOpen.attributes.endTime}`;
+    var endTime = new moment(
+      todayOpen.attributes.endTime,
+      'HH:mm:ss'
+    ).format('LT');
+
+    return `เปิดอยู่ ปิด ${endTime}`;
   }
 
   // today not found or already close
@@ -39,7 +46,11 @@ const getOpeTimeText = (operatedTimes) => {
       (operatedTime) => operatedTime.attributes.day === day
     );
     if (foundDay) {
-      outputText = `ปิดอยู่ เปิด ${foundDay.attributes.day} ${foundDay.attributes.startTime}`;
+      var startTime = new moment(
+        foundDay.attributes.startTime,
+        'HH:mm:ss'
+      ).format('LT');
+      outputText = `ปิดอยู่ เปิด ${startTime}`;
       return false;
     }
     return true;
@@ -47,12 +58,8 @@ const getOpeTimeText = (operatedTimes) => {
   return outputText;
 };
 
-const OpeTimeList = ({ ope }) => {
-  return (
-    <div>
-      <ul>{ope ? getOpeTimeText(ope) : 'ไม่ระบุ'}</ul>
-    </div>
-  );
+const OpeTimeList = (ope) => {
+  return ope ? getOpeTimeText(ope) : 'ไม่ระบุ';
 };
 
 export default OpeTimeList;
