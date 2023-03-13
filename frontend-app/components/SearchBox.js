@@ -4,7 +4,7 @@ const SearchBox = ({ searchText, updateSearch, onSearch }) => {
       <form className="grow">
         <label class="relative block ">
           <input
-            class="w-full placeholder-brown-light bg-butter-light text-sm drop-shadow-md rounded-sm py-2 pl-3 pr-10 border-b-2 border-brown-light focus:outline-none focus:border-brown-default  text-brown-default"
+            class="w-full placeholder-brown-light bg-butter-light text-sm drop-shadow-md rounded-sm py-2 pl-3 pr-10 border-b-2 border-brown-light focus:outline-none focus:border-brown-default  text-brown-default text-base font-normal font-kanit"
             placeholder="ใส่ชื่อร้าน ชื่อย่าน หรือที่อยู่สำหรับค้นหา"
             value={searchText}
             onChange={(e) => updateSearch(e.target.value)}

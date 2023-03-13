@@ -120,7 +120,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         <select
           value={selectedDistance}
           onChange={handleDistanceChange}
-          className="m-3 placeholder-brown-light border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default rounded-full btn w-30 btn-outline bg-butter-default"
+          className="m-3 placeholder-brown-light border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default text-center rounded-full btn w-36 h-8 btn-outline bg-butter-default text-xs font-medium font-kanit"
         >
           <option value="100">ห่างจากฉัน</option>
           <option value="2">2 กม</option>
@@ -130,7 +130,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
         </select>
         <button
           onClick={onFormat}
-          className="m-3 border-solid border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default rounded-full w-45 "
+          className="m-3 border-solid border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default rounded-full w-36 h-8 text-xs text-center font-medium font-kanit"
         >
           ปรับรูปแบบการซ่อม
         </button>
