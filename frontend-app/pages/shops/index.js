@@ -117,86 +117,96 @@ const ShopsPage = ({ shops, repairTags, error }) => {
           updateSearch={changeInputText}
           onSearch={getSearchData}
         />
-        <select
-          value={selectedDistance}
-          onChange={handleDistanceChange}
-          className="m-3 placeholder-brown-light border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default text-center rounded-full btn w-36 h-8 btn-outline bg-butter-default text-xs font-medium font-kanit"
-        >
-          <option value="100">ห่างจากฉัน</option>
-          <option value="2">2 กม</option>
-          <option value="5">5 กม</option>
-          <option value="10">10 กม</option>
-          <option value="15">15 กม</option>
-        </select>
-        <button
-          onClick={onFormat}
-          className="m-3 border-solid border-2 border-brown-light focus:outline-none focus:border-brown-default text-brown-default rounded-full w-36 h-8 text-xs text-center font-medium font-kanit"
-        >
-          ปรับรูปแบบการซ่อม
-        </button>
+        <div className="flex h-8 px-6 my-4 space-x-2 text-xs font-medium ">
+          <select
+            value={selectedDistance}
+            onChange={handleDistanceChange}
+            className="text-center border-2 rounded-full grow border-brown-light focus:border-brown-default text-brown-default bg-butter-default font-kanit"
+          >
+            <option value="100">ห่างจากฉัน</option>
+            <option value="2">2 กม</option>
+            <option value="5">5 กม</option>
+            <option value="10">10 กม</option>
+            <option value="15">15 กม</option>
+          </select>
+          <button
+            onClick={onFormat}
+            className="text-center border-2 border-solid rounded-full grow border-brown-light focus:outline-none focus:border-brown-default text-brown-default font-kanit"
+          >
+            ปรับรูปแบบการซ่อม
+          </button>
+        </div>
+
         <MapList initialLocation={coords} shops={totalShops} />
-        <div className="text-xs text-brick font-medium font-kanit">
+        <div className="my-4 text-xs font-medium text-brick font-kanit">
           ผลการค้นหา {totalShops.length} ร้านซ่อม
         </div>
-        {filter && (
-          <FilterTagModal
-            repairTags={filterRepairTags}
-            updateRepairTags={setFilterRepairTags}
-            updateShops={setTempShops}
-            searchText={inputText}
-            convertArrayToText={convertRepairTagArrayToText}
-            setFilter={setFilter}
-          />
-        )}
-        {totalShops.map((shop) => {
-          const id = shop.id;
-          const url = `/shops/${id}`;
-          const distance = calculateDistance(
-            shop.attributes.latitude,
-            shop.attributes.longitude
-          );
-          const opeTime = OpeTimeList(
-            shop.attributes.shop_operating_times.data
-          );
-          let OpeFlag = opeTime.includes('เปิดอยู่');
-          return (
-            <div key={id} className="bg-butter-light py-4 rounded-3xl">
-              <a
-                href={url}
-                className={`text-xl ${
-                  OpeFlag ? 'text-brick' : 'text-brown-light'
-                } font-medium font-kanit`}
-              >
-                {shop.attributes.name}
-              </a>
-              <div
-                className={`text-xs ${
-                  OpeFlag ? 'text-brown-mid' : 'text-brown-light'
-                } font-thin font-kanit`}
-              >
-                ห่างจากฉัน {distance} กม
-              </div>
-              <div
-                className={`text-base ${
-                  OpeFlag ? 'text-brown-default' : 'text-brown-light'
-                } font-normal font-kanit`}
-              >
-                <div>{shop.attributes.address_detail}</div>
-                <div>{opeTime}</div>
-              </div>
-              <div
-                className={`text-xs ${
-                  OpeFlag ? 'text-brick' : 'text-brown-light'
-                } font-light font-kanit`}
-              >
-                {shop.attributes.reviews ? (
-                  <ReviewSummary reviews={shop.attributes.reviews} />
-                ) : null}
-              </div>
-            </div>
-          );
-        })}
+        {totalShops ? (
+          <div className="flex space-y-2">
+            {totalShops.map((shop) => {
+              const id = shop.id;
+              const url = `/shops/${id}`;
+              const distance = calculateDistance(
+                shop.attributes.latitude,
+                shop.attributes.longitude
+              );
+              const opeTime = OpeTimeList(
+                shop.attributes.shop_operating_times.data
+              );
+              let OpeFlag = opeTime.includes('เปิดอยู่');
+              return (
+                <div
+                  key={id}
+                  className="p-4 drop-shadow-md bg-butter-light rounded-3xl grow"
+                >
+                  <a
+                    href={url}
+                    className={`text-xl ${
+                      OpeFlag ? 'text-brick' : 'text-brown-light'
+                    } font-medium font-kanit`}
+                  >
+                    {shop.attributes.name}
+                  </a>
+                  <div
+                    className={`text-xs ${
+                      OpeFlag ? 'text-brown-mid' : 'text-brown-light'
+                    } font-thin font-kanit`}
+                  >
+                    ห่างจากฉัน {distance} กม
+                  </div>
+                  <div
+                    className={`text-base ${
+                      OpeFlag ? 'text-brown-default' : 'text-brown-light'
+                    } font-normal font-kanit`}
+                  >
+                    <div>{shop.attributes.address_detail}</div>
+                    <div>{opeTime}</div>
+                  </div>
+                  <div
+                    className={`text-xs ${
+                      OpeFlag ? 'text-brick' : 'text-brown-light'
+                    } font-light font-kanit`}
+                  >
+                    {shop.attributes.reviews ? (
+                      <ReviewSummary reviews={shop.attributes.reviews} />
+                    ) : null}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        ) : null}
       </div>
+      {filter && (
+        <FilterTagModal
+          repairTags={filterRepairTags}
+          updateRepairTags={setFilterRepairTags}
+          updateShops={setTempShops}
+          searchText={inputText}
+          convertArrayToText={convertRepairTagArrayToText}
+          setFilter={setFilter}
+        />
+      )}
     </PageLayout>
   );
 };
