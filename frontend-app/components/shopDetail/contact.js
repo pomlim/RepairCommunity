@@ -25,7 +25,7 @@ const Contact = ({ contact }) => {
 
   return (
     <div>
-      <p className="font-bold text-primary-content">
+      <p className="font-bold text-xs text-brown-default font-medium font-kanit">
         ช่องทางติดต่อ
         {open ? (
           <FontAwesomeIcon icon={faAngleDown} onClick={() => setOpen(!open)} />

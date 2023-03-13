@@ -46,9 +46,9 @@ const Review = ({ review }) => {
     : null;
   return (
     <div className="review">
-      <p className="font-bold">{reviewInfo.username}</p>
+      <p className="text-base text-brown-default font-normal font-kanit">{reviewInfo.username}</p>
       {presenteCreateDate ? (
-        <p className="font-bold text-secondary-content">{presenteCreateDate}</p>
+        <p className="font-bold text-secondary-content text-brown-mid text-xs font-medium font-kanit">{presenteCreateDate}</p>
       ) : null}
 
       {images ? (
@@ -71,7 +71,7 @@ const Review = ({ review }) => {
           {reviewTags.map((tag, index) => {
             return (
               <p
-                className="mr-3 mt-3 p-1 border-[1px] border-secondary-content rounded font-bold text-secondary-content"
+                className="mr-3 mt-3 p-1 border-[1px] border-primary-content rounded text-brown-mid text-base font-kanit font-normal"
                 key={index}
               >
                 {tag.name}
@@ -80,7 +80,7 @@ const Review = ({ review }) => {
           })}
         </div>
       ) : null}
-      <p className="font-bold">{reviewInfo.review}</p>
+      <p className="text-base text-normal text-brown-default font-normal font-kanit">{reviewInfo.review}</p>
     </div>
   );
 };
