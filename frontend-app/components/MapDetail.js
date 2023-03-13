@@ -10,7 +10,7 @@ const mapDetail = ({ lat, lng }) => {
         mapboxAccessToken={mapboxToken}
         style={{
           width: '100%',
-          height: '500px',
+          height: '250px',
           borderRadius: '15px'
         }}
         initialViewState={{
