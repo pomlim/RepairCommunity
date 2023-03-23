@@ -10,6 +10,10 @@ import { useGeolocated } from 'react-geolocated';
 import { getDistance } from 'geolib';
 import StarRating from '@/components/review/StarRating';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faClock } from '@fortawesome/free-regular-svg-icons';
+
 const ReviewSummary = ({ reviews }) => {
   const reviewScores = reviews.data.map((review) => {
     return review.attributes.score;
@@ -103,11 +107,12 @@ const ShopsPage = ({ shops, repairTags, error }) => {
       : -1
   );
 
-  const totalShops = tempShops.filter(
-    (shop) =>
-      calculateDistance(shop.attributes.latitude, shop.attributes.longitude) <=
-      selectedDistance
-  );
+  // const totalShops = tempShops.filter(
+  //   (shop) =>
+  //     calculateDistance(shop.attributes.latitude, shop.attributes.longitude) <=
+  //     selectedDistance
+  // );
+  const totalShops = tempShops.filter(() => true);
 
   return (
     <PageLayout>
@@ -142,7 +147,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
           ผลการค้นหา {totalShops.length} ร้านซ่อม
         </div>
         {totalShops ? (
-          <div className="flex space-y-2">
+          <div className="space-y-2 flex-column">
             {totalShops.map((shop) => {
               const id = shop.id;
               const url = `/shops/${id}`;
@@ -172,6 +177,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
                       OpeFlag ? 'text-brown-mid' : 'text-brown-light'
                     } font-thin font-kanit`}
                   >
+                    <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
                     ห่างจากฉัน {distance} กม
                   </div>
                   <div
@@ -180,8 +186,18 @@ const ShopsPage = ({ shops, repairTags, error }) => {
                     } font-normal font-kanit`}
                   >
                     <div>{shop.attributes.address_detail}</div>
-                    <div>{opeTime}</div>
                   </div>
+                  {opeTime ? (
+                    <div
+                      className={`text-base ${
+                        OpeFlag ? 'text-brown-default' : 'text-brown-light'
+                      } font-normal font-kanit`}
+                    >
+                      <FontAwesomeIcon icon={faClock} className="mr-2" />
+                      <span>{opeTime}</span>
+                    </div>
+                  ) : null}
+
                   <div
                     className={`text-xs ${
                       OpeFlag ? 'text-brick' : 'text-brown-light'

@@ -2,9 +2,9 @@ const SearchBox = ({ searchText, updateSearch, onSearch }) => {
   return (
     <div className="flex justify-center w-full px-6 mt-6">
       <form className="grow">
-        <label class="relative block ">
+        <label className="relative block ">
           <input
-            class="w-full placeholder-brown-light bg-butter-light text-sm drop-shadow-md rounded-sm py-2 pl-3 pr-10 border-b-2 border-brown-light focus:outline-none focus:border-brown-default  text-brown-default font-normal font-kanit"
+            className="w-full py-2 pl-3 pr-10 text-sm font-normal border-b-2 rounded-sm placeholder-brown-light bg-butter-light drop-shadow-md border-brown-light focus:outline-none focus:border-brown-default text-brown-default font-kanit"
             placeholder="ใส่ชื่อร้าน ชื่อย่าน หรือที่อยู่สำหรับค้นหา"
             value={searchText}
             onChange={(e) => updateSearch(e.target.value)}
@@ -12,11 +12,11 @@ const SearchBox = ({ searchText, updateSearch, onSearch }) => {
           />
 
           <span
-            class="absolute inset-y-0 right-0 flex items-center pr-3 text-brown-light"
+            className="absolute inset-y-0 right-0 flex items-center pr-3 text-brown-light"
             onClick={onSearch}
           >
             <svg
-              class="h-5 w-5 fill-black"
+              className="w-5 h-5 fill-black"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"

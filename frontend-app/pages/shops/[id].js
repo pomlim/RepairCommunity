@@ -62,10 +62,12 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
 
   return (
     <PageLayout>
-      <div className="w-full h-full p-4 bg-butter-default ">
-        <p className="text-2xl font-medium text-brick font-kanit">{name}</p>
+      <div className="w-full h-full py-4 bg-butter-default ">
+        <p className="mx-4 text-2xl font-medium text-brick font-kanit">
+          {name}
+        </p>
         <ShopImage shop_images={shop_images.data} />
-        <div className="flex mb-2 space-x-2">
+        <div className="flex mx-4 mb-2 space-x-2 ">
           <a
             href={`tel:${phones[0]}`}
             className="flex justify-center h-12 text-base border-2 rounded-full grow placeholder-brown-light border-brown-light focus:outline-none focus:border-brown-default text-brown-default btn btn-outline bg-green-default font-kanit"
@@ -79,17 +81,19 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
             <button>นำทาง</button>
           </a>
         </div>
-        <MapDetail lat={latitude} lng={longitude} />
-        <p className="text-xs font-medium text-center rounded-lg bg-butter-light text-brown-default font-kanit">
+        <div className="mx-4">
+          <MapDetail lat={latitude} lng={longitude} />
+        </div>
+        <p className="h-8 p-1 mx-5 mt-1 text-xs font-medium text-center rounded-lg drop-shadow-md -top-4 bg-butter-light text-brown-default font-kanit">
           {address_detail}
         </p>
-        <div className="rounded-lg bg-butter-light">
+        <div className="rounded-lg bg-butter-light drop-shadow-md">
           <div className="grid gap-6 p-3 m-3 divide-y card divide-dashed">
             <div>
               <FontAwesomeIcon icon={faClock} />
               <OpeTimeDetail ope={shop.attributes.shop_operating_times.data} />
             </div>
-            <div>
+            <div className="py-4">
               <p className="text-xs font-bold text-brown-default font-kanit">
                 ประเภทการซ่อมที่เชี่ยวชาญ
               </p>
@@ -114,8 +118,8 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
               </div>
             </div>
             <Contact contact={contacts.data} />
-            <div>
-              <p className="text-xs font-medium font-bold text-brown-default font-kanit">
+            <div className="py-4">
+              <p className="text-xs font-bold text-brown-default font-kanit">
                 วิธีชำระค่าบริการ:
               </p>
               {payments.payments.map((payment, index) => {

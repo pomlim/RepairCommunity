@@ -24,8 +24,8 @@ const Contact = ({ contact }) => {
   const webpages = contact.webpage?.length > 0 ? contact.webpage : null;
 
   return (
-    <div>
-      <p className="font-bold text-xs text-brown-default font-medium font-kanit">
+    <div className="py-4">
+      <p className="text-xs font-medium font-bold text-brown-default font-kanit">
         ช่องทางติดต่อ
         {open ? (
           <FontAwesomeIcon icon={faAngleDown} onClick={() => setOpen(!open)} />
@@ -35,9 +35,9 @@ const Contact = ({ contact }) => {
       </p>
 
       {open ? (
-        <div class="flex flex-col">
+        <div className="flex flex-col">
           {phones ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <FontAwesomeIcon icon={faPhoneAlt} />
               {phones.map((phone, index) => (
                 <a key={index} href={`tel:${phone}`}>
@@ -47,7 +47,7 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {lines ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <FontAwesomeIcon icon={faLine} />
               {lines.map((line, index) => (
                 <a key={index} href={`https://line.me/R/ti/p/${line}`}>
@@ -57,7 +57,7 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {facebooks ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <FontAwesomeIcon icon={faFacebook} />
               {facebooks.map((facebook, index) => (
                 <a key={index} href={facebook} target="_blank" rel="noreferrer">
@@ -67,7 +67,7 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {emails ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <FontAwesomeIcon icon={faEnvelope} />
               {emails.map((email, index) => (
                 <a key={index} href={`mailto:${email}`}>
@@ -77,7 +77,7 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {instagrams ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <FontAwesomeIcon icon={faInstagram} />
               {instagrams.map((instagram, index) => (
                 <a
@@ -92,7 +92,7 @@ const Contact = ({ contact }) => {
             </div>
           ) : null}
           {webpages ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <FontAwesomeIcon icon={faGlobe} />
               {webpages.map((webpage, index) => (
                 <a key={index} href={webpage} target="_blank" rel="noreferrer">
@@ -103,37 +103,37 @@ const Contact = ({ contact }) => {
           ) : null}
         </div>
       ) : (
-        <div class="flex flex-row space-x-4">
+        <div className="flex flex-row space-x-4">
           {facebooks ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <a href={facebooks[0]} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faFacebook} />
               </a>
             </div>
           ) : null}
           {instagrams ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <a href={instagrams[0]} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>
           ) : null}
           {lines ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <a href={`https://line.me/R/ti/p/${lines[0]}`}>
                 <FontAwesomeIcon icon={faLine} />
               </a>
             </div>
           ) : null}
           {emails ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <a href={`mailto:${emails[0]}`}>
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div>
           ) : null}
           {webpages ? (
-            <div class="flex flex-row space-x-4 mt-2">
+            <div className="flex flex-row mt-2 space-x-4">
               <a href={webpages[0]} target="_blank" rel="noreferrer">
                 <FontAwesomeIcon icon={faGlobe} />
               </a>
