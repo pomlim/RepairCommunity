@@ -103,39 +103,47 @@ const Contact = ({ contact }) => {
           ) : null}
         </div>
       ) : (
-        <div className="flex flex-row space-x-4">
-          {facebooks ? (
-            <div className="flex flex-row mt-2 space-x-4">
-              <a href={facebooks[0]} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faFacebook} />
-              </a>
-            </div>
-          ) : null}
+        <div className="flex flex-row mt-2 space-x-12 justify-center">
           {instagrams ? (
             <div className="flex flex-row mt-2 space-x-4">
               <a href={instagrams[0]} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faInstagram} />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="xl"
+                  inverse
+                  style={{
+                    background:
+                      'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)'
+                  }}
+                />
               </a>
             </div>
           ) : null}
           {lines ? (
             <div className="flex flex-row mt-2 space-x-4">
               <a href={`https://line.me/R/ti/p/${lines[0]}`}>
-                <FontAwesomeIcon icon={faLine} />
+                <FontAwesomeIcon icon={faLine} size="xl" color="#00B900" />
+              </a>
+            </div>
+          ) : null}
+          {facebooks ? (
+            <div className="flex flex-row mt-2 space-x-4">
+              <a href={facebooks[0]} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon={faFacebook} size="xl" color="#1877F2" />
               </a>
             </div>
           ) : null}
           {emails ? (
             <div className="flex flex-row mt-2 space-x-4">
               <a href={`mailto:${emails[0]}`}>
-                <FontAwesomeIcon icon={faEnvelope} />
+                <FontAwesomeIcon icon={faEnvelope} size="xl"/>
               </a>
             </div>
           ) : null}
           {webpages ? (
             <div className="flex flex-row mt-2 space-x-4">
               <a href={webpages[0]} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faGlobe} />
+                <FontAwesomeIcon icon={faGlobe} size="xl"/>
               </a>
             </div>
           ) : null}

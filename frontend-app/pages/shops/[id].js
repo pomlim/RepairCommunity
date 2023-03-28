@@ -122,26 +122,34 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
               <p className="text-xs font-bold text-brown-default font-kanit">
                 วิธีชำระค่าบริการ:
               </p>
-              {payments.payments.map((payment, index) => {
-                if (payment === 'cash') {
-                  return <FontAwesomeIcon key={index} icon={faWallet} />;
-                } else if (payment === 'online') {
-                  return (
-                    <FontAwesomeIcon key={index} icon={faMoneyBillTransfer} />
-                  );
-                } else {
-                  return null;
-                }
-              })}
+              <div className="flex self-center flex-row mt-2 space-x-12 justify-center">
+                {payments.payments.map((payment, index) => {
+                  if (payment === 'cash') {
+                    return (
+                      <FontAwesomeIcon key={index} icon={faWallet} size="xl" />
+                    );
+                  } else if (payment === 'online') {
+                    return (
+                      <FontAwesomeIcon
+                        key={index}
+                        icon={faMoneyBillTransfer}
+                        size="xl"
+                      />
+                    );
+                  } else {
+                    return null;
+                  }
+                })}
+              </div>
             </div>
           </div>
         </div>
-        {/* <button
+        <button
           onClick={onReview}
-          className="h-12 m-3 text-base font-normal rounded-full btn w-80 btn-primary bg-green-default text-brown-default font-kanit"
+          className="h-12 m-3 text-base font-normal rounded-full btn w-80 btn-primary bg-green-default text-brown-default font-kanit "
         >
           ให้คะแนนและรีวิวร้านนี้
-        </button> */}
+        </button>
         <br />
         <div className="p-4 mt-3">
           <p className="text-xs font-medium font-bold text-secondary-content text-brown-mid font-kanit">
