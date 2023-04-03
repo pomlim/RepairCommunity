@@ -24,13 +24,21 @@ const Contact = ({ contact }) => {
   const webpages = contact.webpage?.length > 0 ? contact.webpage : null;
 
   return (
-    <div className="py-4">
-      <p className="text-xs font-medium font-bold text-brown-default font-kanit">
+    <div className="w-full py-4">
+      <p className="text-xs font-bold text-brown-default font-kanit">
         ช่องทางติดต่อ
         {open ? (
-          <FontAwesomeIcon icon={faAngleDown} onClick={() => setOpen(!open)} />
+          <FontAwesomeIcon
+            className="ml-1"
+            icon={faAngleDown}
+            onClick={() => setOpen(!open)}
+          />
         ) : (
-          <FontAwesomeIcon icon={faAngleUp} onClick={() => setOpen(!open)} />
+          <FontAwesomeIcon
+            className="ml-1"
+            icon={faAngleUp}
+            onClick={() => setOpen(!open)}
+          />
         )}
       </p>
 
@@ -103,49 +111,39 @@ const Contact = ({ contact }) => {
           ) : null}
         </div>
       ) : (
-        <div className="flex flex-row mt-2 space-x-12 justify-center">
+        <div className="flex justify-between mt-2 ">
           {instagrams ? (
-            <div className="flex flex-row mt-2 space-x-4">
-              <a href={instagrams[0]} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="xl"
-                  inverse
-                  style={{
-                    background:
-                      'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)'
-                  }}
-                />
-              </a>
-            </div>
+            <a href={instagrams[0]} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="xl"
+                inverse
+                style={{
+                  background:
+                    'radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)'
+                }}
+              />
+            </a>
           ) : null}
           {lines ? (
-            <div className="flex flex-row mt-2 space-x-4">
-              <a href={`https://line.me/R/ti/p/${lines[0]}`}>
-                <FontAwesomeIcon icon={faLine} size="xl" color="#00B900" />
-              </a>
-            </div>
+            <a href={`https://line.me/R/ti/p/${lines[0]}`}>
+              <FontAwesomeIcon icon={faLine} size="xl" color="#00B900" />
+            </a>
           ) : null}
           {facebooks ? (
-            <div className="flex flex-row mt-2 space-x-4">
-              <a href={facebooks[0]} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faFacebook} size="xl" color="#1877F2" />
-              </a>
-            </div>
+            <a href={facebooks[0]} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faFacebook} size="xl" color="#1877F2" />
+            </a>
           ) : null}
           {emails ? (
-            <div className="flex flex-row mt-2 space-x-4">
-              <a href={`mailto:${emails[0]}`}>
-                <FontAwesomeIcon icon={faEnvelope} size="xl"/>
-              </a>
-            </div>
+            <a href={`mailto:${emails[0]}`}>
+              <FontAwesomeIcon icon={faEnvelope} size="xl" />
+            </a>
           ) : null}
           {webpages ? (
-            <div className="flex flex-row mt-2 space-x-4">
-              <a href={webpages[0]} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon={faGlobe} size="xl"/>
-              </a>
-            </div>
+            <a href={webpages[0]} target="_blank" rel="noreferrer">
+              <FontAwesomeIcon icon={faGlobe} size="xl" />
+            </a>
           ) : null}
         </div>
       )}

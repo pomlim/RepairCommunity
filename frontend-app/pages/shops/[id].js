@@ -122,7 +122,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
               <p className="text-xs font-bold text-brown-default font-kanit">
                 วิธีชำระค่าบริการ:
               </p>
-              <div className="flex self-center flex-row mt-2 space-x-12 justify-center">
+              <div className="flex flex-row self-center justify-center mt-2 space-x-12">
                 {payments.payments.map((payment, index) => {
                   if (payment === 'cash') {
                     return (
@@ -144,15 +144,17 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
             </div>
           </div>
         </div>
-        <button
-          onClick={onReview}
-          className="h-12 m-3 text-base font-normal rounded-full btn w-80 btn-primary bg-green-default text-brown-default font-kanit "
-        >
-          ให้คะแนนและรีวิวร้านนี้
-        </button>
+        <div className="flex justify-center w-full px-3">
+          <button
+            onClick={onReview}
+            className="w-full h-12 text-base font-normal rounded-full btn btn-primary bg-green-default text-brown-default font-kanit"
+          >
+            ให้คะแนนและรีวิวร้านนี้
+          </button>
+        </div>
         <br />
         <div className="p-4 mt-3">
-          <p className="text-xs font-medium font-bold text-secondary-content text-brown-mid font-kanit">
+          <p className="text-xs font-bold text-secondary-content text-brown-mid font-kanit">
             รีวิวจากผู้ใช้งาน
           </p>
           <div className="divide-y divide-dashed divide-primary">
