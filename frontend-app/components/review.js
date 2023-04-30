@@ -4,28 +4,6 @@ import moment from 'moment';
 
 const { apiBaseUrl } = config;
 
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
-
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 100
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 10
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 5
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 3
-  }
-};
 const Review = ({ review }) => {
   const reviewInfo = review.attributes;
   const createDate = moment(reviewInfo.createdAt);
@@ -46,25 +24,49 @@ const Review = ({ review }) => {
     : null;
   return (
     <div className="review">
-      <p className="text-base text-brown-default font-normal font-kanit">{reviewInfo.username}</p>
+      <p className="text-base font-normal text-brown-default font-kanit">
+        {reviewInfo.username}
+      </p>
       {presenteCreateDate ? (
-        <p className="font-bold text-secondary-content text-brown-mid text-xs font-medium font-kanit">{presenteCreateDate}</p>
+        <p className="text-xs font-medium text-secondary-content text-brown-mid font-kanit">
+          {presenteCreateDate}
+        </p>
       ) : null}
 
       {images ? (
-        <Carousel responsive={responsive}>
+        <div
+          style={{
+            display: 'flex',
+            width: '100%',
+            height: 'auto',
+            flexWrap: 'wrap'
+            // overflow: 'auto',
+            // flexWrap: 'nowrap'
+          }}
+        >
           {images.map((image, index) => {
             return (
-              <div key={index} className={`mr-2`}>
+              <div
+                key={index}
+                style={{
+                  // flex: '0 0 auto',
+                  position: 'relative',
+                  width: '100px',
+                  height: '100px',
+                  marginRight: '5px',
+                  marginBottom: '5px'
+                }}
+              >
                 <Zoom
+                  key={index}
+                  alt="/"
                   src={apiBaseUrl + image.attributes.url}
-                  width={100}
-                  height={100}
+                  layout="fill"
                 />
               </div>
             );
           })}
-        </Carousel>
+        </div>
       ) : null}
       {reviewTags ? (
         <div className="flex flex-row flex-wrap">
@@ -80,7 +82,9 @@ const Review = ({ review }) => {
           })}
         </div>
       ) : null}
-      <p className="text-base text-normal text-brown-default font-normal font-kanit">{reviewInfo.review}</p>
+      <p className="text-base font-normal text-normal text-brown-default font-kanit">
+        {reviewInfo.review}
+      </p>
     </div>
   );
 };
