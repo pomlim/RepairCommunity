@@ -1,11 +1,9 @@
-import { useState } from 'react';
-import ReactMapGL, { Marker, NavigationControl, Popup } from 'react-map-gl';
+import ReactMapGL, { Marker, NavigationControl } from 'react-map-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import config from '@/config/index';
 const { mapboxToken } = config;
 
 const mapList = ({ initialLocation, shops }) => {
-  const [showPopup, togglePopup] = useState(true);
   return (
     <div>
       {initialLocation && (
