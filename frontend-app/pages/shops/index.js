@@ -41,9 +41,9 @@ const ReviewSummary = ({ reviews }) => {
 };
 
 const ShopsPage = ({ shops, repairTags, error }) => {
-  if (error) {
-    return <div>An error occured: {error.message}</div>;
-  }
+  // if (error) {
+  //   return <div>An error occured: {error.message}</div>;
+  // }
   const [inputText, changeInputText] = useState('');
   const [tempShops, setTempShops] = useState(shops);
   const [filter, setFilter] = useState(false);
