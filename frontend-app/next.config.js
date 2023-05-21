@@ -3,7 +3,7 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['*', 'localhost', 'http://localhost:1337'],
+    domains: ['*', 'localhost', 'http://localhost:1337', '167.71.206.157', 'http://167.71.206.157:1337', ],
     remotePatterns: [
       {
         protocol: 'https',

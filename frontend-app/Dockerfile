@@ -19,7 +19,7 @@ RUN npm run build
 # Set environment variables
 ENV NODE_ENV production
 ENV PORT 3000
-ENV NEXT_PUBLIC_API_BASE_URL http://localhost:1337
+ENV NEXT_PUBLIC_API_BASE_URL http://167.71.206.157:1337
 
 # Expose port
 EXPOSE 3000
