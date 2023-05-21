@@ -87,17 +87,22 @@ const ShopsPage = ({ shops, repairTags, error }) => {
       userDecisionTimeout: 5000
     });
 
+  const currentLoacaiton = () => {
+    if (coords) return coords;
+    // Fix data for testing (@BTS Phyathai)
+    return { latitude: 13.793017268140483, longitude: 100.54925081035572 };
+  };
+
   const calculateDistance = (lat, lng) => {
-    if (coords) {
-      const diffDistance =
-        getDistance(
-          // { latitude: coords.latitude, longitude: coords.longitude },
-          // Fix data for testing (@BTS Phyathai)
-          { latitude: 13.793017268140483, longitude: 100.54925081035572 },
-          { latitude: lat, longitude: lng }
-        ) / 1000;
-      return diffDistance;
-    }
+    const diffDistance =
+      getDistance(
+        {
+          latitude: currentLoacaiton.latitude,
+          longitude: currentLoacaiton.longitude
+        },
+        { latitude: lat, longitude: lng }
+      ) / 1000;
+    return diffDistance;
   };
 
   tempShops.sort((a, b) =>
@@ -142,7 +147,7 @@ const ShopsPage = ({ shops, repairTags, error }) => {
           </button>
         </div>
 
-        <MapList initialLocation={coords} shops={totalShops} />
+        <MapList initialLocation={currentLoacaiton} shops={totalShops} />
         <div className="my-4 text-xs font-medium text-brick font-kanit">
           ผลการค้นหา {totalShops.length} ร้านซ่อม
         </div>
