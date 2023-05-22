@@ -97,8 +97,8 @@ const ShopsPage = ({ shops, repairTags, error }) => {
     const diffDistance =
       getDistance(
         {
-          latitude: currentLoacaiton.latitude,
-          longitude: currentLoacaiton.longitude
+          latitude: currentLoacaiton().latitude,
+          longitude: currentLoacaiton().longitude
         },
         { latitude: lat, longitude: lng }
       ) / 1000;
@@ -146,8 +146,9 @@ const ShopsPage = ({ shops, repairTags, error }) => {
             ปรับรูปแบบการซ่อม
           </button>
         </div>
-
-        <MapList initialLocation={currentLoacaiton} shops={totalShops} />
+        <input type="checkbox" className=" outline-green-default" />
+        Customizedss
+        <MapList initialLocation={currentLoacaiton()} shops={totalShops} />
         <div className="my-4 text-xs font-medium text-brick font-kanit">
           ผลการค้นหา {totalShops.length} ร้านซ่อม
         </div>
