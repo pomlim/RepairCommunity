@@ -5,6 +5,8 @@ import StarRating from '@/components/review/StarRating';
 import TextInput from '@/components/review/TextInput';
 import TagReviews from '@/components/review/TagReviews';
 
+import ReviewService from '@/services/review';
+
 const Modal = ({ shopId, reviewTags, setModal }) => {
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState('');
@@ -73,15 +75,11 @@ const Modal = ({ shopId, reviewTags, setModal }) => {
 
       formData.append('ref', 'api::review.review');
       formData.append('field', 'images');
-      const response = await fetch(`http://localhost:1337/api/upload`, {
-        method: 'POST',
-        body: formData
-      });
-
-      const data = await response.json();
+      const data = await ReviewService.UploadImageFiles(formData);
       fileId = data.map((d) => d.id);
     }
-    const result = axios.post('http://localhost:1337/api/reviews', {
+
+    const result = await ReviewService.CreateReview({
       data: {
         images: fileId,
         shop: shopId,
