@@ -1,20 +1,26 @@
-# Set the base image to use for this Docker image
-FROM node:14.16.0-alpine
+FROM node:16-alpine as build
+# Installing libvips-dev for sharp Compatibility
+RUN apk update && apk add --no-cache build-base gcc autoconf automake zlib-dev libpng-dev vips-dev && rm -rf /var/cache/apk/* > /dev/null 2>&1
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+WORKDIR /opt/
+COPY ./package.json ./
+ENV PATH /opt/node_modules/.bin:$PATH
+RUN npm install --production
+WORKDIR /opt/app
+COPY ./ .
+RUN npm run build
 
-# Set the working directory for the Docker image
-WORKDIR /app
 
-# Copy the package.json and package-lock.json files into the Docker image
-COPY package*.json ./
-
-# Install the dependencies in the Docker image
-RUN npm install
-
-# Copy the rest of the application files into the Docker image
-COPY . .
-
-# Set the port that the Docker image will use
+FROM node:16-alpine
+# Installing libvips-dev for sharp Compatibility
+RUN apk add vips-dev
+RUN rm -rf /var/cache/apk/*
+ARG NODE_ENV=production
+ENV NODE_ENV=${NODE_ENV}
+WORKDIR /opt/app
+COPY --from=build /opt/node_modules ./node_modules
+ENV PATH /opt/node_modules/.bin:$PATH
+COPY --from=build /opt/app ./
 EXPOSE 1337
-
-# Start the Strapi server when the Docker image runs
-CMD ["npm", "start"]
+CMD ["npm", "run","start"]
