@@ -6,8 +6,11 @@ import TextInput from '@/components/review/TextInput';
 import TagReviews from '@/components/review/TagReviews';
 
 import ReviewService from '@/services/review';
+import { useRouter } from 'next/router';
 
 const Modal = ({ shopId, reviewTags, setModal }) => {
+  const router = useRouter();
+
   const [rating, setRating] = useState(0);
   const [review, setReview] = useState('');
   const [username, setName] = useState('');
@@ -56,6 +59,8 @@ const Modal = ({ shopId, reviewTags, setModal }) => {
       return { ...tag, selected: false };
     });
     setCsheckedReviewTags(resetTags);
+
+    router.reload(window.location.pathname);
   };
 
   const onSubmit = async () => {
