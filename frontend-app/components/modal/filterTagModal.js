@@ -42,66 +42,60 @@ const FilterTagModal = ({
   return (
     <div>
       <div
-        className="relative z-10"
+        className="relative z-10 w-full"
         aria-labelledby="modal-title"
         role="dialog"
         aria-modal="true"
       >
-        <div className="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75"></div>
+        <div className="fixed inset-0 transition-opacity bg-opacity-75 backdrop-blur-lg"></div>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
-          <div className="flex items-end justify-center min-h-full p-4 text-center sm:items-center sm:p-0">
-            <div className="relative overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl sm:my-8 sm:w-full sm:max-w-lg">
-              <div className="px-4 pt-5 pb-4 bg-white sm:p-6 sm:pb-4">
+          <div className="flex items-end justify-center min-h-full text-center sm:items-center p-0">
+            <div className="relative overflow-hidden text-left transition-all transform bg-butter-light rounded-lg shadow-xl sm:my-8 w-full">
+              <div className="px-10 pt-2 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                  <div className="mt-3 sm:mt-0 sm:ml-4 divide-y card divide-dashed">
                     <h3
-                      className="text-lg font-small leading-6 text-gray-900"
+                      className="font-medium leading-6 text-xs text-brown-mid font-kanit pb-2"
                       id="modal-title"
                     >
                       ปรับรูปแบบการซ่อม
                     </h3>
                     <h1
-                      className="text-lg font-medium leading-6 text-gray-900"
+                      className="text-base text-brown-default font-medium leading-6 font-kanit py-4"
                       id="modal-title"
                     >
                       เลือกประเภทการซ่อม (เลือกได้มากกว่า 1)
                     </h1>
                     {checkedRepairTags.map((repairTag, index) => {
                       return (
-                        <li key={index}>
-                          <div className="toppings-list-item">
+                        <label key={index}>
+                          <div className="toppings-list-item text-brown-default text-base font-kanit font-medium mb-4">
                             <input
                               type="checkbox"
                               id={`custom-checkbox-${index}`}
                               name={repairTag.attributes.name}
                               checked={repairTag.checked}
+                              className="accent-green-default mr-4"
                               value={repairTag.id}
                               onChange={handleChange}
                             />
                             {repairTag.attributes.name}
                             {repairTag.checked}
                           </div>
-                        </li>
+                        </label>
                       );
                     })}
                   </div>
                 </div>
               </div>
-              <div className="px-4 py-3 bg-gray-50 sm:flex sm:flex-row-reverse sm:px-6">
+              <div className="flex justify-center w-full px-3 pt-4 pb-8">
                 <button
                   type="button"
                   onClick={onSubmit}
-                  className="inline-flex justify-center w-full px-4 py-2 text-base font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 sm:ml-3 sm:w-auto sm:text-sm"
+                  className="w-80 h-12 text-base font-normal rounded-full btn btn-primary bg-green-default text-brown-default font-kanit"
                 >
                   บันทึก
-                </button>
-                <button
-                  type="button"
-                  onClick={onCancel}
-                  className="inline-flex justify-center w-full px-4 py-2 mt-3 text-base font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-                >
-                  Cancel
                 </button>
               </div>
             </div>
