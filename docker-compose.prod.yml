@@ -7,8 +7,8 @@ services:
     ports:
       - "1337:1337"
     volumes:
-      - ./api_data_upload:/app/public/uploads
-      - ./api_data_tmp:/app/.tmp
+      - ./api_data_upload:/opt/app/public/uploads
+      - ./api_data_tmp:/opt/app/.tmp
   nextjs:
     build:
       context: ./frontend-app
