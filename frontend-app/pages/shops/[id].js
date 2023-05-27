@@ -1,10 +1,9 @@
 import _ from 'lodash';
-import React, { useState } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React, { useState, useMemo } from 'react';
 import shopService from '@/services/shop';
 import reviewTagService from '@/services/reviewTag';
 import Modal from '@/components/modal/modal';
+import ContactModal from '@/components/modal/ContactModal';
 import Review from '@/components/review';
 import OpeTimeDetail from '@/components/detail/OpeTimeDetail';
 import PageLayout from '@/components/PageLayout';
@@ -23,6 +22,36 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ShopPresenter = ({ shop, reviews, reviewTags }) => {
   const [modal, setModal] = useState(false);
+  const [additionContactModal, setAdditionContactModal] = useState(false);
+  const [clickedContactIcon, setClickedContactIcon] = useState('');
+
+  const { id } = shop;
+  const {
+    name,
+    address_detail,
+    latitude,
+    longitude,
+    shop_images,
+    shop_repair_tag_links,
+    contacts,
+    payments,
+    google_map_url
+  } = shop.attributes;
+
+  const phones = contacts.phone?.length > 0 ? contacts.phone : null;
+
+  const additionalContact = useMemo(() => {
+    let res = {};
+    if (clickedContactIcon === 'instagram') {
+      res.data = contacts.instagram?.length > 0 ? contacts.instagram : null;
+    } else if (clickedContactIcon === 'line') {
+      res.data = contacts.line?.length > 0 ? contacts.line : null;
+    } else {
+      res.data = contacts.facebook?.length > 0 ? contacts.facebook : null;
+    }
+    res.name = clickedContactIcon;
+    return res;
+  }, [contacts, clickedContactIcon]);
 
   const onReview = () => {
     setModal(true);
@@ -33,32 +62,6 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
       // FIXME: get updated reviews
     }
   };
-
-  const { id } = shop;
-  const {
-    name,
-    address_detail,
-    latitude,
-    longitude,
-    shop_images,
-    shop_repair_tag_links,
-    // contacts,
-    payments,
-    google_map_url
-  } = shop.attributes;
-
-  const contacts = {
-    data: {
-      phone: ['0867722033', '0806187311'],
-      line: ['@benjamastailor', ['order1991']],
-      facebook: ['https://www.facebook.com/BenjamasTailor/'],
-      email: ['benjamas2519@gmail.com'],
-      instagram: ['https://www.instagram.com/benjamastailor/'],
-      webpage: ['http://www.benjamastailor.com/']
-    }
-  };
-
-  const phones = contacts.data.phone?.length > 0 ? contacts.data.phone : null;
 
   return (
     <PageLayout>
@@ -117,7 +120,13 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
                   : null}
               </div>
             </div>
-            <Contact contact={contacts.data} />
+            <Contact
+              contact={contacts}
+              onIconClick={(clickedIcon) => {
+                setAdditionContactModal(true);
+                setClickedContactIcon(clickedIcon);
+              }}
+            />
             <div className="py-4">
               <p className="text-xs font-bold text-brown-default font-kanit">
                 วิธีชำระค่าบริการ:
@@ -173,6 +182,15 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
       {modal && (
         <Modal shopId={id} reviewTags={reviewTags} setModal={modalClick} />
       )}
+      {additionContactModal ? (
+        <ContactModal
+          contact={additionalContact}
+          onClose={() => {
+            setAdditionContactModal(false);
+            setClickedContactIcon('');
+          }}
+        />
+      ) : null}
     </PageLayout>
   );
 };
