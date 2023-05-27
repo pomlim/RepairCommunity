@@ -146,8 +146,6 @@ const ShopsPage = ({ shops, repairTags, error }) => {
             ปรับรูปแบบการซ่อม
           </button>
         </div>
-        <input type="checkbox" className=" outline-green-default" />
-        Customizedss
         <MapList initialLocation={currentLoacaiton()} shops={totalShops} />
         <div className="my-4 text-xs font-medium text-brick font-kanit">
           ผลการค้นหา {totalShops.length} ร้านซ่อม

@@ -2,15 +2,15 @@ import React from 'react';
 
 const TextInput = ({ title, placeholder, review, setReview }) => {
   return (
-    <label className="block">
+    <label className="block pb-3">
       <span
-        className="block text-sm font-medium text-slate-700"
+        className="block pb-2 text-xs font-medium text-slate-700"
         htmlFor="comment"
       >
         {title}
       </span>
       <input
-        className="block w-full py-2 pr-3 bg-white border rounded-md shadow-sm placeholder:italic placeholder:text-slate-400 border-slate-300 pl-9 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+        className="w-full py-2 pl-3 pr-10 text-sm font-normal border-b-2 rounded-sm placeholder-brown-light bg-butter-light drop-shadow-md border-brown-light focus:outline-none focus:border-brown-default text-brown-default font-kanit"
         placeholder={placeholder}
         type="text"
         id="comment"

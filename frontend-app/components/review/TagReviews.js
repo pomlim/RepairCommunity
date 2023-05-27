@@ -6,24 +6,19 @@ const TagReviews = ({ reviewTags, handleTagClicked }) => {
   };
 
   return (
-    <ul className="reviewTag-list">
+    <ul className="reviewTag-list flex flex-row flex-wrap">
       {reviewTags.map((tag, index) => {
         return (
-          <li key={index}>
-            <div className="toppings-list-item">
-              <div className="left-section">
-                <input
-                  type="checkbox"
-                  id={`custom-checkbox-${index}`}
-                  name={tag.attributes.name}
-                  value={tag.id}
-                  checked={tag.selected}
-                  onChange={checkValue}
-                />
-                <label> {tag.attributes.name}</label>
-              </div>
-            </div>
-          </li>
+          <div
+            key={index}
+            className={`mr-3 mt-3 px-1 border-[1px] border-primary-content rounded ${
+              tag.selected ? 'text-brown-mid' : 'text-brown-light'
+            } text-base font-kanit font-normal flex flex-row flex-wrap`}
+          >
+            <button value={tag.id} checked={tag.selected} onClick={checkValue}>
+              {tag.attributes.name}
+            </button>
+          </div>
         );
       })}
     </ul>
