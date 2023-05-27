@@ -24,6 +24,7 @@ const Contact = ({ contact, onIconClick }) => {
       </p>
       <div className="flex justify-between mt-2 ">
         {contactsMethods.map((contactMethod, index) => {
+          if (!contactMethod.data) return null;
           const icon =
             contactMethod.name === 'instagram'
               ? faInstagram
