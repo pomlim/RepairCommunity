@@ -168,49 +168,50 @@ const ShopsPage = ({ shops, repairTags, error }) => {
                   key={id}
                   className="p-4 drop-shadow-md bg-butter-light rounded-3xl grow"
                 >
-                  <a
-                    href={url}
-                    className={`text-xl ${
-                      OpeFlag ? 'text-brick' : 'text-brown-light'
-                    } font-medium font-kanit`}
-                  >
-                    {shop.attributes.name}
-                  </a>
-                  <div
-                    className={`text-xs ${
-                      OpeFlag ? 'text-brown-mid' : 'text-brown-light'
-                    } font-thin font-kanit`}
-                  >
-                    <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
-                    ห่างจากฉัน {distance} กม
-                  </div>
-                  <div
-                    className={`text-base ${
-                      OpeFlag ? 'text-brown-default' : 'text-brown-light'
-                    } font-normal font-kanit`}
-                  >
-                    <div>{shop.attributes.address_detail}</div>
-                  </div>
-                  {opeTime ? (
+                  <a href={url}>
+                    <div
+                      className={`text-xl ${
+                        OpeFlag ? 'text-brick' : 'text-brown-light'
+                      } font-medium font-kanit`}
+                    >
+                      {shop.attributes.name}
+                    </div>
+                    <div
+                      className={`text-xs ${
+                        OpeFlag ? 'text-brown-mid' : 'text-brown-light'
+                      } font-thin font-kanit`}
+                    >
+                      <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
+                      ห่างจากฉัน {distance} กม
+                    </div>
                     <div
                       className={`text-base ${
                         OpeFlag ? 'text-brown-default' : 'text-brown-light'
                       } font-normal font-kanit`}
                     >
-                      <FontAwesomeIcon icon={faClock} className="mr-2" />
-                      <span>{opeTime}</span>
+                      <div>{shop.attributes.address_detail}</div>
                     </div>
-                  ) : null}
-
-                  <div
-                    className={`text-xs ${
-                      OpeFlag ? 'text-brick' : 'text-brown-light'
-                    } font-light font-kanit`}
-                  >
-                    {shop.attributes.reviews ? (
-                      <ReviewSummary reviews={shop.attributes.reviews} />
+                    {opeTime ? (
+                      <div
+                        className={`text-base ${
+                          OpeFlag ? 'text-brown-default' : 'text-brown-light'
+                        } font-normal font-kanit`}
+                      >
+                        <FontAwesomeIcon icon={faClock} className="mr-2" />
+                        <span>{opeTime}</span>
+                      </div>
                     ) : null}
-                  </div>
+
+                    <div
+                      className={`text-xs ${
+                        OpeFlag ? 'text-brick' : 'text-brown-light'
+                      } font-light font-kanit`}
+                    >
+                      {shop.attributes.reviews ? (
+                        <ReviewSummary reviews={shop.attributes.reviews} />
+                      ) : null}
+                    </div>
+                  </a>
                 </div>
               );
             })}
