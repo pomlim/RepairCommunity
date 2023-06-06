@@ -6,7 +6,7 @@ import Reviv_logo from '@/public/Reviv_logo_landing.png';
 const LandingPage = ({}) => {
   const url = `/shops`;
   return (
-    <div className="w-full h-full p-4 bg-butter-default ">
+    <div className="w-full p-4 bg-butter-default ">
       <div className="pt-20 p-4 text-center">
         <div>
           <Image src={Reviv_logo} width={40} height={60} />

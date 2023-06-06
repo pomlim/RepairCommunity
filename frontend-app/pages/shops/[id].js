@@ -65,7 +65,7 @@ const ShopPresenter = ({ shop, reviews, reviewTags }) => {
 
   return (
     <PageLayout>
-      <div className="w-full h-full py-4 bg-butter-default ">
+      <div className="w-full py-4 bg-butter-default ">
         <p className="mx-4 text-2xl font-medium text-brick font-kanit">
           {name}
         </p>
