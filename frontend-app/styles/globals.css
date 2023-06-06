@@ -22,3 +22,14 @@
     opacity: 1;
   }
 }
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#__next {
+  margin: 0;
+  height: 100%;
+}

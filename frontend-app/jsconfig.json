@@ -5,6 +5,7 @@
       "@/components/*": ["components/*"],
       "@/config/*": ["config/*"],
       "@/services/*": ["services/*"],
+      "@/public/*": ["public/*"],
     }
   }
 }
