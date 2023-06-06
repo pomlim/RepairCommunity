@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import Landing_img from '@/public/landing-img.png';
 import Reviv_logo from '@/public/Reviv_logo_landing.png';
 
@@ -21,14 +22,14 @@ const LandingPage = ({}) => {
           <p>หรือใกล้ที่ทำงานก็หาได้ที่ Repair Market</p>
         </div>
         <div className="flex justify-center w-full pt-40 pb-8">
-          <a href="/shops">
+          <Link href="/shops">
             <button
               type="button"
               className="h-12 text-base font-normal rounded-full w-80 btn btn-primary bg-green-default text-brown-default font-kanit"
             >
               เริ่มเลย
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
