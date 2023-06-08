@@ -1,0 +1,1252 @@
+[
+  {
+    "id": 51,
+    "name": "ร้านซ่อมเสื้อผ้า ท่าเรือ มศว. ประสานมิตร",
+    "province": "กรุงเทพ",
+    "district": "",
+    "sub_district": "",
+    "address_detail": "เพชรบุรี38 ",
+    "landmark": "เพชรบุรี38 สุดซอยติดสะพานข้ามเข้า มศว.",
+    "operators": { "name": "ช่างข้าว" },
+    "latitude": 13.7474664,
+    "longitude": 100.5660595,
+    "contacts": { "phone": ["0932147259"], "line": ["+66932147259"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/89DSXJDqqv6gn383A",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "ถ้างานด่วนเพิ่มค่าบริการ",
+        "operator_experience": "จบการตัดเย็บโดยตรง"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "ร้านซ่อมเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "วัฒนา",
+    "sub_district": "คลองตันเหนือ",
+    "address_detail": "999/9 ตึก2 ชั้น1 ปรีดีพนมยงค์39 ",
+    "landmark": "เข้ามาในซอยผ่านป้อม รปภ. เจอร้านเลย",
+    "operators": { "name": "สุวรรณ" },
+    "latitude": 13.7323747,
+    "longitude": 100.596347,
+    "contacts": { "phone": ["0858328754"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2007-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/aiDYxCr87AgQe9Nq6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "",
+        "operator_experience": "ทำงานร้านตัดเย็บมาก่อน"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "name": "ลุงสัม ซ่อมผ้า",
+    "province": "กรุงเทพ",
+    "district": "วัฒนา",
+    "sub_district": "พระโขนงเหนือ",
+    "address_detail": "สุขุมวิท ",
+    "landmark": "ตรงข้ามร้านโดมิโนพิซซ่า ถ.สุขุมวิท ติดถนนใหญ่",
+    "operators": { "name": "ลุงสัม" },
+    "latitude": 13.72577,
+    "longitude": 100.5848917,
+    "contacts": { "phone": ["0870012909"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/SCTx695V8hVjR6Pt6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "คูณ ซ่อมผ้า",
+    "province": "กรุงเทพ",
+    "district": "วัฒนา",
+    "sub_district": "พระโขนงเหนือ",
+    "address_detail": "34/2 สุขุมวิท ",
+    "landmark": "ติดถนนใหญ่",
+    "operators": { "name": "คูณ" },
+    "latitude": 13.7155867,
+    "longitude": 100.5952246,
+    "contacts": { "phone": ["0993839568"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/7gL3C8KvpuMSsbQX7",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ถ้าช่างทำไม่เนียบแก้ให้ฟรี",
+        "operator_experience": "เรียนเย็บจากการทำงานในโรงงาน"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "ร้านสมานอ่อนนุช17",
+    "province": "กรุงเทพ",
+    "district": "สวนหลวง",
+    "sub_district": "สวนหลวง",
+    "address_detail": "อ่อนนุช17 ",
+    "landmark": "ติดถนนใหญ่",
+    "operators": { "name": "สมาน" },
+    "latitude": 13.7120349,
+    "longitude": 100.6099626,
+    "contacts": { "phone": ["0894239765"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/PyLn97khSatxpr9f6",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "name": "ลุงบัว",
+    "province": "กรุงเทพ",
+    "district": "สวนหลวง",
+    "sub_district": "สวนหลวง",
+    "address_detail": "303/39(166) ",
+    "landmark": "ริมถนนน(ทางโค้งพอดี)",
+    "operators": { "name": "ลุงบัว" },
+    "latitude": 13.7106561,
+    "longitude": 100.609065,
+    "contacts": { "phone": ["0927599392"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/2RaCQU6phMh51ioi7",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "name": "ซ่อมเสื้อผ้า(ลุงอ้วน)",
+    "province": "กรุงเทพ",
+    "district": "",
+    "sub_district": "พระโขนงเหนือ",
+    "address_detail": "115/4 ",
+    "landmark": "อยู่ในซอย",
+    "operators": { "name": "ช่างอ้วน" },
+    "latitude": 13.714058,
+    "longitude": 100.5972095,
+    "contacts": {},
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/3vLR4aiExa2CrpKg9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ต้องนำผ้ามาให้ช่างดูก่อน",
+        "operator_experience": "เริ่มต้นจากการขายผ้ามาก่อนและในสมัยก่อนรายได้ดี จึงศึกษาเรียนรูปการเย็บผ้าด้วยตนเอง จนได้เริ่มเปิดร้านเล็กๆและขยายจนถึงปัจจุบัน"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "name": "ร้านลุงเล็ก ซ่อม แก้ทรงเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "วัฒนา",
+    "sub_district": "พระโขนงเหนือ",
+    "address_detail": "สุขุมวิท71 ",
+    "landmark": "ติดถนนใหญ่",
+    "operators": { "name": "ช่างเล็ก" },
+    "latitude": 13.7213236,
+    "longitude": 100.595819,
+    "contacts": { "phone": ["0637315798"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/8bJQku55Btri3eNEA",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "name": "ศักดิ์คอลเลคชั่น",
+    "province": "กรุงเทพ",
+    "district": "สวนหลวง",
+    "sub_district": "สวนหลวง",
+    "address_detail": "47/660 ศิริพจน์ ",
+    "landmark": "ตรงข้ามเซเว่น ",
+    "operators": { "name": "ช่างทุเรียน" },
+    "latitude": 13.7072242,
+    "longitude": 100.607573,
+    "contacts": { "phone": ["0843210086"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/mdDuSanfxm62u51D9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ไม่ทำกระเป๋าเพราะหาเนื่อผ้ายาก",
+        "operator_experience": "มีประสบการณ์ในการทำงานร้านผ้ามาก่อน"
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "name": "ย่าแก้ว(ซ่อมผ้า)",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "",
+    "landmark": "อยู่ในซอย",
+    "operators": { "name": "" },
+    "latitude": 13.6969686,
+    "longitude": 100.5956526,
+    "contacts": { "phone": ["0898882454"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/gfVaknsquaDWiMbf8",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ประกันภายใน2วัน",
+        "operator_experience": "เรียนช่างฝีมือตัดเย็บ และเก็บประสบการณ์แล้วจึงมาเปิดร้านเอง"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "พี่ตุ้ม ซ่อมเสื้อผ้า เปลี่ยนทรง",
+    "province": "กรุงเทพ",
+    "district": "วัฒนา",
+    "sub_district": "คลองตันเหนือ",
+    "address_detail": "ปรีดีพนมยงค์42 ",
+    "landmark": "ติดถนนใหญ่",
+    "operators": { "name": "ตุ้ม" },
+    "latitude": 13.7339,
+    "longitude": 100.6006582,
+    "contacts": { "phone": ["0648916251"], "line": ["s0648916251"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2016-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/ta7Zr5nKQcGa1w6p6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ดูแลจนกว่าจะพอใจ",
+        "operator_experience": "เรียนจบสายตรงของวิชาชีพ และมีประสบการณ์การทำงานอยู่แล้ว"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "ป้าใหญ่ ซ่อมผ้า แก้ไขทรง",
+    "province": "กรุงเทพ",
+    "district": "วัฒนา",
+    "sub_district": "พระโขนงเหนือ",
+    "address_detail": "",
+    "landmark": "ใกล้ Big C Extra อ่อนนุช ติดถนนใหญ่",
+    "operators": { "name": "ป้าใหญ่" },
+    "latitude": 13.7089121,
+    "longitude": 100.5999145,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/YoExTax64QUrPVyd9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "ป้าแจ้ ซ่อมแก้ไขทรงเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "สวนหลวง",
+    "sub_district": "สวนหลวง",
+    "address_detail": "อ่อนนุช 44 ",
+    "landmark": "ตรงข้ามซอยอ่อนนุช44/2 ติดถนนใหญ่",
+    "operators": { "name": "ป้าแจ้" },
+    "latitude": 13.7102318,
+    "longitude": 100.6311765,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "1983-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/1SLKZD4QuZbvoQRm8",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ไม่มีประกัน งานทุกชิ้นต้องให้ช่างประเมินหน้างานเท่านั้น",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "แม่อารีย์ รับตัดเสื้อ แก้ทรง",
+    "province": "กรุงเทพ",
+    "district": "สวนหลวง",
+    "sub_district": "สวนหลวง",
+    "address_detail": "1267 อ่อนนุุช 46 ",
+    "landmark": "อยู่ในซอย อ่อนนุช 44",
+    "operators": { "name": "แม่อารีย์" },
+    "latitude": 13.7025688,
+    "longitude": 100.6376823,
+    "contacts": { "phone": ["0825082359"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "1997-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/p1Tr2Ru5F5J9Liys7",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "รับประกันภายใน2วัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Katai DIY รับตัดเสื้อ ซ่อมเสื้อผ้า เปลี่ยนซิป แก้ทรง",
+    "province": "กรุงเทพ",
+    "district": "สวนหลวง",
+    "sub_district": "สวนหลวง",
+    "address_detail": "145 อ่อนนุช46 ",
+    "landmark": "อยู่ในซอย อ่อนนุช 46",
+    "operators": { "name": "กระต่าย" },
+    "latitude": 13.7084069,
+    "longitude": 100.6346345,
+    "contacts": { "phone": ["0957216462"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/kUFtSJjfhqpq5V1NA",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "รับประกันภายใน2วัน",
+        "operator_experience": "ฝึกฝนด้วยตนเองและทางครอบครัวสอนให้"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "เบสท์กะบูม",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "พึ่งมี 50/38 ",
+    "landmark": "อยู่ในซอย พึ่งมี  50/38",
+    "operators": { "name": "" },
+    "latitude": 13.7012975,
+    "longitude": 100.6299114,
+    "contacts": { "phone": ["0828789309"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/Q5QLH9yXRwNmrM999",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "ถ้าผิดพลาดจากทางร้าน รับผิดชอบทั้งหมด",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "ป้าอ้อ รับซ่อมเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "พึ่งมี 50/34 ",
+    "landmark": "อยู่ในซอย พึ่งมี 50/34",
+    "operators": { "name": "ป้าอ้อ" },
+    "latitude": 13.7005939,
+    "longitude": 100.629385,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/f27B8knJCsVEWtd99",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "รับเปลี่ยนทรงเสื้อผ้า(ป้ายอด)",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "พึ่งมี 50/32 ",
+    "landmark": "อยู่ในซอย พึ่งมี 50/32",
+    "operators": { "name": "ป้ายอด" },
+    "latitude": 13.7011793,
+    "longitude": 100.6289141,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/noE8PH3vfCNwpaiW6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "เรียนรู้จากตอนทำงานกับโรงงานตัดเย็บ5ปี แล้วออกมาทำร้านเอง"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "ร้านป้านงค์ซ่อมเปลี่ยนซิป แก้ทรง",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "ซอยพึ่งมี52 ",
+    "landmark": "อยู่ในซอย พึ่งมี ",
+    "operators": { "name": "ป้านงค์" },
+    "latitude": 13.7018006,
+    "longitude": 100.6238185,
+    "contacts": { "phone": ["0856722163"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/oAfTcde1aQo4bBhH7",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "ป้าหน่อง",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "419/46 ซอยพึ่งมี52 ",
+    "landmark": "อยู่ในซอย พึ่งมี ",
+    "operators": { "name": "ป้าหน่อง" },
+    "latitude": 13.7018592,
+    "longitude": 100.622176,
+    "contacts": { "phone": ["0622496591"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/eHhxkNDiQEvRpEgD6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "เรียนรู้โดยตรงจากพ่อแม่"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "พี่น้อย แก้ทรงเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "246/349 ซอยพึ่งมี50 ",
+    "landmark": "อยู่ในซอย พึ่งมี ",
+    "operators": { "name": "พี่น้อย" },
+    "latitude": 13.7019647,
+    "longitude": 100.621584,
+    "contacts": { "phone": ["0972023128"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/jeMBTHieXgiZERAd7",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "เรียนรู้โดยตรงจากแม่"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "รับตัดเสื้อเปลี่ยนซิป",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "ซอยพึ่งมี50/10 ",
+    "landmark": "อยู่ในซอย พึ่งมี ",
+    "operators": { "name": "" },
+    "latitude": 13.7019606,
+    "longitude": 100.6215375,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/fUuJ5HC6q3dBRqAa8",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "ผิงผิง ซ่อมผ้า",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "3037/11 สุขุมวิท101 ",
+    "landmark": "ติด BTS บางจาก ติดป้ารถเมล์",
+    "operators": { "name": "ผิงผิง" },
+    "latitude": 13.6907935,
+    "longitude": 100.6085221,
+    "contacts": { "phone": ["0613184366"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/9XnNSpU7kRCre9Aw9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "เรียนรู้จากตอนทำงานกับโรงงานตัดเย็บแล้วออกมาทำร้านเอง"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "ร้านป้าหน้าร้านห้างทองอุดมสิน",
+    "province": "กรุงเทพ",
+    "district": "บางนา",
+    "sub_district": "บางนา",
+    "address_detail": "สุขุมวิท103 ",
+    "landmark": "เข้ามาอยู่สุดซอย",
+    "operators": { "name": "" },
+    "latitude": 13.6782683,
+    "longitude": 100.6292564,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/NTwP2NW32BTR6LkWA",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "ร้านตัดเย็บเสื้อผ้าสตรี หนึ่ง",
+    "province": "กรุงเทพ",
+    "district": "บางนา",
+    "sub_district": "บางนา",
+    "address_detail": "สุขุมวิท103 ",
+    "landmark": "อยู่สุดซอยร้านอยู่ซ้ายมือ",
+    "operators": { "name": "หนึ่ง" },
+    "latitude": 13.6782683,
+    "longitude": 100.6292564,
+    "contacts": { "phone": ["0814594397"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/dDQfGR9UBwhtGSx6A",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "เรียนจบสายตรงของวิชาชีพ และมีประสบการณ์การทำงานอยู่แล้ว"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "ป้ารัตน์บริการซ่อมผ้าแก้ทรง",
+    "province": "กรุงเทพ",
+    "district": "บางนา",
+    "sub_district": "บางนา",
+    "address_detail": "103 สุขุมวิท103 ",
+    "landmark": "อยู่ในตลาดอุดมสุข",
+    "operators": { "name": "ป้ารันต์" },
+    "latitude": 13.6801588,
+    "longitude": 100.6099458,
+    "contacts": { "phone": ["0645844370"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/NU9mZMW4MpVAYZH48",
+    "notes": [
+      {
+        "operting_time": "หยุดวันขัตฤกษ์",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Supimporn รับซ่อมแซมเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "บางนา",
+    "sub_district": "บางนา",
+    "address_detail": "65/6 สุขุมวิท103/2 ",
+    "landmark": "อยู่ในตลาดอุดมสุข",
+    "operators": { "name": "สุพิมพ์พร" },
+    "latitude": 13.6791565,
+    "longitude": 100.6103903,
+    "contacts": { "phone": ["0807445517"], "line": ["Supimporn"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/2uoT4ZCAregCdHey9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "เรียนจบสายตรงของวิชาชีพ และจึงมาเปิดร้าน"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "ร้านซ่อมผ้ากรรณิกร",
+    "province": "กรุงเทพ",
+    "district": "บางนา",
+    "sub_district": "บางนา",
+    "address_detail": "1010/1 อุดมสุข26 แยก29 ",
+    "landmark": "อยู่ในซอย อุดมสุข26 แยก29",
+    "operators": { "name": "ปุ๋ย" },
+    "latitude": 13.6761578,
+    "longitude": 100.6217242,
+    "contacts": { "phone": ["0817781675"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/PtqgYT4gxx3Ku9fN9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "เรียนจบสายตรงของวิชาชีพ และมีประสบการณ์การทำงานอยู่แล้ว"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "ป้าต๋อย เปลี่ยนซิป แก้ทรง",
+    "province": "กรุงเทพ",
+    "district": "บางนา",
+    "sub_district": "บางนา",
+    "address_detail": "อุดมสุข26 แยก39 ",
+    "landmark": "อยู่ในซอย อุดมสุข26 แยก39",
+    "operators": { "name": "ป้าต๋อย" },
+    "latitude": 13.6743238,
+    "longitude": 100.6211456,
+    "contacts": { "phone": ["0895356581"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/NarVGcBFUgz86hnH6",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "ถ้าผิดพลาดจากทางร้าน รับผิดชอบทั้งหมด",
+        "operator_experience": "เคยทำงานตัดเย็บมาก่อน และจึงมาเปิดร้าน"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "ลัดดา ซ่อมผ้า(เฉลิมพระเกียรติอุดมสุข ศรีนครินทร์)",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "หนองบอน",
+    "address_detail": "นิรันดร์4ชั้น1 เฉลิมพระเกียรติ23 ",
+    "landmark": "อยู่ล็อคแรก",
+    "operators": { "name": "ลัดดา" },
+    "latitude": 13.6780409,
+    "longitude": 100.6575818,
+    "contacts": { "phone": ["0850566139"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/umm8Ya4d2FSqKtBq6",
+    "notes": [
+      {
+        "operting_time": "หยุดวันขัตฤกษ์",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "เคยทำงานตัดเย็บมาก่อน และจึงมาเปิดร้าน"
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "name": "ห้องเสื้อสาคร",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "หนองบอน",
+    "address_detail": "1/22 เฉลิมพระเกียรติ ร.9 ",
+    "landmark": "ติดศาลท้าวชัยมงคลมหาสิทธิโชค",
+    "operators": { "name": "สาคร" },
+    "latitude": 13.674906,
+    "longitude": 100.6630454,
+    "contacts": { "phone": ["0891032065"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/MBkBxeb3wE8pm1Xt7",
+    "notes": [
+      {
+        "operting_time": "หยุดวันขัตฤกษ์",
+        "payment": "",
+        "condition": "ถ้าผิดพลาดจากทางร้าน รับผิดชอบทั้งหมด",
+        "operator_experience": "ฝึกฝนด้วยตนเองและทางครอบครัวสอนให้"
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "name": "ป้าผ้อม แก้ไขเสื้อ",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "หนองบอน",
+    "address_detail": "61/7 เฉลิมพระเกียรติ ร.9 ซอย14 แยก16 ",
+    "landmark": "อยู่สุดซอย",
+    "operators": { "name": "ป้าผ้อม" },
+    "latitude": 13.6747529,
+    "longitude": 100.6627224,
+    "contacts": {},
+    "payments": { "payments": ["cash"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/A7YtjpAhP3yPyjKRA",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ต้องนำชิ้นงานมาให้ดูหน้าร้านก่อน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "name": "เปลี่ยนซิป แก้ทรง ตัดขา ปะกางเกง",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "หนองบอน",
+    "address_detail": "2 เฉลิมพระเกียรติ ร.9 ซอย20 ",
+    "landmark": "ตั้งอยู่ติดถนนใหญ่ หน้าร้านตัดผมชาย",
+    "operators": { "name": "พี่พลอย" },
+    "latitude": 13.6766066,
+    "longitude": 100.6622324,
+    "contacts": { "phone": ["0979248475"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/13xjoTVpPTT5Q3MV7",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "จบสายแฟชั่นโดยตรง เก็บเกี่ยวประสบการณ์มาเรื่อยๆ เพราะความชื่นชอบจนเกิดเป็นอาชีพ"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "ซ่อมผ้า รุ่งนภา",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "4/11 รามคำแหง2 ซอย23 ",
+    "landmark": "อยู่ใต้ตึก",
+    "operators": { "name": "รุ่งนภา" },
+    "latitude": 13.670955,
+    "longitude": 100.6814095,
+    "contacts": { "phone": ["0636791218"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/mcUimm2EePrjYNaZ9",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน อาจปิดร้านกลับก่อนเวลา",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "เรียนงานตัดเย็บมากศูนย์ฝึก สั่งสมประสบการณ์ มาเรื่อยๆจนหันมาเปิดร้านของตัวเอง"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "บ้านตัดเย็บ",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "5/11 รามคำแหง2 ซอย23 แยก5 ",
+    "landmark": "อยู่ใต้ตึก",
+    "operators": { "name": "ลูกจ้าง" },
+    "latitude": 13.670955,
+    "longitude": 100.6814095,
+    "contacts": { "phone": ["0824506116"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2018-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/ka7Me9we1PQqYPCq6",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "ป้าพิมพ์ แก้ไขทรงเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "7/9 รามคำแหง2 ซอย23 แยก5 ",
+    "landmark": "อยู่ใต้ตึก",
+    "operators": { "name": "ป้าพิมพ์" },
+    "latitude": 13.6709531,
+    "longitude": 100.681409,
+    "contacts": { "phone": ["0887891571"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/7mdVR99E6av6GVnHA",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "ลุงชิด ซ่อมผ้า",
+    "province": "กรุงเทพ",
+    "district": "พระโขนง",
+    "sub_district": "บางจาก",
+    "address_detail": "37/11 สุขุมวิท64/1 ",
+    "landmark": "เข้าไปในซอย อยู่ซ้ายมือ ขายน้ำส้มด้วย",
+    "operators": { "name": "ลุงชิด" },
+    "latitude": 13.685875,
+    "longitude": 100.6080955,
+    "contacts": { "phone": ["0922483870"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "1992-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/DyZLra6Gi2wY5eAJ9",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ประกันภายใน2วัน",
+        "operator_experience": "เรียนรู้กับภรรยา แล้วมาเปิดร้านด้วยกัน"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "วรภัทร ตัดเย็บเสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A014 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "ภัทร" },
+    "latitude": 13.6711346,
+    "longitude": 100.6827413,
+    "contacts": { "phone": ["0992303735"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/v3qvzmQskSdP6hTP6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "",
+        "operator_experience": "เป็็นสาวโรงงานตัดเย็บมาก่อนแล้วลาออกมาเปิดร้านเองเป็นหลาย10ปี"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "โอสถานนท์",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A053 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "ทม" },
+    "latitude": 13.6709968,
+    "longitude": 100.6827467,
+    "contacts": { "phone": ["0851468716"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/iSBRXfnWBVmn5fHTA",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ประกันภายใน2วัน",
+        "operator_experience": "ฝึกฝนด้วยตนเองและทางครอบครัวสอนให้"
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "name": "ร้านศิริลักษณ์ รับตัดเสื้อ",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A752 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "ลัก" },
+    "latitude": 13.6657249,
+    "longitude": 100.6827192,
+    "contacts": { "phone": ["0895169224"] },
+    "payments": { "payments": ["cash"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/Gy5pcf7VSE2qxfkEA",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน อาจปิดร้านกลับก่อนเวลา",
+        "payment": "",
+        "condition": "ประกันภายใน2วัน",
+        "operator_experience": "ฝึกฝนด้วยตนเองและทางครอบครัวสอนให้"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "ร้านภาวดี ซิตี้",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A837 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "ภา" },
+    "latitude": 13.6707769,
+    "longitude": 100.6826769,
+    "contacts": { "phone": ["0859144499"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2010-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/4ZQT8bidjsbF81tHA",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "ร้านป้าพร งานซ่อมเสื้อผ้าทุกชนิด",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A058 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "ป้าพร" },
+    "latitude": 13.6710669,
+    "longitude": 100.6827721,
+    "contacts": { "phone": ["0645361696"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/YoZjw9FXaEXNwdQk8",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "name": "ร้านเจ๊สายสุดา รามฯ 2",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A055 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "เจ๊ดา" },
+    "latitude": 13.6687168,
+    "longitude": 100.6826256,
+    "contacts": { "phone": ["0818135156"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/5zHTB8Ei9LGPxQ5bA",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "Jira รับซ่อม แก้ทรง เสื้อผ้า",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A059 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "อ้อย" },
+    "latitude": 13.6687168,
+    "longitude": 100.6826256,
+    "contacts": { "phone": ["0636244429"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2007-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/jzhvZPdR32NgR5hC7",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเองและถามลูกค้าจนมั่นใจก่อนแล้วลงมือทำ ไม่มีประกัน",
+        "operator_experience": "ทำงานโรงงานเย็บมาก่อนแล้วมาเปิดร้านเอง"
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "name": "ร้านพิมพ์กมล",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A058 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "กมล" },
+    "latitude": 13.6710149,
+    "longitude": 100.6827536,
+    "contacts": { "phone": ["0844565449"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/o97FP1AT9Sy8prsD7",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "ร้านศร ซ่อมด่วน รับตัดชุดทุกชนิด",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A056 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "ศร" },
+    "latitude": 13.6687168,
+    "longitude": 100.6826256,
+    "contacts": { "phone": ["0636476289"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2002-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/X6rkgnuxreFRkt3i8",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเองและถามลูกค้าจนมั่นใจก่อนแล้วลงมือทำ ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "name": "ร้านถังเงิน",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A060 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "" },
+    "latitude": 13.6657249,
+    "longitude": 100.6827192,
+    "contacts": { "phone": ["0626543856"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2007-01-01",
+    "fitting_room": 1,
+    "google_map_url": "https://goo.gl/maps/cz6rjJ91hxkxPAgN6",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "ร้านบัว",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A060 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "บัว" },
+    "latitude": 13.6708745,
+    "longitude": 100.6831138,
+    "contacts": { "phone": ["0988254505"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2017-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/GP4EVw9c88k8fQg4A",
+    "notes": [
+      {
+        "operting_time": "",
+        "payment": "",
+        "condition": "มั่นใจในฝีมือตนเอง ไม่มีประกัน",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "ร้านพิมดาว ซ่อมและตัดเสื้อ",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A029 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "พิมดาว" },
+    "latitude": 13.6713203,
+    "longitude": 100.6825839,
+    "contacts": { "phone": ["0971986856"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2007-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/UwgrUCQGMGNjRL487",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "ปรับปรุงจนกว่าลูกค้าจะพอใจ",
+        "operator_experience": "ฝึกฝนด้วยตนเอง"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "ร้านปักเสื้อนวลจันทร์ ราม2",
+    "province": "กรุงเทพ",
+    "district": "ประเวศ",
+    "sub_district": "ดอกไม้",
+    "address_detail": "A034 รามคำแหง2 ",
+    "landmark": "ภายในตลาด NumberOne Market",
+    "operators": { "name": "พี่นวล" },
+    "latitude": 13.6713834,
+    "longitude": 100.6827376,
+    "contacts": { "phone": ["0901040579"] },
+    "payments": { "payments": ["cash", "online"] },
+    "establish_date": "2012-01-01",
+    "fitting_room": 0,
+    "google_map_url": "https://goo.gl/maps/VHwz1f91PAipnJnAA",
+    "notes": [
+      {
+        "operting_time": "โทรมาถามก่อน",
+        "payment": "",
+        "condition": "ถ้าผิดพลาดจากทางร้าน รับผิดชอบทั้งหมด",
+        "operator_experience": "เรียนจบสายตรงของวิชาชีพ และมีประสบการณ์การทำงานอยู่แล้วจึงมาเปิดร้าน"
+      }
+    ]
+  }
+]

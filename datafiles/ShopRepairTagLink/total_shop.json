@@ -1,0 +1,2431 @@
+[
+  {
+    "shop": 51,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 51,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 51,
+    "repair_tag": 3,
+    "min_price": 50,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 51,
+    "repair_tag": 4,
+    "min_price": 60,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 51,
+    "repair_tag": 5,
+    "min_price": 20,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 51,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 51,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": "นำผ้ามาเองทำได้เลย แต่ถ้าไม่มีต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 51,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": "นำผ้ามาเองทำได้เลย แต่ถ้าไม่มีต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 52,
+    "repair_tag": 1,
+    "min_price": 70,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 52,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 52,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 52,
+    "repair_tag": 4,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 52,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 52,
+    "repair_tag": 6,
+    "min_price": 50,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 52,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 52,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 53,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 53,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 53,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 53,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 53,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 53,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 53,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ไม่รับทั้งหมดต้องพิจารณางานก่อน"
+  },
+  {
+    "shop": 54,
+    "repair_tag": 1,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 54,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": null,
+    "note": "บางงานฟรี"
+  },
+  {
+    "shop": 54,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 54,
+    "repair_tag": 4,
+    "min_price": 120,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 54,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 54,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": null,
+    "note": "บางงานฟรี"
+  },
+  {
+    "shop": 54,
+    "repair_tag": 7,
+    "min_price": 150,
+    "spend_time": "7วัน",
+    "note": "ไม่รับทั้งหมดต้องพิจารณางานก่อน"
+  },
+  {
+    "shop": 54,
+    "repair_tag": 8,
+    "min_price": 150,
+    "spend_time": "7วัน",
+    "note": "ไม่รับทั้งหมดต้องพิจารณางานก่อน"
+  },
+  {
+    "shop": 55,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 55,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 55,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 55,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 55,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 55,
+    "repair_tag": 6,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": "ดูตามสภาพงาน"
+  },
+  {
+    "shop": 55,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": null,
+    "note": null
+  },
+  {
+    "shop": 55,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ลูกค้าต้องมีผ้ามาเอง"
+  },
+  {
+    "shop": 56,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 56,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 57,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1-3วัน",
+    "note": "งานยีนส์80"
+  },
+  {
+    "shop": 57,
+    "repair_tag": 2,
+    "min_price": 50,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 57,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "1-3วัน",
+    "note": "งานยีนส์120"
+  },
+  {
+    "shop": 57,
+    "repair_tag": 4,
+    "min_price": 120,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 57,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "1-3วัน",
+    "note": "ดูตามขนาดที่ต้องปะ"
+  },
+  {
+    "shop": 57,
+    "repair_tag": 6,
+    "min_price": 50,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 58,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 58,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": "รอรับได้เลย"
+  },
+  {
+    "shop": 58,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 58,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 58,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 58,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": "บางงานฟรี"
+  },
+  {
+    "shop": 58,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ต้องดูงานก่อน"
+  },
+  {
+    "shop": 59,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 59,
+    "repair_tag": 2,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 59,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 1,
+    "min_price": 70,
+    "spend_time": "5วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 2,
+    "min_price": 30,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 4,
+    "min_price": 70,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 7,
+    "min_price": 150,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 60,
+    "repair_tag": 8,
+    "min_price": 150,
+    "spend_time": "3-5วัน",
+    "note": "นำผ้ามาเอง"
+  },
+  {
+    "shop": 61,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 61,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 61,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 61,
+    "repair_tag": 4,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 61,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 61,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 61,
+    "repair_tag": 7,
+    "min_price": 80,
+    "spend_time": null,
+    "note": "ใช้เวลาในการหาผ้าก่อน"
+  },
+  {
+    "shop": 61,
+    "repair_tag": 8,
+    "min_price": 80,
+    "spend_time": null,
+    "note": "ใช้เวลาในการหาผ้าก่อน"
+  },
+  {
+    "shop": 62,
+    "repair_tag": 1,
+    "min_price": 80,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 62,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 62,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 62,
+    "repair_tag": 4,
+    "min_price": 120,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 62,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 62,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 62,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 62,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 63,
+    "repair_tag": 1,
+    "min_price": 80,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 63,
+    "repair_tag": 2,
+    "min_price": 50,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 63,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 63,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 63,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 63,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 63,
+    "repair_tag": 7,
+    "min_price": 120,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 63,
+    "repair_tag": 8,
+    "min_price": 120,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 64,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2-7วัน",
+    "note": null
+  },
+  {
+    "shop": 64,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "2-7วัน",
+    "note": null
+  },
+  {
+    "shop": 64,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2-7วัน",
+    "note": null
+  },
+  {
+    "shop": 64,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "2-7วัน",
+    "note": null
+  },
+  {
+    "shop": 64,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "2-7วัน",
+    "note": null
+  },
+  {
+    "shop": 64,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "2-7วัน",
+    "note": null
+  },
+  {
+    "shop": 64,
+    "repair_tag": 7,
+    "min_price": 150,
+    "spend_time": "7วัน",
+    "note": "นำผ้ามาเองทำได้เลย แต่ถ้าไม่มีต้องให้ช่างหาผ้าก่อน"
+  },
+  {
+    "shop": 64,
+    "repair_tag": 8,
+    "min_price": 150,
+    "spend_time": "7วัน",
+    "note": "นำผ้ามาเองทำได้เลย แต่ถ้าไม่มีต้องให้ช่างหาผ้าก่อน"
+  },
+  {
+    "shop": 65,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 65,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 65,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 65,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 65,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 65,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 65,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "นำผ้ามาเองทำได้เลย แต่ถ้าไม่มีต้องให้ช่างหาผ้าก่อน"
+  },
+  {
+    "shop": 65,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": null,
+    "note": "นำผ้ามาเองทำได้เลย แต่ถ้าไม่มีต้องให้ช่างหาผ้าก่อน"
+  },
+  {
+    "shop": 66,
+    "repair_tag": 1,
+    "min_price": 70,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 4,
+    "min_price": 60,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 5,
+    "min_price": 40,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 7,
+    "min_price": 80,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 66,
+    "repair_tag": 8,
+    "min_price": 80,
+    "spend_time": "3-7วัน",
+    "note": null
+  },
+  {
+    "shop": 67,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 67,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 67,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 67,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 67,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 67,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 68,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 68,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 68,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 68,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 68,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 3,
+    "min_price": 90,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 5,
+    "min_price": 90,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 69,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "7วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 69,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "7วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 70,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 70,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 70,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 70,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 70,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 70,
+    "repair_tag": 6,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 71,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 71,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 71,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 71,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 1,
+    "min_price": 80,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 2,
+    "min_price": 50,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 3,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 5,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "5-7วัน",
+    "note": null
+  },
+  {
+    "shop": 72,
+    "repair_tag": 7,
+    "min_price": 150,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 72,
+    "repair_tag": 8,
+    "min_price": 150,
+    "spend_time": null,
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 73,
+    "repair_tag": 1,
+    "min_price": 80,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 73,
+    "repair_tag": 2,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 73,
+    "repair_tag": 3,
+    "min_price": 100,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 73,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 73,
+    "repair_tag": 5,
+    "min_price": 100,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 73,
+    "repair_tag": 6,
+    "min_price": 50,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 73,
+    "repair_tag": 7,
+    "min_price": 150,
+    "spend_time": "5-7วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 73,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 74,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 74,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 74,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 74,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 74,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 74,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 75,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 75,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5-7วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 76,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 76,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 76,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 76,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 76,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "3-5วัน",
+    "note": null
+  },
+  {
+    "shop": 76,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 76,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "นำผ้ามาเอง"
+  },
+  {
+    "shop": 76,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องนำผ้ามาเอง"
+  },
+  {
+    "shop": 77,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 77,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 77,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 77,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 77,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 77,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 77,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 77,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 78,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 78,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 78,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 78,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 78,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 78,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 78,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 78,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 79,
+    "repair_tag": 1,
+    "min_price": 30,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 79,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 79,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 79,
+    "repair_tag": 4,
+    "min_price": 120,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 79,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 79,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 79,
+    "repair_tag": 7,
+    "min_price": 150,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 79,
+    "repair_tag": 8,
+    "min_price": 150,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 80,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 80,
+    "repair_tag": 2,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 80,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 80,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 80,
+    "repair_tag": 5,
+    "min_price": 50,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 80,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 80,
+    "repair_tag": 7,
+    "min_price": 80,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 80,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 81,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 81,
+    "repair_tag": 2,
+    "min_price": 30,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 81,
+    "repair_tag": 3,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 81,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 81,
+    "repair_tag": 5,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 81,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 81,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 81,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 82,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 82,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 82,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 82,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 82,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 82,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 1,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 3,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 5,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 6,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 83,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 83,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 84,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 84,
+    "repair_tag": 2,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 84,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 84,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 84,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 84,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 84,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 84,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 85,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 85,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 85,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 85,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 85,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 85,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1-2วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 2,
+    "min_price": 40,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 86,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "1-5วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 2,
+    "min_price": 30,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 4,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 6,
+    "min_price": 20,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 87,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 87,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 88,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 88,
+    "repair_tag": 2,
+    "min_price": 40,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 88,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 88,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 88,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 88,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 88,
+    "repair_tag": 7,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 88,
+    "repair_tag": 8,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 89,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 89,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 89,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 89,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 89,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 89,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 90,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 90,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 90,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 91,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 91,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 91,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 91,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 1,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 2,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 92,
+    "repair_tag": 8,
+    "min_price": 150,
+    "spend_time": "5วัน",
+    "note": null
+  },
+  {
+    "shop": 93,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 93,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 93,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 93,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "2-3วัน",
+    "note": null
+  },
+  {
+    "shop": 94,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 94,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 94,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 94,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 94,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 2,
+    "min_price": 40,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 95,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 95,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 96,
+    "repair_tag": 1,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 96,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 96,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 96,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 96,
+    "repair_tag": 5,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 96,
+    "repair_tag": 6,
+    "min_price": 50,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 96,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "3วัน",
+    "note": null
+  },
+  {
+    "shop": 97,
+    "repair_tag": 1,
+    "min_price": 60,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 97,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 97,
+    "repair_tag": 4,
+    "min_price": 80,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 97,
+    "repair_tag": 5,
+    "min_price": 70,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 97,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1-3วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 3,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 4,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 5,
+    "min_price": 100,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 7,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 98,
+    "repair_tag": 8,
+    "min_price": 80,
+    "spend_time": "2-5วัน",
+    "note": null
+  },
+  {
+    "shop": 99,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 99,
+    "repair_tag": 2,
+    "min_price": 20,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 99,
+    "repair_tag": 3,
+    "min_price": 70,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 99,
+    "repair_tag": 5,
+    "min_price": 80,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 99,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 100,
+    "repair_tag": 1,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 100,
+    "repair_tag": 2,
+    "min_price": 10,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 100,
+    "repair_tag": 3,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 100,
+    "repair_tag": 5,
+    "min_price": 60,
+    "spend_time": "2วัน",
+    "note": null
+  },
+  {
+    "shop": 100,
+    "repair_tag": 6,
+    "min_price": 40,
+    "spend_time": "1วัน",
+    "note": null
+  },
+  {
+    "shop": 100,
+    "repair_tag": 7,
+    "min_price": 100,
+    "spend_time": "3-5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  },
+  {
+    "shop": 100,
+    "repair_tag": 8,
+    "min_price": 100,
+    "spend_time": "3-5วัน",
+    "note": "ต้องให้ช่างดูงานก่อน"
+  }
+]
