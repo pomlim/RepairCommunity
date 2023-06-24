@@ -7,7 +7,7 @@ const LandingPage = ({}) => {
   const url = `/shops`;
   return (
     <div className="w-full p-4 bg-butter-default ">
-      <div className="pt-20 p-4 text-center">
+      <div className="pt-5 p-4 text-center">
         <div>
           <Image src={Reviv_logo} width={40} height={60} />
         </div>
@@ -22,7 +22,7 @@ const LandingPage = ({}) => {
           <p>ไม่ว่าจะตัดขาหรือซ่อมรูขาด ร้านใกล้บ้าน</p>
           <p>หรือใกล้ที่ทำงานก็หาได้ที่ Repair Market</p>
         </div>
-        <div className="flex justify-center w-full pt-40 pb-8">
+        <div className="flex justify-center w-full pt-10 pb-8">
           <a href={url}>
             <button
               type="button"
