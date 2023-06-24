@@ -66,7 +66,7 @@ class ShopService {
   }
 
   async getAllShops() {
-    const url = `/api/Shops/?sort[0]=name&populate=*`;
+    const url = `/api/Shops/?sort[0]=name&populate=*&pagination[pageSize]=100`;
     const resp = await this.axiosClient.get(url);
     return resp.data?.data;
   }
